@@ -1,0 +1,401 @@
+[
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "rel=\"noopener\">Открыть в Google Картаs →</a>",
+  "replace": "rel=\"noopener\">Открыть в Google Картах →</a>",
+  "why": "Broken word: Latin \"s\" glued to a Cyrillic stem (\"Картаs\"). Correct form is \"Google Картах\".",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "\"address\":{\"@type\":\"PostalАдрес\"",
+  "replace": "\"address\":{\"@type\":\"PostalAddress\"",
+  "why": "schema.org type name was translated (\"PostalАдрес\"): invalid structured data, Google drops the address block.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "\"name\":\"Сколько стоит вход в Чичен-Ицу?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Foreign visitors pay two separate fees at two windows: the federal INAH fee and the Yucatán state fee, around 697 pesos in total in 2026 (roughly €35 / $40). Prices are set yearly, so check before you travel.\"}}",
+  "replace": "\"name\":\"Сколько стоит вход в Чичен-Ицу?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Иностранцы платят два отдельных сбора в двух кассах: федеральный INAH и сбор штата Юкатан — вместе около 697 песо в 2026 году (примерно €35 / $40). Цены пересматривают каждый год, так что сверьтесь перед поездкой.\"}}",
+  "why": "FAQ answer in the JSON-LD was left in English while the question is Russian; it can surface untranslated in Google rich results.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "Пирамида в центре — Эль-Кастильо (Эль-Кастильо), храм Кукулькана",
+  "replace": "Пирамида в центре — Эль-Кастильо (El Castillo), храм Кукулькана",
+  "why": "The bracket should hold the original Latin name, not a repeat of the transliteration (cf. «сеноте (cenote)», «Шибальбу (Xibalba)»).",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "У <strong>Эль-Караколя</strong> (Эль-Караколь), круглой обсерватории",
+  "replace": "У <strong>Эль-Караколя</strong> (El Caracol), круглой обсерватории",
+  "why": "Same duplicated-transliteration bug: brackets must contain the original \"El Caracol\".",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "<strong>Цомпантли</strong> (Цомпантли), платформа черепов",
+  "replace": "<strong>Цомпантли</strong> (Tzompantli), платформа черепов",
+  "why": "Same duplicated-transliteration bug: brackets must contain the original \"Tzompantli\".",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "около 1,5 часа — останавливайтесь в тени когда захотите</li>",
+  "replace": "около 1,5 часа — останавливайтесь в тени, когда захотите</li>",
+  "why": "Missing comma before the subordinate clause «когда захотите».",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "\"Этот аудиогид оказался куда лучше, чем я ждала!",
+  "replace": "\"Этот аудиогид оказался куда лучше, чем я ждал!",
+  "why": "Feminine verb form under a male reviewer name (Albert Parson); the rest of the quote is gender-neutral.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "чтобы вы ушли увереннее, любопытнее и лучше готовыми, чем были пять минут назад",
+  "replace": "чтобы вы ушли увереннее, любопытнее и лучше подготовленными, чем были пять минут назад",
+  "why": "«лучше готовыми» is not idiomatic Russian and clashes with the two comparative adverbs before it.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": ">Купить аудиоэкскурсию — от €9.99</a>",
+  "replace": ">Купить аудиоэкскурсию — от 9,99 €</a>",
+  "why": "Decimal point and symbol-first order; the rest of the page writes «От 9,99 €» (Russian format).",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "<small>· от &euro;9.99 · офлайн · на русском</small>",
+  "replace": "<small>· от 9,99 &euro; · офлайн · на русском</small>",
+  "why": "Same price-format inconsistency in the sticky bar: dot instead of comma, symbol before the number.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": ">Купить за &euro;9.99</a>",
+  "replace": ">Купить за 9,99 &euro;</a>",
+  "why": "Same price-format inconsistency on the sticky-bar button.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "Большая площадка для игры в мяч — самая большая в Мезоамерике",
+  "replace": "Большая площадка для игры в мяч — крупнейшая в Мезоамерике",
+  "why": "Word repetition «Большая … самая большая» in one clause.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "Не менее развитые и заметно более жестокие, они перестроили северную половину города на свой лад.",
+  "replace": "Они были не менее развиты и заметно более жестоки. Северную половину города перестроили на свой лад.",
+  "why": "Fronted adjectival phrase is a translation artefact; the brief asks for short active sentences.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "Цены на входе INAH и штат Юкатан пересматривают каждый год",
+  "replace": "Цены на входе каждый год пересматривают INAH и штат Юкатан",
+  "why": "Current word order first parses as «цены на входе INAH»; the subject gets lost.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "включайте каждую историю сами на нужной точке.",
+  "replace": "включайте каждую историю сами в нужной точке.",
+  "why": "Wrong preposition: «в точке», not «на точке».",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "администрацией археологической зоны Чичен-Ица.",
+  "replace": "администрацией археологической зоны Чичен-Ицы.",
+  "why": "The name should decline here (genitive) as it does everywhere else on the page.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "8:00–17:00 · кассы и последний вход до 16:00</div>",
+  "replace": "8:00–17:00 · кассы и последний вход — 16:00</div>",
+  "why": "EN master says last entry AT 16:00; «до 16:00» also contradicts the FAQ («последний вход — в 16:00»).",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "решил проверить: вычерпал колодец, а потом нырнул сам",
+  "replace": "решил проверить: прочесал дно колодца драгой, а потом нырнул сам",
+  "why": "Thompson dredged the cenote, he did not bail it out; «драга Томпсона» is the wording used on the guides page.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/index.html",
+  "find": "Кайфанул от своего темпа: никто не подгоняет",
+  "replace": "Понравилось идти в своём темпе: никто не подгоняет",
+  "why": "Slang («кайфанул») sits oddly against the neutral sentence before it in the same quote.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/ru/guides/index.html",
+  "find": "Автобус, прокатная машина или колективо: время в пути",
+  "replace": "Автобус, прокатная машина или маршрутка-колективо: время в пути",
+  "why": "A bare «колективо» means nothing to a Russian reader and looks like a misspelling of «коллектив»; one word of gloss fixes it.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "Mapaa GPS działa offline i pokazuje, gdzie jesteś",
+  "replace": "Mapa GPS działa offline i pokazuje, gdzie jesteś",
+  "why": "Doubled letter: \"Mapaa\" — the same broken find-and-replace that produced \"Mapaa GPS\" in Spanish.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "r=\"2.5\"/></svg> Mapaa GPS</div>",
+  "replace": "r=\"2.5\"/></svg> Mapa GPS</div>",
+  "why": "Doubled letter \"Mapaa\" in the highlights chip.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "Mapaa GPS offline — każde nagranie włączasz sam na miejscu",
+  "replace": "Mapa GPS offline — każde nagranie włączasz sam na miejscu",
+  "why": "Doubled letter \"Mapaa\" in the product feature list.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "rel=\"noopener\">Otwórz w Mapaach Google →</a>",
+  "replace": "rel=\"noopener\">Otwórz w Mapach Google →</a>",
+  "why": "Doubled letter: \"Mapaach\" — correct locative plural is \"Mapach Google\".",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "\"address\":{\"@type\":\"PostalAdres\"",
+  "replace": "\"address\":{\"@type\":\"PostalAddress\"",
+  "why": "schema.org type name was translated (\"PostalAdres\"): invalid structured data.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "\"name\":\"Ile kosztuje wstęp do Chichén Itzá?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Foreign visitors pay two separate fees at two windows: the federal INAH fee and the Yucatán state fee, around 697 pesos in total in 2026 (roughly €35 / $40). Prices are set yearly, so check before you travel.\"}}",
+  "replace": "\"name\":\"Ile kosztuje wstęp do Chichén Itzá?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Obcokrajowcy płacą dwie osobne opłaty w dwóch kasach: federalną INAH i stanową Jukatanu — łącznie około 697 peso w 2026 roku (mniej więcej 35 € / 40 $). Ceny ustala się co roku, więc sprawdź je przed wyjazdem.\"}}",
+  "why": "FAQ answer left in English inside the Polish JSON-LD.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "ma 30 metrów wysokości, cztery schody po 91 stopni",
+  "replace": "ma 30 metrów wysokości, cztery biegi schodów po 91 stopni",
+  "why": "\"schody\" is plurale tantum: \"cztery schody\" is ungrammatical and reads as \"four stairs\".",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "trzymaj się mapy offline i na każdym przystanku sam odpalasz nagranie.",
+  "replace": "trzymaj się mapy offline i na każdym przystanku sam odpalaj nagranie.",
+  "why": "Imperative chain broken by an indicative (\"odpalasz\") in the same sentence.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "y2=\"18\"/></svg> Działa na iOS &amp; Android</li>",
+  "replace": "y2=\"18\"/></svg> Działa na iOS i Androidzie</li>",
+  "why": "Missing locative after \"na\" (\"na Androidzie\" — as written correctly in the download step), plus \"&\" used as Polish \"i\".",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<small>· od &euro;9,99 · offline · po polsku</small>",
+  "replace": "<small>· od 9,99 &euro; · offline · po polsku</small>",
+  "why": "Currency symbol before the number; everywhere else the page writes \"Od 9,99 €\" / \"Od ~35 €\".",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": ">Kup za &euro;9,99</a>",
+  "replace": ">Kup za 9,99 &euro;</a>",
+  "why": "Same currency-order inconsistency on the sticky-bar button.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<p>Kalendarz zbudowany jako piramida — 91 stopni na każdą stronę",
+  "replace": "<p>Kalendarz zbudowany jako piramida — 91 stopni z każdej strony",
+  "why": "Wrong preposition: \"z każdej strony\", not \"na każdą stronę\".",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<h3>Obserwatorium, ołtarz czaszek i 200 kolumn</h3>",
+  "replace": "<h3>Obserwatorium, platforma czaszek i 200 kolumn</h3>",
+  "why": "Glossary drift: Tzompantli is \"platforma czaszek\" in the body text and in the stop card; \"ołtarz\" also changes the meaning.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "Ogląda to kilkadziesiąt tysięcy osób rocznie.",
+  "replace": "Ogląda to kilkadziesiąt tysięcy osób.",
+  "why": "\"rocznie\" is not in the English master and adds a claim we do not source.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "Plony przepadły, źródła opadły, gleba zjałowiała",
+  "replace": "Plony przepadły, źródła wyschły, gleba zjałowiała",
+  "why": "\"źródła opadły\" is not Polish; springs \"wysychają\".",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "trzy kilometry na południe, jest otwarta do kąpieli",
+  "replace": "trzy kilometry na południe, można się w niej kąpać",
+  "why": "\"otwarta do kąpieli\" is a literal calque of \"open for swimming\".",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "Cel jest prosty: masz stąd wyjść pewniejszy, bardziej ciekawy i lepiej przygotowany niż pięć minut temu",
+  "replace": "Cel jest prosty: chcemy, żebyś wyszedł stąd pewniejszy, bardziej ciekawy świata i lepiej przygotowany niż pięć minut temu",
+  "why": "\"masz stąd wyjść\" reads as an order to the reader, and bare \"bardziej ciekawy\" means \"more interesting\", not \"more curious\".",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "Uwielbiam, że szedłem we własnym tempie.",
+  "replace": "Najlepsze było to, że szedłem we własnym tempie.",
+  "why": "Present tense \"uwielbiam\" clashes with the past-tense clause it governs.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "Za taką cenę na pewno wezmę taki przewodnik znowu.",
+  "replace": "Za tę cenę na pewno sięgnę po taki przewodnik znowu.",
+  "why": "Repetition \"taką … taki\" inside one short sentence.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "zostaje czas na przystanek, zdjęcie i chwilę siedzenia",
+  "replace": "zostaje czas, żeby przystanąć, zrobić zdjęcie i usiąść",
+  "why": "\"przystanek\" is the word used for a tour stop everywhere else on the page; nouns here should be verbs.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "8:00–17:00 · kasy i ostatnie wejście do 16:00</div>",
+  "replace": "8:00–17:00 · kasy i ostatnie wejście — 16:00</div>",
+  "why": "EN master and the FAQ both say last entry AT 16:00.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<span class=\"chip\">Majowie &amp; Toltekowie</span>",
+  "replace": "<span class=\"chip\">Majowie i Toltekowie</span>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (chip) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "opinie na Tripadvisorze &amp; Viatorze</div>",
+  "replace": "opinie na Tripadvisorze i Viatorze</div>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (product card) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<div class=\"step\"><h3>Pauza &amp; wznowienie</h3>",
+  "replace": "<div class=\"step\"><h3>Pauza i wznowienie</h3>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (step heading) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<h3>Chichén Itzá &mdash; bilety wstępu &amp; wycieczki</h3>",
+  "replace": "<h3>Chichén Itzá &mdash; bilety wstępu i wycieczki</h3>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (ticket box heading) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": ">Sprawdź dostępność &amp; rezerwuj na Tiqets &rarr;</a>",
+  "replace": ">Sprawdź dostępność i rezerwuj na Tiqets &rarr;</a>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (CTA button) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<h2>Bilety, wycieczki jednodniowe &amp; auta</h2>",
+  "replace": "<h2>Bilety, wycieczki jednodniowe i auta</h2>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (section H2) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<h3>Wycieczki jednodniowe &amp; wcześniejsze wejście</h3>",
+  "replace": "<h3>Wycieczki jednodniowe i wcześniejsze wejście</h3>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (partner card) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "Z Cancún, Playa del Carmen, Tulum &amp; Méridy",
+  "replace": "Z Cancún, Playa del Carmen, Tulum i Méridy",
+  "why": "Ampersand used as the Polish conjunction \"i\" (partner card meta) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<h3>Wynajem aut &amp; hotele</h3>",
+  "replace": "<h3>Wynajem aut i hotele</h3>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (partner card) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "noclegi w Valladolid &amp; Méridzie</div>",
+  "replace": "noclegi w Valladolid i Méridzie</div>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (partner card meta) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/index.html",
+  "find": "<div class=\"meta\">Miasta &amp; zabytki na całym świecie</div>",
+  "replace": "<div class=\"meta\">Miasta i zabytki na całym świecie</div>",
+  "why": "Ampersand used as the Polish conjunction \"i\" (cross-sell meta) — an English habit that marks the page as translated.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/guides/index.html",
+  "find": "<div class=\"gcat\">Wycieczki &amp; audioprzewodnik</div>",
+  "replace": "<div class=\"gcat\">Wycieczki i audioprzewodnik</div>",
+  "why": "Ampersand used as the Polish conjunction \"i\" in a category label.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/guides/index.html",
+  "find": "<div class=\"gcat\">Historia &amp; kultura</div>",
+  "replace": "<div class=\"gcat\">Historia i kultura</div>",
+  "why": "Ampersand used as the Polish conjunction \"i\" in a category label.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/guides/index.html",
+  "find": "<div class=\"gcat\">Astronomia &amp; kalendarz</div>",
+  "replace": "<div class=\"gcat\">Astronomia i kalendarz</div>",
+  "why": "Ampersand used as the Polish conjunction \"i\" in a category label.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/pl/guides/index.html",
+  "find": "<p>91 stopni na stronę, świątynia w świątyni",
+  "replace": "<p>91 stopni z każdej strony, świątynia w świątyni",
+  "why": "Wrong preposition (\"na stronę\"); also aligns with the wording on the landing page.",
+  "severity": "style"
+ }
+]

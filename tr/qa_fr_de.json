@@ -1,0 +1,163 @@
+[
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "\"text\":\"Foreign visitors pay two separate fees at two windows: the federal INAH fee and the Yucatán state fee, around 697 pesos in total in 2026 (roughly €35 / $40). Prices are set yearly, so check before you travel.\"",
+  "replace": "\"text\":\"Les visiteurs étrangers paient deux taxes à deux guichets distincts : la taxe fédérale de l'INAH et celle de l'État du Yucatán — environ 697 pesos au total en 2026 (à peu près 35 € / 40 $). Les tarifs sont revus chaque année : vérifiez avant de partir.\"",
+  "why": "The first FAQ answer in the JSON-LD block was never localized — a full English paragraph shipped to Google on the French page. Text taken from the matching visible FAQ answer.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "\"address\":{\"@type\":\"PostalAdresse\"",
+  "replace": "\"address\":{\"@type\":\"PostalAddress\"",
+  "why": "The schema.org type name was translated. PostalAdresse is not a valid type; the address block is silently dropped by structured-data parsers. EN master has PostalAddress.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "<a href=\"https://maps.google.com/?q=Chichen+Itza\" target=\"_blank\" rel=\"noopener\">Ouvrir dans Google Cartes →</a>",
+  "replace": "<a href=\"https://maps.google.com/?q=Chichen+Itza\" target=\"_blank\" rel=\"noopener\">Ouvrir dans Google Maps →</a>",
+  "why": "« Google Cartes » is not a product name — the service is called Google Maps in French too. Reads like machine translation.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "Chichén Itzá n'est pas une pyramide. C'est une ville :",
+  "replace": "Chichén Itzá n'est pas qu'une pyramide. C'est une ville :",
+  "why": "EN reads “is not ONE pyramid”. Dropping « qu’ » flips it into “is not a pyramid”, which is simply false — the German page got this right (“keine einzelne Pyramide”).",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "un terrain de jeu long comme un terrain de football",
+  "replace": "un jeu de balle long comme un terrain de football",
+  "why": "« terrain … terrain » in five words, and « terrain de jeu » means playground; the page’s own glossary term is « jeu de balle ».",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "à deux heures et demie de Cancún et quarante minutes de la petite ville coloniale de Valladolid",
+  "replace": "à deux heures et demie de Cancún et à quarante minutes de la petite ville coloniale de Valladolid",
+  "why": "Missing repeated preposition; without the second « à » the phrase stumbles when read aloud.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "les astronomes mayas suivaient l'année d'assez près pour prévoir les éclipses",
+  "replace": "les astronomes mayas mesuraient l'année avec assez de précision pour prévoir les éclipses",
+  "why": "« suivre l’année d’assez près » is a word-for-word calque of “tracked the year accurately enough”; no French speaker says it.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "<h3>Un observatoire, un mur de crânes et 200 colonnes</h3>",
+  "replace": "<h3>Un observatoire, une plateforme de crânes et 200 colonnes</h3>",
+  "why": "Glossary drift: the heading says « mur de crânes » while the paragraph below and the stop card both say « la plateforme des crânes » for the same Tzompantli.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "Un court extrait — la voix qui vous mène de l'entrée à El Castillo, et retour.",
+  "replace": "Un court extrait — la même voix qui vous conduit de l'entrée à El Castillo, puis vous ramène.",
+  "why": "EN says “the SAME voice” — that is the whole selling point of the sample. « et retour » also reads like a bus timetable.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/index.html",
+  "find": "<p>Oui, à condition d'arriver tôt et de savoir ce que vous regardez. Entrer à 8 h avec un guide dans les oreilles transforme une marche brûlante le long de pierres balisées",
+  "replace": "<p>Oui, à condition d'arriver tôt et de savoir ce que vous regardez. Entrer à 8 h avec un guide dans les oreilles transforme une marche brûlante le long de pierres mises hors d'atteinte",
+  "why": "« balisées » means way-marked, the opposite of “roped-off”. Same wording also sits in the JSON-LD copy of this answer and should be fixed there too.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/fr/guides/index.html",
+  "find": "La légende, la drague de Thompson, et ce qui est sorti de l'eau.",
+  "replace": "La légende, le dragage du puits par Thompson, et ce qui est sorti de l'eau.",
+  "why": "« la drague » reads first as flirting in modern French — an unfortunate pun on a card about a sacrificial well. « le dragage » is the action.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/index.html",
+  "find": "\"text\":\"Foreign visitors pay two separate fees at two windows: the federal INAH fee and the Yucatán state fee, around 697 pesos in total in 2026 (roughly €35 / $40). Prices are set yearly, so check before you travel.\"",
+  "replace": "\"text\":\"Ausländische Gäste zahlen zwei getrennte Gebühren an zwei Schaltern: die föderale INAH-Gebühr und die Gebühr des Bundesstaats Yucatán – 2026 zusammen rund 697 Pesos (etwa 35 € / 40 $). Die Preise werden jährlich neu festgelegt, prüfen Sie sie also vor der Reise.\"",
+  "why": "The first FAQ answer in the JSON-LD block was never localized — a full English paragraph shipped on the German page. Text taken from the matching visible FAQ answer.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/index.html",
+  "find": "\"address\":{\"@type\":\"PostalAdresse\"",
+  "replace": "\"address\":{\"@type\":\"PostalAddress\"",
+  "why": "The schema.org type name was translated. PostalAdresse is not a valid type; the address block is silently dropped by structured-data parsers.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/index.html",
+  "find": "<a href=\"https://maps.google.com/?q=Chichen+Itza\" target=\"_blank\" rel=\"noopener\">In Google Kartes öffnen →</a>",
+  "replace": "<a href=\"https://maps.google.com/?q=Chichen+Itza\" target=\"_blank\" rel=\"noopener\">In Google Maps öffnen →</a>",
+  "why": "“Kartes” is not a German word — a broken half-translation of Google Maps, visible in the practical-info box. This is the German twin of the Spanish “Mapaa GPS” bug.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/index.html",
+  "find": "<div class=\"who\">Geprüfte Reisende · Tripadvisor</div>",
+  "replace": "<div class=\"who\">Geprüfter Reisender · Tripadvisor</div>",
+  "why": "Signature of one anonymous reviewer. “Geprüfte Reisende” reads as plural (“verified travellers”) under a single first-person review; EN and FR both use the singular.",
+  "severity": "error"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/index.html",
+  "find": "6.022 Reisende sind diesen Guide gegangen",
+  "replace": "6.022 Reisende sind mit diesem Guide gelaufen",
+  "why": "„einen Guide gehen“ is not German — you walk a route with a guide, you do not walk the guide. First line of the hero, so it is the first thing a German reader trips over.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/index.html",
+  "find": "<h3>Das Ballspielfeld und der Ball mit fünf Kilo</h3>",
+  "replace": "<h3>Das Ballspielfeld und der Ball, der fünf Kilo wog</h3>",
+  "why": "„der Ball mit fünf Kilo“ is a literal fold of the English title; a heading with a verb lands better and matches the EN “that weighed”.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/index.html",
+  "find": "An der Grenze von Quintana Roo nach Yucatán stellt sich Ihr Handy eine Stunde zurück.",
+  "replace": "Beim Wechsel von Quintana Roo nach Yucatán stellt sich Ihr Handy eine Stunde zurück.",
+  "why": "„An der Grenze von X nach Y“ mixes two constructions (an der Grenze zwischen … / beim Wechsel von … nach …) and reads as translated German.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/index.html",
+  "find": "dass sie Finsternisse vorhersagten und die Maisaussaat terminierten",
+  "replace": "dass sie Finsternisse vorhersagten und den Zeitpunkt der Maisaussaat bestimmten",
+  "why": "„terminieren“ is office-calendar German (scheduling a meeting) and clashes with the voice of the rest of the paragraph.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/index.html",
+  "find": "<div class=\"review\">\"Dieser Audioguide war viel besser, als ich erwartet hatte!",
+  "replace": "<div class=\"review\">„Dieser Audioguide war viel besser, als ich erwartet hatte!",
+  "why": "All six review quotes kept ASCII \" while the German prose on the same page uses „…“ („gefiederte Schlange“, „Nonnenkloster“) — the FR page did localize its quotes to « ». Apply the same swap (opening „ and closing “) to all six reviews.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/guides/index.html",
+  "find": "Alles für die Planung: Tickets, Uhrzeit, Tagestouren",
+  "replace": "Alles für die Planung: Tickets, beste Zeit, Tagestouren",
+  "why": "EN “timing” became „Uhrzeit“ (clock time), which is not a guide topic and sits oddly in a list of subject areas.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/guides/index.html",
+  "find": "Eine Route mit 16 Stopps durch die Ausgrabungszone, in Gehreihenfolge.",
+  "replace": "Eine Route mit 16 Stopps durch die Ausgrabungszone, in der Reihenfolge, in der Sie gehen.",
+  "why": "„Gehreihenfolge“ is an invented compound (not in any dictionary) built straight from “walking order”.",
+  "severity": "style"
+ },
+ {
+  "file": "/home/claude/chichenitzawalk/public/de/guides/index.html",
+  "find": "Zeiten, Maut und die Schlepper am Straßenrand.",
+  "replace": "Zeiten, Maut und die Anwerber am Straßenrand.",
+  "why": "„Schlepper“ in current German first means people smuggler; using it for “touts” on a travel page is a headline risk.",
+  "severity": "style"
+ }
+]

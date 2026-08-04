@@ -1,8 +1,9 @@
 # chichenitzawalk.com — EN landing bundle (4 Aug 2026)
 
-## What's in `public/`
-- `index.html` — EN master landing (the pillar). Full MSM structure, re-skinned to the Chichén Itzá logo palette.
-- `guides/index.html` — /guides/ index with all 29 planned articles as "Coming soon" cards.
+## What's in `public/`  — 8 languages, 16 pages
+- `index.html` + `<lang>/index.html` ×7 — the pillar landing in EN/ES/FR/DE/IT/PT/PL/RU.
+- `guides/index.html` + `<lang>/guides/index.html` ×7 — the guides index with all 29 planned articles as "Coming soon" cards.
+- `audio/cancunt1_<lang>_intro.mp3` ×8 — the preview player, self-hosted so it works in every language.
 - `privacy-policy.html`, `affiliate-disclosure.html` — own legal pages.
 - `robots.txt`, `llms.txt`, `sitemap.xml`
 - `favicon.ico` / `favicon-32.png` / `favicon-180.png` — generated from IMG/favicon.png
@@ -50,3 +51,50 @@ Widget URL pattern in use:
 2. Infra: GitHub repo + Cloudflare Pages (output dir `public`) + point chichenitzawalk.com.
 3. Localise the landing to 7 languages (gen.py-style) once EN is approved.
 4. Start P0 articles from the 30-topic plan; slugs are already fixed in /guides/.
+
+
+---
+
+## Localization (added 4 Aug 2026)
+
+Seven languages generated from the EN master: **ES, FR, DE, IT, PT, PL, RU**.
+Localized, not translated — per the house localization guide: short sentences, active
+voice, no clichés, units and number formats per market, one consistent politeness
+register per language, the monument glossary held identical across each page.
+
+### Build
+- `localize.py` — shared single-pass substitution helper.
+- `gen_land.py` — landings. `gen_guides.py` — /guides/ pages.
+- `tr/strings_en.json` (231 landing strings) + `tr/strings_guides_en.json` (80).
+- `tr/tr_<lang>.json`, `tr/trg_<lang>.json` — the text maps.
+- `tr/postfix.json` — proofreading fixes that span markup, applied after substitution.
+- Rebuild: `python3 gen_land.py && python3 gen_guides.py`. Both report `missing 0`.
+
+### ⚠️ Generator bug found and fixed — do not reintroduce
+The first version applied the text map with repeated `str.replace()`, longest key first.
+That re-scans text that was already translated, so the short key `Map` matched inside the
+freshly produced `Mapa GPS` and yielded **`Mapaa GPS`**; `Address` ate the schema.org type
+name inside `PostalAddress` and produced `PostalDirección` / `PostalАдрес`, silently killing
+the address node; `Google Maps` became `Google Mapas`. It hit six of seven languages.
+
+`localize.py` now does ONE regex pass over the original string, longest alternative first,
+so output is never re-scanned, plus a `PROTECT` list of literals (schema.org type names,
+brand names) that resolve to themselves. Any future generator must use `apply_map()`.
+
+### Per-language swaps the generator makes
+`<html lang>`, canonical, `og:url`, `og:locale`, active flag in the language switcher,
+audio preview file, `&lang=<code>` on every Bókun URL (English omits it), the TouringBee
+product + shop URL for that language, Tiqets locale path, GetYourGuide `<xx-xx>` path,
+Booking `searchresults.<lang>.html` and `cars/index.<lang>.html`, `/<lang>/guides/` links,
+JSON-LD `@id`s and `inLanguage`. IT additionally gets the localized Tulum and Teotihuacán
+cross-sell products; the other languages fall back to EN where no localized product exists.
+
+### QA
+Three independent proofreaders swept all 14 localized pages against the English master.
+115 findings: 31 were the generator bug (fixed at the source), 84 were real language fixes
+(19 errors, 65 style) — all back-ported into the text maps, so a clean rebuild keeps them.
+Verified after rebuild: every number matches the master, the GPS wording is correct in all
+8 languages, register is consistent per language, all JSON-LD parses, no leftover English.
+
+### sitemap.xml
+18 `<loc>` — 8 landings + 8 guides pages + 2 legal — each with 8 hreflang alternates + x-default.
