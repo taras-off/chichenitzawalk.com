@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://chichenitzawalk.com/</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1.0</priority>
+<xhtml:link rel="alternate" hreflang="en" href="https://chichenitzawalk.com/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://chichenitzawalk.com/"/>
+</url>
+<url>
+<loc>https://chichenitzawalk.com/guides/</loc>
+<lastmod>2026-08-04</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://chichenitzawalk.com/privacy-policy.html</loc>
+<lastmod>2026-08-04</lastmod>
+<priority>0.2</priority>
+</url>
+<url>
+<loc>https://chichenitzawalk.com/affiliate-disclosure.html</loc>
+<lastmod>2026-08-04</lastmod>
+<priority>0.2</priority>
+</url>
+</urlset>
