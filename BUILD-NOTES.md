@@ -44,7 +44,14 @@ Widget URL pattern in use:
 - Climbing banned since **2006**.
 - Equinox serpent: ~**20 March** / ~**22 September**.
 - Product: **€9.99**, 16 stops, ~1.5 h, 8 languages, **6,022 users** (from the cancunt1 ID table).
-- Reviews: 6 verbatim Tripadvisor reviews taken from Reviews.docx. No invented aggregateRating — Product schema deliberately carries **no** aggregateRating (playbook rule).
+- Reviews: 6 verbatim Tripadvisor reviews taken from Reviews.docx.
+- **Rating: 4.6 from 18 reviews**, read off the product's own Viator listing
+  ("Chichen Itza Walking Tour with Audioguide (no ticket)", supplied by TouringBee —
+  https://www.viator.com/tours/Chichen-Itza/Chichen-Itza-Self-Guided-Audio-Tour-for-your-smartphone/d50526-366784P6).
+  Shown visibly in the hero ("4.6 on Viator") and in the product card with the count, and
+  mirrored in the Product schema as `aggregateRating` — real figure, real count, visible on
+  the page, which is exactly what the playbook requires. Re-check the count before each
+  release; if it moves, update both the visible strings and the schema together.
 
 ## Next steps
 1. Deploy + one real test order → confirm the activation email arrives.
