@@ -9,19 +9,20 @@
 - `img/` — 14 WebP images generated from the cancunt1 photo set + `logo.webp` + `author-eugene.webp`
 - `audio/cancunt1_en_intro.mp3` — the 30-sec preview player source (self-hosted, so it works in every language)
 
-## ⚠️ ONE THING TO FILL BEFORE DEPLOY
-`__BOKUN_UUID__` appears 13× in `index.html`. Create the Bókun booking channel for
-**chichenitzawalk.com** (Sales tools → Booking widgets → add domain → Edit Channel →
-Online sales → Booking Channel → copy UUID) and find/replace `__BOKUN_UUID__` with it.
-Bókun product id is already wired: **790505** (cancunt1).
+## ✅ Bókun wired and live
+Channel UUID **028dc54f-646b-4b9d-a0f0-e1c5746da99a** (channel `chichenitzawalk.com`),
+product **790505** — read off the generated Button widget code in the Bókun dashboard on 4 Aug 2026.
+All 6 buy CTAs + the lazy loader now carry the real UUID. Nothing left to fill in.
 
-Until then the buy buttons point at an invalid widget URL. Everything else works.
+Widget URL pattern in use:
+`https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1`
+(add `&lang=<code>` on the localized pages; English omits it.)
 
 ## IDs confirmed for this site
 | Item | Value |
 |---|---|
 | Bókun product | #790505 · cancunt1 · Chichen Itza Audioguide |
-| Bókun channel UUID | ❌ not created yet |
+| Bókun channel UUID | **028dc54f-646b-4b9d-a0f0-e1c5746da99a** ✅ вставлен |
 | TouringBee EN product | https://touringbee.com/product/chichen-itza-tour/ |
 | TouringBee ES | /es/product/chichen-itza-tour-es/ |
 | TouringBee FR | /fr/product/chichen-itza-tour-fr/ |
@@ -45,7 +46,7 @@ Until then the buy buttons point at an invalid widget URL. Everything else works
 - Reviews: 6 verbatim Tripadvisor reviews taken from Reviews.docx. No invented aggregateRating — Product schema deliberately carries **no** aggregateRating (playbook rule).
 
 ## Next steps
-1. Bókun channel → UUID → find/replace.
+1. Deploy + one real test order → confirm the activation email arrives.
 2. Infra: GitHub repo + Cloudflare Pages (output dir `public`) + point chichenitzawalk.com.
 3. Localise the landing to 7 languages (gen.py-style) once EN is approved.
 4. Start P0 articles from the 30-topic plan; slugs are already fixed in /guides/.
