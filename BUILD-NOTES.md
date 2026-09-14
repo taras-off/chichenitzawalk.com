@@ -105,3 +105,78 @@ Verified after rebuild: every number matches the master, the GPS wording is corr
 
 ### sitemap.xml
 18 `<loc>` — 8 landings + 8 guides pages + 2 legal — each with 8 hreflang alternates + x-default.
+
+---
+
+## Article #2 — `/chichen-itza-tour/` (13 September 2026)
+
+**Slug:** `chichen-itza-tour` · 8 languages · EN master ~2,950 words.
+Title: *Chichén Itzá Tour: Coach, Guide or Audio?*
+
+### Build pipeline
+
+    build_article.py      # shared chrome: pulls <style>, <header>, <footer> out of
+                          # public/index.html, adds the article-only CSS, localizes
+                          # the header (brand href, menu word, dropdown entry,
+                          # lang nav pointing at the article in each language)
+    gen_article.py <lang> meta/02_<lang>.json drafts/02-body-<lang>.html
+                          # builds the <head>, derives the FAQPage JSON-LD FROM the
+                          # on-page <details> so the two can never drift, and writes
+                          # public/[<lang>/]chichen-itza-tour/index.html
+    wire_article.py       # adds the article to the Guides dropdown on all 8 landings
+                          # and flips the /guides/ card from "Coming soon" to a live
+                          # link in all 8 languages. Idempotent.
+
+Rebuild everything:
+
+    for L in en es fr de it pt pl ru; do
+      python3 gen_article.py $L meta/02_$L.json \
+        drafts/02-body-$(  [ $L = en ] && echo EN || echo $L ).html
+    done
+    python3 wire_article.py
+
+### Decisions worth remembering
+
+- **Root-absolute asset paths (`/img/…`) in articles**, not the Playbook v3 §6
+  relative `../img/`. The rest of the site already uses root-absolute, it behaves
+  identically on the server, and it removes the `../` vs `../../` bug class from
+  the localizer entirely — localized pages need no path rewriting at all.
+- **The localized body is a full HTML fragment per language, not a string map.**
+  A 3,000-word article cannot be localized key-by-key without turning into a
+  translation. Each language got the whole body; the structural contract
+  (identical tag sequence to the EN master) is what the build script enforces.
+  Verify with:
+
+      python3 -c "
+      import re
+      def t(f): return [x.split()[0].lower() for x in re.findall(r'<(/?[a-zA-Z][^>]*)>', open(f,encoding='utf-8').read())]
+      ref=t('drafts/02-body-EN.html')
+      for L in ['es','fr','de','it','pt','pl','ru']: print(L, t(f'drafts/02-body-{L}.html')==ref)"
+
+- **FAQ JSON-LD is generated from the page, never written by hand.**
+- The RU body reuses the wording of the WordPress draft (post #18381) that is
+  with the editor; the sections the EN master has and that draft did not
+  (byline, at-a-glance grid, product card, final CTA) were written fresh from
+  the approved landing-page strings in `tr/tr_ru.json`.
+
+### Proofreading round
+
+Three adversarial native-editor passes over the 7 localizations produced 96
+findings; all were applied. The notable ones:
+
+- **DE** had a meaning reversal in FAQ 1 — *"Ganz ohne hineinzugehen ist die
+  Variante, von der wir abraten"* said we advise against entering at all.
+- **PL** mixed 2sg and 2pl address in five places, twice inside one sentence.
+- **IT** called both entry fees *statali* two clauses after saying one is federal.
+- **PT** put the accredited guides at the ticket office instead of the entrance,
+  and turned the cenote under El Castillo into a *gruta*.
+- **PL and RU** both mistranslated Thompson's dredging of the Sacred Cenote as
+  deepening / baling it dry.
+- **ES and IT** both produced the same tautology from "unlocks the 8:00 opening"
+  (*abre la apertura* / *apre l'apertura*).
+- The EN lead did not contain the main keyword; fixed in EN and mirrored in all 7.
+
+### Still open
+
+- The DE H1 keeps `allein` for *self-guided*. It reads as headline compression
+  rather than "travelling solo", and matches `og_title` — flagged, not changed.

@@ -1,0 +1,26 @@
+{
+  "slug": "chichen-itza-tour",
+  "title": "Excursion à Chichén Itzá : les 4 formules | TouringBee",
+  "desc": "Excursion en car, guide à l'entrée, visite privée ou audioguide à Chichén Itzá ? Prix réels 2026, heures d'arrivée et comparatif honnête des quatre.",
+  "site_name": "Chichén Itzá Walk",
+  "og_title": "Chichén Itzá : excursion guidée, visite libre ou audioguide ?",
+  "og_desc": "Quatre façons réalistes de visiter Chichén Itzá, ce que chacune coûte en 2026, et à qui elle convient.",
+  "sticky": {
+    "sticky_title": "Audioguide de Chichén Itzá",
+    "sticky_sub": "· dès 9,99 &euro; · hors ligne · en français",
+    "sticky_btn": "Acheter 9,99 &euro;",
+    "bokun_href": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=fr",
+    "bokun_src": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=fr"
+  },
+  "labels": {
+    "menu": "Guides",
+    "dropdown": "Chichén Itzá : quelle excursion ?",
+    "all": "Tous les guides"
+  },
+  "crumbs": {
+    "home": "Accueil",
+    "guides": "Guides",
+    "self": "Formules de visite de Chichén Itzá",
+    "attraction": "Chichén Itzá"
+  }
+}
