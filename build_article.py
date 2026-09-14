@@ -15,6 +15,8 @@ FOOTER = slice_between(LAND, '<footer', '</footer>')
 
 ART_CSS = """
 /* ---- article page ---- */
+/* sticky header is 56px tall: keep anchor targets clear of it */
+[id]{scroll-margin-top:72px}
 .arthero{background:var(--soft);border-bottom:1px solid var(--line);padding:34px 0 30px}
 .arthero h1{font-size:38px;line-height:1.15;margin:.15em 0 .2em;max-width:24ch}
 .arthero .sub{font-size:19px;color:#33402f;max-width:60ch;margin:0 0 14px}

@@ -176,6 +176,34 @@ findings; all were applied. The notable ones:
   (*abre la apertura* / *apre l'apertura*).
 - The EN lead did not contain the main keyword; fixed in EN and mirrored in all 7.
 
+### Fix, 14 September 2026 — in-page anchors
+
+The body had **two** `href="#audio"` links. The second sat *inside* the
+`<h3 id="audio">` section, so it pointed at its own heading and did nothing —
+and because its link text names the product ("the TouringBee Chichén Itzá audio
+walk"), a reader clicking it expected the Bókun widget and got a no-op.
+It now points at `#product`, which scrolls to the product card with the rating,
+the price and the Bókun button. The first `#audio` link, in the lead, still
+jumps to the section that explains the option — that one is correct.
+
+Also added `[id]{scroll-margin-top:72px}` to the article CSS: the header is
+`position:sticky` at 56px, so before this any anchor jump parked the target
+heading underneath it.
+
+Rule for future articles: a link whose text names the product goes to
+`#product`, never to `#audio`. Check with
+
+    python3 -c "
+    import re,glob,os
+    for p in glob.glob('public/**/*.html',recursive=True):
+        h=open(p,encoding='utf-8').read()
+        for u in re.findall(r'href=\"([^\"]*#[^\"]+)\"',h):
+            if u.startswith('http'): continue
+            path,frag=u.split('#',1)
+            t=p if path=='' else 'public'+path+('index.html' if path.endswith('/') else '')
+            if not os.path.exists(t) or f'id=\"{frag}\"' not in open(t,encoding='utf-8').read():
+                print('BROKEN',p,u)"
+
 ### Still open
 
 - The DE H1 keeps `allein` for *self-guided*. It reads as headline compression
