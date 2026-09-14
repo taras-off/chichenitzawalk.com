@@ -190,8 +190,28 @@ Also added `[id]{scroll-margin-top:72px}` to the article CSS: the header is
 `position:sticky` at 56px, so before this any anchor jump parked the target
 heading underneath it.
 
-Rule for future articles: a link whose text names the product goes to
-`#product`, never to `#audio`. Check with
+**Superseded the same day, by request:** both in-text links whose text names the
+product now open the Bókun widget directly instead of scrolling anywhere. They
+carry `class="bokunButton inlinebuy"` with the usual `data-src` (`&lang=` per
+language) — the same hook the three CTA buttons use, so Bókun binds to them
+identically; `.inlinebuy` styles them as a weighted, green-underlined text link
+rather than a button, so they still read as prose.
+
+Two safety nets, because an in-text link can be clicked earlier in the page
+life than a CTA button:
+
+- the lazy loader now also fires on `setTimeout(b,3000)`, not only on first
+  interaction, so the engine is bound well before anyone reaches mid-article;
+- the inline links carry `target="_blank" rel="noopener"`, so on the rare early
+  click where Bókun has not bound yet, the real `href` opens the checkout in a
+  new tab and the reader keeps the article. The three CTA buttons are unchanged.
+
+Note the `id="audio"` and `id="product"` anchors still exist and are still the
+scroll targets used by `scroll-margin-top`; nothing links to them from the body
+any more.
+
+Rule for future articles: a link whose text names the product is a
+`bokunButton`, not an anchor. Check with
 
     python3 -c "
     import re,glob,os

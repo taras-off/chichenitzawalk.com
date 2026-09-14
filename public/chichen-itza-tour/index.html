@@ -219,6 +219,10 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 .fgrid b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.4px;color:var(--brand-d)}
 .disc{font-size:13px;color:var(--muted);background:#fbfaf5;border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0}
 .prose h2{margin:1.7em 0 .4em}
+/* in-text links that open the Bokun widget rather than navigating */
+.prose a.inlinebuy{color:var(--brand-d);font-weight:600;text-decoration:underline;text-decoration-color:rgba(93,138,78,.55);text-underline-offset:3px;text-decoration-thickness:2px;cursor:pointer}
+.prose a.inlinebuy:hover{text-decoration-color:var(--brand-d);background:rgba(93,138,78,.09);border-radius:3px}
+
 .prose blockquote{margin:1.4em 0;padding:14px 18px;background:var(--soft);border-left:3px solid var(--brand);border-radius:0 10px 10px 0;font-style:italic;color:#33402f}
 .prose blockquote cite{display:block;margin-top:8px;font-style:normal;font-size:13px;color:var(--muted)}
 .tablewrap{overflow-x:auto;margin:1.5em 0;-webkit-overflow-scrolling:touch}
@@ -271,7 +275,7 @@ ul.related a:hover{text-decoration:underline}
 
 <p>This page compares the four realistic ways to see the site — an organised day tour, a licensed guide hired at the entrance, a private tour, and going in independently with a self-guided audio walk. Real 2026 prices, the trade-offs nobody puts in the brochure, and an honest answer to which one suits you.</p>
 
-<p>Still planning the whole trip? Start with our <a href="/">complete guide to Chichén Itzá</a>, then come back here for the tour decision. And if you already know you want to walk it at your own pace, our <a href="#audio">self-guided Chichén Itzá audio walk</a> by TouringBee runs 16 stops in about an hour and a half, offline, in eight languages, for &euro;9.99.</p>
+<p>Still planning the whole trip? Start with our <a href="/">complete guide to Chichén Itzá</a>, then come back here for the tour decision. And if you already know you want to walk it at your own pace, our <a class="bokunButton inlinebuy" target="_blank" rel="noopener" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1">self-guided Chichén Itzá audio walk</a> by TouringBee runs 16 stops in about an hour and a half, offline, in eight languages, for &euro;9.99.</p>
 
 <div class="facts">
 <h2>At a glance</h2>
@@ -309,7 +313,7 @@ ul.related a:hover{text-decoration:underline}
 <h3 id="audio">Independent, with a self-guided audio walk</h3>
 <p>You get yourself there — rental car, ADO bus, or colectivo from Valladolid — you buy your own ticket at the gate, and you carry the commentary in your pocket.</p>
 <p>This is the option that unlocks the 8:00 opening, and that is the whole argument for it. Nobody on a coach from Cancún can be at the gate at eight. You can.</p>
-<p>The <a href="#product">TouringBee Chichén Itzá audio walk</a> is 16 stops and about 90 minutes of narration, in walking order from the entrance to El Castillo and back. An offline GPS map shows where you are; you start each recording yourself when you reach the spot, so your eyes stay on the carvings rather than the screen. One payment, &euro;9.99, works offline — which matters, because mobile signal inside the archaeological zone is poor — and it stays on your phone for a year.</p>
+<p>The <a class="bokunButton inlinebuy" target="_blank" rel="noopener" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1">TouringBee Chichén Itzá audio walk</a> is 16 stops and about 90 minutes of narration, in walking order from the entrance to El Castillo and back. An offline GPS map shows where you are; you start each recording yourself when you reach the spot, so your eyes stay on the carvings rather than the screen. One payment, &euro;9.99, works offline — which matters, because mobile signal inside the archaeological zone is poor — and it stays on your phone for a year.</p>
 
 <h2>What each option actually costs in 2026</h2>
 <p>Start from the fixed number everyone pays. Entry for a foreign adult is <strong>697 MXN</strong> (about &euro;35 / US$40), and it is collected as two separate fees at two separate windows: the federal INAH fee of 105 MXN and the Yucatán state fee of 592 MXN. Foreign children aged 3–12 pay 105 MXN. Mexican nationals pay around 300 MXN with ID. Both windows take cards, but the machines fail often enough that you should have pesos on you. <a href="https://www.tiqets.com/en/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Buy entry in advance &rarr;</a> — both government fees in one booking, no second queue.</p>
@@ -438,6 +442,6 @@ ul.related a:hover{text-decoration:underline}
 </div>
 <script>(function(){var b=document.getElementById('stickybuy');if(!b)return;function s(){if(window.scrollY>800){b.classList.add('show')}else{b.classList.remove('show')}}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 
-<script>/* Lazy-load Bokun engine only on first user interaction so it never blocks page load / Lighthouse */(function(){var l=0;function b(){if(l)return;l=1;var s=document.createElement('script');s.async=true;s.src='https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=028dc54f-646b-4b9d-a0f0-e1c5746da99a';document.body.appendChild(s);}['mouseover','touchstart','scroll','keydown','pointerdown'].forEach(function(e){window.addEventListener(e,b,{once:true,passive:true});});})();</script>
+<script>/* Lazy-load Bokun engine only on first user interaction so it never blocks page load / Lighthouse */(function(){var l=0;function b(){if(l)return;l=1;var s=document.createElement('script');s.async=true;s.src='https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=028dc54f-646b-4b9d-a0f0-e1c5746da99a';document.body.appendChild(s);}['mouseover','touchstart','scroll','keydown','pointerdown'].forEach(function(e){window.addEventListener(e,b,{once:true,passive:true});});setTimeout(b,3000);})();</script>
 </body>
 </html>

@@ -33,6 +33,10 @@ ART_CSS = """
 .fgrid b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.4px;color:var(--brand-d)}
 .disc{font-size:13px;color:var(--muted);background:#fbfaf5;border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0}
 .prose h2{margin:1.7em 0 .4em}
+/* in-text links that open the Bokun widget rather than navigating */
+.prose a.inlinebuy{color:var(--brand-d);font-weight:600;text-decoration:underline;text-decoration-color:rgba(93,138,78,.55);text-underline-offset:3px;text-decoration-thickness:2px;cursor:pointer}
+.prose a.inlinebuy:hover{text-decoration-color:var(--brand-d);background:rgba(93,138,78,.09);border-radius:3px}
+
 .prose blockquote{margin:1.4em 0;padding:14px 18px;background:var(--soft);border-left:3px solid var(--brand);border-radius:0 10px 10px 0;font-style:italic;color:#33402f}
 .prose blockquote cite{display:block;margin-top:8px;font-style:normal;font-size:13px;color:var(--muted)}
 .tablewrap{overflow-x:auto;margin:1.5em 0;-webkit-overflow-scrolling:touch}
@@ -58,7 +62,7 @@ STICKY = """<div class="stickybuy" id="stickybuy">
 </div>
 <script>(function(){{var b=document.getElementById('stickybuy');if(!b)return;function s(){{if(window.scrollY>800){{b.classList.add('show')}}else{{b.classList.remove('show')}}}}window.addEventListener('scroll',s,{{passive:true}});s();}})();</script>
 
-<script>/* Lazy-load Bokun engine only on first user interaction so it never blocks page load / Lighthouse */(function(){{var l=0;function b(){{if(l)return;l=1;var s=document.createElement('script');s.async=true;s.src='https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=028dc54f-646b-4b9d-a0f0-e1c5746da99a';document.body.appendChild(s);}}['mouseover','touchstart','scroll','keydown','pointerdown'].forEach(function(e){{window.addEventListener(e,b,{{once:true,passive:true}});}});}})();</script>"""
+<script>/* Lazy-load Bokun engine only on first user interaction so it never blocks page load / Lighthouse */(function(){{var l=0;function b(){{if(l)return;l=1;var s=document.createElement('script');s.async=true;s.src='https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=028dc54f-646b-4b9d-a0f0-e1c5746da99a';document.body.appendChild(s);}}['mouseover','touchstart','scroll','keydown','pointerdown'].forEach(function(e){{window.addEventListener(e,b,{{once:true,passive:true}});}});setTimeout(b,3000);}})();</script>"""
 
 
 # ---------------------------------------------------------------- chrome
