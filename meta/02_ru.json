@@ -1,0 +1,26 @@
+{
+  "slug": "chichen-itza-tour",
+  "title": "Экскурсия в Чичен-Ицу: 4 варианта и цены | TouringBee",
+  "desc": "Автобусная экскурсия, гид у входа, индивидуальный тур или аудиопрогулка по Чичен-Ице? Реальные цены 2026, время приезда и сравнение четырёх вариантов.",
+  "site_name": "Chichén Itzá Walk",
+  "og_title": "Экскурсия в Чичен-Ицу: с гидом, самостоятельно или с аудиогидом?",
+  "og_desc": "Четыре реальных способа посмотреть Чичен-Ицу, во что каждый обходится в 2026 году и кому что подходит.",
+  "sticky": {
+    "sticky_title": "Аудиогид по Чичен-Ице",
+    "sticky_sub": "· от 9,99 &euro; · офлайн · на русском",
+    "sticky_btn": "Купить за 9,99 &euro;",
+    "bokun_href": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru",
+    "bokun_src": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru"
+  },
+  "labels": {
+    "menu": "Гиды",
+    "dropdown": "Экскурсия в Чичен-Ицу: какая?",
+    "all": "Все гиды"
+  },
+  "crumbs": {
+    "home": "Главная",
+    "guides": "Гиды",
+    "self": "Варианты экскурсий в Чичен-Ицу",
+    "attraction": "Чичен-Ица"
+  }
+}

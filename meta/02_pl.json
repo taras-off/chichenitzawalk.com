@@ -1,0 +1,26 @@
+{
+  "slug": "chichen-itza-tour",
+  "title": "Chichén Itzá: wycieczka czy audioprzewodnik? | TouringBee",
+  "desc": "Wycieczka z przewodnikiem, przewodnik przy bramie, wycieczka prywatna czy audioprzewodnik w Chichén Itzá? Ceny 2026, godziny przyjazdu i porównanie opcji.",
+  "site_name": "Chichén Itzá Walk",
+  "og_title": "Wycieczka do Chichén Itzá: z przewodnikiem, samodzielnie czy z audioprzewodnikiem?",
+  "og_desc": "Cztery realne sposoby na zwiedzanie Chichén Itzá, ile kosztują w 2026 roku i komu który pasuje.",
+  "sticky": {
+    "sticky_title": "Audioprzewodnik po Chichén Itzá",
+    "sticky_sub": "· od 9,99 &euro; · offline · po polsku",
+    "sticky_btn": "Kup za 9,99 &euro;",
+    "bokun_href": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl",
+    "bokun_src": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl"
+  },
+  "labels": {
+    "menu": "Przewodniki",
+    "dropdown": "Chichén Itzá: która wycieczka?",
+    "all": "Wszystkie przewodniki"
+  },
+  "crumbs": {
+    "home": "Strona główna",
+    "guides": "Przewodniki",
+    "self": "Wycieczki do Chichén Itzá",
+    "attraction": "Chichén Itzá"
+  }
+}

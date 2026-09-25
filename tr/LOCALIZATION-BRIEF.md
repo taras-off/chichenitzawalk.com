@@ -86,8 +86,10 @@ TouringBee product facts:
 - 8 languages. **16 stops, about 1.5 hours** for this tour. 6,022 travellers have used it.
 
 Chichén Itzá facts (2026), transfer the numbers exactly:
-- Entry for foreigners: INAH federal 105 MXN + Yucatán state 592 MXN = ~697 MXN (~€35 / $40),
-  paid at two separate windows.
+- Entry for foreigners: ~697 MXN (~€35 / $40) — ONE ticket at ONE window since the Boleto Único
+  replaced the old two-counter system in spring 2026, inside the new CATVI visitor centre.
+  The total still breaks down as INAH federal 105 MXN + Yucatán state 592 MXN.
+  NEVER write that visitors queue twice or pay at two windows — that system is gone.
 - Hours 8:00–17:00; ticket booths and last entry 16:00.
 - Climbing banned since 2006.
 - Equinox serpent ~20 March and ~22 September.
