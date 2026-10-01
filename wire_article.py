@@ -15,6 +15,7 @@ LANGS = ['en', 'es', 'fr', 'de', 'it', 'pt', 'pl', 'ru']
 PUBLISHED = [
     {'slug': 'chichen-itza-tour',                 'card_en': 'Guided, Self-Guided or Audio Guide?'},
     {'slug': 'chichen-itza-day-trip-from-cancun', 'card_en': 'Day Trip from Cancún'},
+    {'slug': 'chichen-itza-self-guided-tour',      'card_en': 'Self-Guided Walking Tour'},
 ]
 
 READ = {'en':'Read the guide','es':'Leer la guía','fr':'Lire le guide','de':'Guide lesen',
