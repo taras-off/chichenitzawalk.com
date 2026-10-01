@@ -1,0 +1,28 @@
+{
+  "slug": "chichen-itza-self-guided-tour",
+  "title": "Чичен-Ица самостоятельно: маршрут 2026 | TouringBee",
+  "desc": "Вход переехал в 2026 году, и почти все описания маршрута ведут через старый. Порядок обхода, расстояния, часы работы и честное время.",
+  "site_name": "Chichén Itzá Walk",
+  "og_title": "Чичен-Ица самостоятельно: маршрут, порядок обхода и время",
+  "og_desc": "Вход переехал в 2026 году. Вот как прогулка устроена теперь.",
+  "published": "2026-10-01",
+  "modified": "2026-10-01",
+  "sticky": {
+    "sticky_title": "Аудиогид по Чичен-Ице",
+    "sticky_sub": "· от 9,99 &euro; · офлайн · на русском",
+    "sticky_btn": "Купить за 9,99 &euro;",
+    "bokun_href": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru",
+    "bokun_src": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru"
+  },
+  "labels": {
+    "menu": "Гиды",
+    "dropdown": "Самостоятельно",
+    "all": "Все гиды"
+  },
+  "crumbs": {
+    "home": "Главная",
+    "guides": "Гиды",
+    "self": "Чичен-Ица самостоятельно",
+    "attraction": "Чичен-Ица"
+  }
+}

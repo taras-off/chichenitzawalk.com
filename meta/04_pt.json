@@ -1,0 +1,28 @@
+{
+  "slug": "chichen-itza-self-guided-tour",
+  "title": "Chichén Itzá por conta própria: percurso | TouringBee",
+  "desc": "A entrada mudou de lugar em 2026 e quase todos os percursos descrevem ainda a antiga. Ordem de visita, distâncias, horários e tempos honestos.",
+  "site_name": "Chichén Itzá Walk",
+  "og_title": "Chichén Itzá por conta própria: o percurso, a ordem e os tempos",
+  "og_desc": "A entrada mudou de lugar em 2026. É assim que o percurso funciona agora.",
+  "published": "2026-10-01",
+  "modified": "2026-10-01",
+  "sticky": {
+    "sticky_title": "Audioguia de Chichén Itzá",
+    "sticky_sub": "· a partir de 9,99 &euro; · offline · em português",
+    "sticky_btn": "Comprar 9,99 &euro;",
+    "bokun_href": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt",
+    "bokun_src": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt"
+  },
+  "labels": {
+    "menu": "Guias",
+    "dropdown": "Por conta própria",
+    "all": "Todos os guias"
+  },
+  "crumbs": {
+    "home": "Início",
+    "guides": "Guias",
+    "self": "Chichén Itzá por conta própria",
+    "attraction": "Chichén Itzá"
+  }
+}

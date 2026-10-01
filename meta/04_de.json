@@ -1,0 +1,28 @@
+{
+  "slug": "chichen-itza-self-guided-tour",
+  "title": "Chichén Itzá auf eigene Faust: Route | TouringBee",
+  "desc": "Der Eingang ist 2026 umgezogen, fast alle Rundgänge beschreiben noch den alten. Reihenfolge, Entfernungen, Öffnungszeiten und ehrliche Zeiten.",
+  "site_name": "Chichén Itzá Walk",
+  "og_title": "Chichén Itzá auf eigene Faust: Route, Reihenfolge und echte Zeiten",
+  "og_desc": "Der Eingang ist 2026 umgezogen. So läuft der Rundgang heute wirklich.",
+  "published": "2026-10-01",
+  "modified": "2026-10-01",
+  "sticky": {
+    "sticky_title": "Chichén-Itzá-Audioguide",
+    "sticky_sub": "· ab 9,99 &euro; · offline · auf Deutsch",
+    "sticky_btn": "Für 9,99 &euro; kaufen",
+    "bokun_href": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=de",
+    "bokun_src": "https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=de"
+  },
+  "labels": {
+    "menu": "Guides",
+    "dropdown": "Auf eigene Faust",
+    "all": "Alle Guides"
+  },
+  "crumbs": {
+    "home": "Startseite",
+    "guides": "Guides",
+    "self": "Chichén Itzá auf eigene Faust",
+    "attraction": "Chichén Itzá"
+  }
+}
