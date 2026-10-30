@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Чичен-Ица самостоятельно: маршрут 2026 | TouringBee</title>
-<meta name="description" content="Вход переехал в 2026 году, и почти все описания маршрута ведут через старый. Порядок обхода, расстояния, часы работы и честное время.">
+<title>Чичен-Ица самостоятельно: 16 историй аудиогида | TouringBee</title>
+<meta name="description" content="Пройдите Чичен-Ицу сами и понимайте, что видите: 16 аудиоисторий, карта офлайн, 8 языков. 9,99 € один раз, доступ на год. Билет в зону — отдельно.">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Chichén Itzá Walk">
-<meta property="og:title" content="Чичен-Ица самостоятельно: маршрут, порядок обхода и время">
-<meta property="og:description" content="Вход переехал в 2026 году. Вот как прогулка устроена теперь.">
+<meta property="og:title" content="Чичен-Ица самостоятельно: 16 историй аудиогида">
+<meta property="og:description" content="Без группы, без расписания, без ожидания — и при этом вы понимаете, что видите.">
 <meta property="og:url" content="https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/">
 <meta property="og:image" content="https://chichenitzawalk.com/img/hero-1536.webp">
 <meta property="og:locale" content="ru">
@@ -20,8 +20,8 @@
 <meta property="og:locale:alternate" content="pt">
 <meta property="og:locale:alternate" content="pl">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Чичен-Ица самостоятельно: маршрут, порядок обхода и время">
-<meta name="twitter:description" content="Вход переехал в 2026 году. Вот как прогулка устроена теперь.">
+<meta name="twitter:title" content="Чичен-Ица самостоятельно: 16 историй аудиогида">
+<meta name="twitter:description" content="Без группы, без расписания, без ожидания — и при этом вы понимаете, что видите.">
 <meta name="twitter:image" content="https://chichenitzawalk.com/img/hero-1536.webp">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/favicon-32.png">
@@ -199,6 +199,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 /* Bokun widget: take the injected root OUT of document flow (kills CLS) without touching the checkout modal. */
 #bokun-widgets-root{position:fixed!important;top:0!important;left:0!important;width:0!important;height:0!important;overflow:visible!important;z-index:2147483000!important}
 .bokun-widgets-cart-wrapper{position:fixed!important;top:auto!important;left:auto!important;right:16px!important;bottom:16px!important;margin:0!important;z-index:2147483000!important}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 
 /* ---- article page ---- */
 /* sticky header is 56px tall: keep anchor targets clear of it */
@@ -230,14 +232,39 @@ table.cmp{border-collapse:collapse;width:100%;min-width:680px;font-size:14.5px}
 table.cmp th,table.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 table.cmp thead th{background:var(--soft);font-size:13.5px}
 table.cmp tbody td:first-child{background:#fbfaf5;white-space:nowrap}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 ul.related{list-style:none;padding:0;margin:.6em 0 0}
 ul.related li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 ul.related a{font-weight:600;text-decoration:none}
 ul.related a:hover{text-decoration:underline}
 @media(max-width:640px){.arthero h1{font-size:29px}.arthero .sub{font-size:17px}.hbtns .btn{width:100%;text-align:center}}
+/* ---- money page: чипсы, баннер, плеер, шаги, отзывы ---- */
+ul.chips{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0 0 16px}
+ul.chips li{font-size:13px;line-height:1;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);white-space:nowrap}
+.tb-banner{display:flex;gap:16px;align-items:center;border:2px solid #0ea2e6;background:#f2f9fd;border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-banner-img{width:132px;height:96px;object-fit:cover;border-radius:8px;flex:0 0 auto}
+.tb-banner-body{min-width:0}
+.tb-banner-body p{margin:0 0 8px}
+.tb-banner-head{font-weight:700;font-size:17px;color:#0b5f85}
+.tb-audio{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-audio-head{font-weight:700;margin:0 0 6px}
+.tb-audio p{margin:0 0 10px}
+.tb-audio audio{width:100%}
+.tb-steps{margin:1.6em 0}
+.tb-steps ol{padding-left:1.2em;margin:0 0 16px}
+.tb-steps li{margin:0 0 8px}
+.tb-shots{display:flex;gap:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+img.tb-shot{width:210px;height:auto;border:1px solid var(--line);border-radius:10px;flex:0 0 auto}
+.tb-reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:1.6em 0}
+.tb-review{margin:0;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.tb-review blockquote{margin:0 0 8px;padding:0;background:none;border:0;font-style:normal;color:var(--ink)}
+.tb-review blockquote p{margin:0}
+.tb-review figcaption{font-size:13px;color:var(--muted)}
+@media(max-width:640px){.tb-banner{flex-direction:column;align-items:flex-start}.tb-banner-img{width:100%;height:150px}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/#article","headline":"Чичен-Ица самостоятельно: маршрут, порядок обхода и время","description":"Вход переехал в 2026 году, и почти все описания маршрута ведут через старый. Порядок обхода, расстояния, часы работы и честное время.","inLanguage":"ru","datePublished":"2026-10-01","dateModified":"2026-10-01","mainEntityOfPage":{"@id":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/"},"image":"https://chichenitzawalk.com/img/hero-1536.webp","author":{"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene"},"publisher":{"@type":"Organization","@id":"https://chichenitzawalk.com/#org","name":"TouringBee","url":"https://touringbee.com/"},"about":{"@type":"TouristAttraction","name":"Чичен-Ица"}},{"@type":"FAQPage","@id":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/#faq","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Можно ли посетить Чичен-Ицу без гида?","acceptedAnswer":{"@type":"Answer","text":"Да. Обязательной экскурсии нет, единого маршрута нет: покупаете билет в CATVI и идёте. Так делает большинство. Аудиогид или гид, нанятый у входа, — дополнение по желанию."}},{"@type":"Question","name":"Сколько времени занимает самостоятельный маршрут по Чичен-Ице?","acceptedAnswer":{"@type":"Answer","text":"Источники дают 2–4 часа внутри археологической зоны, чаще всего называют 3 часа, плюс 30–60 минут на дорогу от визит-центра и обратно. Экскурсия с гидом по тому же участку занимает 90 минут – 2 часа, потому что гид выбирает."}},{"@type":"Question","name":"Сколько километров придётся пройти по Чичен-Ице?","acceptedAnswer":{"@type":"Answer","text":"От 3 до 5 км по основной зоне — Yucatán Today пишет: минимум 4 км — плюс подход от визит-центра в обе стороны. Ядро занимает не меньше 5 км²."}},{"@type":"Question","name":"Где вход в Чичен-Ицу в 2026 году?","acceptedAnswer":{"@type":"Answer","text":"Через новый визит-центр CATVI на трассе 180, примерно в 900 м к северу от Эль-Кастильо. Старый западный Parador Turístico перестал продавать билеты в 2026 году, и маршрут теперь выводит к Священному сеноту раньше, чем к пирамиде, — наоборот по сравнению с тем, что описывает большинство путеводителей."}},{"@type":"Question","name":"В каком порядке лучше обходить Чичен-Ицу?","acceptedAnswer":{"@type":"Answer","text":"Северные памятники тольтекские, южные старше и майяские, в стиле Пуук, — так что одна петля проводит вас по эпохам по порядку. Приехали к открытию — сначала главная площадь, до автобусов. Приехали между 10:00 и полуднем — начинайте с юга, а главную площадь оставьте на время после 14:00. Как группы расходятся внутри зоны, нигде не задокументировано, так что это рассуждение, а не правило."}},{"@type":"Question","name":"Можно ли подняться на Эль-Кастильо?","acceptedAnswer":{"@type":"Answer","text":"Нет. Подъём запрещён с 2006 года, после падения со смертельным исходом. Храм воинов для подъёма тоже закрыт, а внутренний храм в теле Эль-Кастильо закрыт с того же года. Смотреть можно только с земли, из-за верёвки."}},{"@type":"Question","name":"Есть ли приложение-аудиогид по Чичен-Ице?","acceptedAnswer":{"@type":"Answer","text":"Да. Самостоятельная прогулка TouringBee — 16 остановок примерно за 90 минут, iOS и Android, восемь языков, офлайн-карта и GPS, 9,99 € с доступом на год. Каждую запись вы включаете сами, дойдя до памятника."}},{"@type":"Question","name":"Сколько стоит гид у входа?","acceptedAnswer":{"@type":"Answer","text":"По отзывам 2026 года — около 900–1000 песо на испанском, 1200 на английском и 1400 на французском, итальянском или немецком, за группу до восьми человек, наняв на месте у касс и заплатив наличными. Экскурсия занимает от 45 минут до 2 часов. Официального тарифа не публиковали, так что считайте эти цифры диапазоном."}},{"@type":"Question","name":"В какое время в Чичен-Ице меньше всего людей?","acceptedAnswer":{"@type":"Answer","text":"До 10:00 и после 15:00. По собственным данным INAH, пик давления на вход приходится на 10:00–14:00; автобусы начинают приезжать около 10:00–11:00, группы уезжают с 14:00. Воскресенья по возможности избегайте: вход бесплатный для граждан и резидентов Мексики, и это может привести к воротам больше людей. Посещаемость по дням недели никто не публикует, так что считайте это поводом для гибкости, а не измеренным фактом."}}]},{"@type":"BreadcrumbList","@id":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://chichenitzawalk.com/ru/"},{"@type":"ListItem","position":2,"name":"Гиды","item":"https://chichenitzawalk.com/ru/guides/"},{"@type":"ListItem","position":3,"name":"Чичен-Ица самостоятельно"}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/#article","headline":"Чичен-Ица самостоятельно: прогулка с аудиогидом TouringBee","description":"Пройдите Чичен-Ицу сами и понимайте, что видите: 16 аудиоисторий, карта офлайн, 8 языков. 9,99 € один раз, доступ на год. Билет в зону — отдельно.","inLanguage":"ru","datePublished":"2026-10-01","dateModified":"2026-10-30","mainEntityOfPage":{"@id":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/"},"image":"https://chichenitzawalk.com/img/hero-1536.webp","author":{"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene"},"publisher":{"@type":"Organization","@id":"https://chichenitzawalk.com/#org","name":"TouringBee","url":"https://touringbee.com/"},"about":{"@type":"TouristAttraction","name":"Чичен-Ица"}},{"@type":"FAQPage","@id":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/#faq","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Можно ли посетить Чичен-Ицу без экскурсии?","acceptedAnswer":{"@type":"Answer","text":"Да. Покупаете билет за 697 песо в кассах CATVI и заходите. Внутри зоны гид нигде не требуется, и ни один участок маршрута не закрыт для одиночек. Единственное, что теряется при самостоятельном походе, — объяснение; для этого и нужен аудиогид."}},{"@type":"Question","name":"Сколько историй и сколько длится прогулка?","acceptedAnswer":{"@type":"Answer","text":"Шестнадцать аудиоисторий, около полутора часов, если идти без остановок. Большинство тратит больше, потому что останавливаться можно когда угодно и приложение ждёт."}},{"@type":"Question","name":"Нужен ли интернет?","acceptedAnswer":{"@type":"Answer","text":"Нет. Скачайте тур до поездки, и всё — звук, карта и маршрут — работает офлайн. Так сделано нарочно: зона большая, и ловить сигнал на жаре не нужно."}},{"@type":"Question","name":"Входит ли билет в Чичен-Ицу?","acceptedAnswer":{"@type":"Answer","text":"Нет. Аудиогид стоит 9,99 €, а вход — 697 песо для взрослого иностранца, оплачивается отдельно в кассах CATVI. Говорим прямо, потому что некоторые объявления этого не уточняют."}},{"@type":"Question","name":"Можно начать не с начала?","acceptedAnswer":{"@type":"Answer","text":"Да, с любого места. Карта показывает каждую историю на своей точке, так что присоединиться к маршруту можно там, где вы оказались, и пройти остальное в любом порядке."}},{"@type":"Question","name":"На каких языках есть озвучка?","acceptedAnswer":{"@type":"Answer","text":"На восьми: английский, испанский, французский, немецкий, итальянский, португальский, польский и русский. Каждый в компании слушает на своём языке на своём телефоне."}},{"@type":"Question","name":"Подойдёт ли детям?","acceptedAnswer":{"@type":"Answer","text":"Подойдёт детям, которые уже способны пройти три-пять километров по жаре и носить наушники. Истории короткие, это помогает. Само городище даётся тяжелее, чем гид."}}]},{"@type":"BreadcrumbList","@id":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://chichenitzawalk.com/ru/"},{"@type":"ListItem","position":2,"name":"Гиды","item":"https://chichenitzawalk.com/ru/guides/"},{"@type":"ListItem","position":3,"name":"Самостоятельная прогулка"}]},{"@type":"Product","@id":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/#productld","name":"Аудиогид по Чичен-Ице","description":"16 аудиоисторий по маршруту прогулки по археологической зоне Чичен-Ица. Офлайн, 8 языков, доступ на год.","brand":{"@type":"Brand","name":"TouringBee"},"url":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/#product","image":"https://chichenitzawalk.com/img/product-audioguide.webp","offers":{"@type":"Offer","price":"9.99","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://chichenitzawalk.com/ru/chichen-itza-self-guided-tour/#product"}}]}
 </script>
 </head>
 <body>
@@ -249,9 +276,11 @@ ul.related a:hover{text-decoration:underline}
 <div class="dropdown">
 <a href="/ru/chichen-itza-tour/">Экскурсия в Чичен-Ицу: какая?</a>
 <a href="/ru/chichen-itza-day-trip-from-cancun/">Из Канкуна на день</a>
-<a href="/ru/chichen-itza-self-guided-tour/">Самостоятельно</a>
+<a href="/ru/chichen-itza-self-guided-tour/">Самостоятельная прогулка</a>
 <a href="/ru/chichen-itza-tickets/">Билеты</a>
 <a href="/ru/chichen-itza-best-time-to-visit/">Когда ехать</a>
+<a href="/ru/chichen-itza-map/">Карта зоны</a>
+<a href="/ru/chichen-itza-equinox/">Равноденствие</a>
 <a class="all" href="/ru/guides/">Все гиды &rarr;</a>
 </div></details>
 <nav class="lang"><a href="/chichen-itza-self-guided-tour/">EN</a><a href="/es/chichen-itza-self-guided-tour/">ES</a><a href="/fr/chichen-itza-self-guided-tour/">FR</a><a href="/de/chichen-itza-self-guided-tour/">DE</a><a href="/it/chichen-itza-self-guided-tour/">IT</a><a href="/pt/chichen-itza-self-guided-tour/">PT</a><a href="/pl/chichen-itza-self-guided-tour/">PL</a><a class="on" href="/ru/chichen-itza-self-guided-tour/">RU</a></nav>
@@ -259,228 +288,178 @@ ul.related a:hover{text-decoration:underline}
 </div></header>
 
 <div class="arthero"><div class="wrap">
-<nav class="crumbs"><a href="/ru/">Главная</a> &rsaquo; <a href="/ru/guides/">Гиды</a> &rsaquo; Самостоятельно</nav>
-<h1>Чичен-Ица самостоятельно: маршрут, порядок обхода и время</h1>
-<p class="sub">Вход переехал в 2026 году, и почти все описания маршрута до сих пор ведут через старый. Порядок обхода, расстояния, часы и честное время.</p>
-<div class="byline"><img src="/img/author-eugene.webp" width="34" height="34" loading="lazy" alt="Евгений, автор"><span>Автор: <strong>Евгений</strong> &middot; обновлено 1 октября 2026 &middot; 13 мин чтения</span></div>
+<nav class="crumbs"><a href="/ru/">Главная</a> &rsaquo; <a href="/ru/guides/">Гиды</a> &rsaquo; Самостоятельная прогулка</nav>
+<h1>Чичен-Ица самостоятельно: прогулка с аудиогидом TouringBee</h1>
+<p class="sub">Без группы, без расписания, без ожидания — и при этом вы понимаете, что видите.</p>
+<ul class="chips">
+<li>★ 4,6</li>
+<li>~1,5 ч</li>
+<li>16 историй</li>
+<li>8 языков</li>
+<li>офлайн</li>
+<li>9,99 &euro;</li>
+<li>более 6 100 путешественников</li>
+</ul>
+<div class="byline"><img src="/img/author-eugene.webp" width="34" height="34" loading="lazy" alt="Евгений, автор"><span>Автор: <strong>Евгений</strong> &middot; обновлено 30 октября 2026 &middot; 9 мин чтения</span></div>
 <div class="hbtns">
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — 9,99 &euro;</a>
-<a class="btn outline" href="https://www.getyourguide.com/ru-ru/chichen-itza-l785/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Сравнить экскурсии с гидом на GetYourGuide</a>
-<a class="btn outline" href="https://www.tiqets.com/ru/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Купить входные билеты</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=hero" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=hero">Купить аудиогид — 9,99 &euro;</a>
 </div>
 </div></div>
 
 <section><div class="wrap prose">
-<p class="lead">Чичен-Ицу можно обойти без гида, и так делает большинство. Обязательной экскурсии нет, единого маршрута нет, и никто не проверяет, понимаете ли вы, на что смотрите.</p>
-<p>Загвоздка в том, что сама прогулка изменилась в 2026 году. А почти все описания маршрута в сети — включая обновлённые в этом году — ведут вас через старый вход.</p>
-<p>Если не хотите стоять перед Храмом воинов и гадать, зачем тут двести резных колонн, аудиопрогулка TouringBee ведёт по археологической зоне: 16 остановок, около 90 минут, темп ваш. Карта, GPS и рассказ работают офлайн, а каждую запись вы включаете сами, дойдя до памятника.</p>
-<p><a class="bokunButton inlinebuy" target="_blank" rel="noopener" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Аудиогид по Чичен-Ице — 9,99 &euro; &rarr;</a></p>
-<p>Всё, что ниже, описывает вход 2026 года, а не тот, что в вашем путеводителе.</p>
-<div class="facts">
-<h2>Коротко</h2>
-<div class="fgrid">
-<div><b>Расстояние внутри</b>3–5 км по основной зоне &middot; Yucatán Today пишет: минимум 4 км</div>
-<div><b>Плюс подход</b>800 м – 2 км в одну сторону &middot; официальные цифры расходятся</div>
-<div><b>Время внутри</b>2–4 часа &middot; чаще всего называют 3</div>
-<div><b>Добавить на подход</b>30–60 минут туда и обратно</div>
-<div><b>Часы работы</b>ворота 08:00 &middot; отсечка на вход спорная — приезжайте до 15:00 &middot; зону освобождают около 17:00</div>
-<div><b>Вход (2026)</b>697 песо для взрослого иностранца &middot; одна касса, внутри CATVI</div>
-<div><b>Пик на входе</b>10:00–14:00 &middot; автобусы приезжают с 10:00–11:00</div>
-<div><b>Тише всего</b>до 10:00 и после 15:00</div>
-<div><b>День бесплатного входа</b>воскресенье — бесплатно для граждан и резидентов Мексики</div>
-<div><b>Подъёмы</b>никакие. Ни на пирамиду, ни на храм, ни внутрь</div>
-<div><b>Самостоятельная прогулка</b>TouringBee &middot; 16 остановок &middot; ~1,5 ч &middot; офлайн &middot; 9,99 &euro;</div>
+<p class="lead">Пройти Чичен-Ицу без экскурсии можно совершенно спокойно. Купить обязательно только билет, внутри зоны ничего не закрыто для одиночек, и никто не проверяет, есть ли у вас гид. Сложнее другое — понять, на что вы смотрите: таблички у построек короткие, а читать путеводитель с телефона на солнце и одновременно смотреть по сторонам получается плохо.</p>
+<p>В девятистах метрах от входа стоит пирамида, площадка для игры в мяч размером с футбольное поле и сенот, со дна которого археологи подняли золото, жадеит и сотни других ритуальных даров, — и без голоса рядом всё это молчит. <a class="bokunButton inlinebuy" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=text" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=text">Аудиопрогулка TouringBee</a> закрывает этот зазор: <strong>16 историй</strong>, в порядке движения, полностью офлайн, в вашем темпе.</p>
+<div class="tb-banner">
+<img class="tb-banner-img" width="132" height="96" loading="lazy" decoding="async" src="/img/product-audioguide.webp" alt="Аудиогид TouringBee открыт на телефоне на фоне Эль-Кастильо">
+<div class="tb-banner-body">
+<p class="tb-banner-head">Идёте по Чичен-Ице сами?</p>
+<p>Аудиогид TouringBee ведёт маршрут из 16 историй — от Священного сенота через Большую площадь и Храм воинов к группе Монастыря. На телефоне, офлайн, в вашем темпе.</p>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=banner" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=banner">Аудиогид по Чичен-Ице — 9,99 &euro;</a>
 </div>
 </div>
-<p class="disc">Данные проверены 30 сентября 2026 года.</p>
-<p class="disc">Часть ссылок на этой странице — партнёрские (GetYourGuide, Tiqets). Если вы бронируете по ним, мы можем получить небольшую комиссию, а цена для вас остаётся той же. На рекомендации это не влияет.</p>
-<h2>Вход переехал. Описания маршрутов за ним не успели</h2>
-<p>Десятилетиями сюда входили с <strong>запада</strong>, через старый <em>Parador Turístico</em>, и почти сразу оказывались у Эль-Кастильо. Священный сенот был ответвлением от пирамиды: дошёл, посмотрел, вернулся. Или не дошёл.</p>
-<p>Так больше не работает.</p>
-<p>Новый визит-центр <strong>CATVI</strong> стоит примерно <strong>в 900 метрах к северу от Эль-Кастильо</strong>, на федеральной трассе 180. Министр туризма Юкатана Дарио Флота Окампо (Darío Flota Ocampo) описал новую последовательность прямо: <strong>сначала сенот, потом Кастильо</strong>. Священный сенот теперь встречается раньше пирамиды.</p>
-<p>Старый западный <em>Parador Turístico</em> <strong>перестал продавать билеты в 2026 году</strong>: поставили барьеры и перенаправили поток. Вход теперь один, через CATVI, и INAH не давал понять, что собирается вернуть прежнюю схему.</p>
-<p><strong>Не стройте на этом слишком много: деталей мало.</strong> Нигде не задокументировано: как именно идёт внутренняя тропа от CATVI к памятникам, какое у неё покрытие, сколько на ней тени, остался ли Священный сенот тупиковым ответвлением от сакбе или теперь лежит на пути внутрь, и ходит ли какой-нибудь шаттл.</p>
-<p>Официальные расстояния тоже не сходятся между собой:</p>
-<ul>
-<li><strong>900 м</strong> — правительство штата Юкатан, от CATVI до Эль-Кастильо</li>
-<li><strong>800 м</strong> — от касс до Священного сенота</li>
-<li><strong>2 км</strong> — от CATVI до археологической зоны</li>
-</ul>
-<p>Так что закладывайте <strong>от 800 метров до 2 километров в одну сторону</strong>, пешком, по открытому месту. <strong>Официального времени на этот переход не публиковали.</strong> 30–60 минут на дорогу туда и обратно, сверх времени среди памятников, — разумный запас, а не измеренная цифра.</p>
-<h2>Как устроена зона — и почему порядок обхода вообще важен</h2>
-<p>Если бы вся археологическая зона была одной эпохой, порядок обхода остался бы делом вкуса. Но эпох здесь несколько — и это единственный твёрдый аргумент думать о последовательности.</p>
-<p>Ядро занимает <strong>не меньше 5 км²</strong>. INAH считает здесь шесть групп памятников: <strong>Гран-Нивеласьон</strong> (главная площадь), <strong>Группа тысячи колонн</strong>, <strong>Группа Эль-Осарио</strong>, <strong>Группа Каса-Колорада</strong>, <strong>Группа Лас-Монхас</strong> и <strong>Чичен-Вьехо</strong>.</p>
-<p>Для прогулки они складываются в две.</p>
-<p><strong>Север — тольтекский.</strong> Эль-Кастильо, Большое поле для игры в мяч, Цомпантли, Храм воинов, Группа тысячи колонн. Широкие площади, колоннады, пернатые змеи, военная символика. Это Чичен-Ица с открыток, и именно сюда ведут каждую группу.</p>
-<p><strong>Юг старше и майяский, в стиле Пуук.</strong> Эль-Караколь, Лас-Монхас, Ла-Иглесия, Красный дом. Мельче, плотнее, густо украшено, без парадного масштаба северной части.</p>
-<p><strong>Эпохи здесь разложены по географии.</strong> Пройдите зону одной петлёй — и вы пройдёте её примерно в обратном хронологическом порядке. Вот и всё обоснование порядка обхода. И вот почему от «просто побродить» у большинства остаётся яркая память об одной пирамиде и размытое пятно вокруг.</p>
-<p>Между северными памятниками расстояния короткие. От Эль-Кастильо до Большого поля — около <strong>150 м</strong>, до Храма воинов — около <strong>120 м</strong>. <strong>Сакбе № 1</strong>, древняя мощёная дорога от Эль-Кастильо к Священному сеноту, — <strong>270 м длиной при средней ширине 9 м</strong>; часть источников даёт 300 м.</p>
-<h2>Маршрут, который работает, и почему</h2>
-<p>Данных о том, <strong>как группы расходятся внутри зоны</strong> после турникета, никто не публиковал. Задокументирован <strong>вход</strong>: собственные цифры INAH, опубликованные через Proceso, показывают пик нагрузки на вход между <strong>10:00 и 14:00</strong>. Автобусы начинают приезжать около <strong>10:00–11:00</strong>, группы уезжают между <strong>14:00 и 15:00</strong>. В 2024 году зона приняла <strong>2,2 млн посетителей</strong>.</p>
-<p>Дальше — рассуждение от данных по входу, а не задокументированная карта толп. Считайте это рабочим планом.</p>
-<p><strong>Вы приехали к открытию.</strong> У вас чистый час до автобусов, а все они идут на главную площадь. Потратьте первый час на <strong>Гран-Нивеласьон</strong>: Эль-Кастильо, поле для игры в мяч, платформы, Храм воинов, колоннады. Это тот самый час, когда там больше никого нет. Потом, когда автобусы разгружаются, уходите <strong>на юг</strong>, в группу Пуук, где групповые маршруты задерживаются меньше всего.</p>
-<p><strong>Вы приехали между 10:00 и полуднем.</strong> Вы попадаете прямо в пик. Перевернуть план ничего не стоит: идите <strong>сначала на юг</strong> — Эль-Караколь, Лас-Монхас, группа Каса-Колорада — и оставьте главную площадь на время после 14:00, когда группы тянутся обратно к автобусам. Памятники те же. Людей перед ними меньше.</p>
-<p><strong>Вы приехали после 15:00.</strong> Сначала убедитесь, что вас вообще впустят: источники расходятся об отсечке, и 15:00 — ровно та цифра, в которой нельзя ошибиться. Если прошли ворота, у вас лучший свет за день и примерно два часа до того, как с 17:00 персонал начнёт выводить людей: берите главную площадь и сакбе, а южную группу, скорее всего, придётся отпустить.</p>
-<p>Правило, которое выживает во всех трёх случаях: <strong>идите против потока</strong>. Группы сосредоточены на севере и в середине дня. Это следует из данных по входу и из устройства автобусных программ — и это единственный совет про толпу на этой странице, который не требует догадок.</p>
-<div class="midcta">
-<p class="price">Идёте без гида?</p>
-<p>Знать порядок — одно, понимать, на что смотришь, — другое. Аудиопрогулка TouringBee ведёт по Чичен-Ице через 16 остановок примерно за 90 минут, в порядке обхода, и работает полностью офлайн — включая карту и GPS.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Открыть аудиогид &rarr;</a>
+<h2>Почему с голосом в наушниках лучше</h2>
+<p><strong>Вы понимаете, на что смотрите.</strong> Разница между грудой резного камня и городом — это кто-то, кто объяснит, где что и зачем это построили именно так.</p>
+<p><strong>Вы идёте в своём темпе.</strong> Никого не надо ждать и никуда не надо успевать: стойте у одной постройки сколько хочется, а что не интересно — пропускайте. Постойте двадцать минут в тени — ничего не потеряется.</p>
+<p><strong>Связь не нужна.</strong> Всё скачивается заранее: звук, карта, маршрут. Зона большая, день жаркий, и меньше всего хочется ловить сигнал у подножия пирамиды.</p>
+<div class="tb-audio" id="audio">
+<p class="tb-audio-head">Послушайте начало прогулки</p>
+<p>Около минуты, на вашем языке. Так звучит вся прогулка.</p>
+<audio controls preload="none" src="/audio/cancunt1_ru_intro.mp3"></audio>
 </div>
-<h2>Сколько времени нужно на самостоятельный маршрут</h2>
-<p>Источники сходятся на <strong>2–4 часах внутри археологической зоны</strong>, и чаще всего называют <strong>3 часа</strong>: шесть групп памятников в неспешном темпе, с остановками. Добавьте <strong>30–60 минут</strong> на подход от CATVI и обратно — официального времени перехода нет, так что это запас, а не расписание. Экскурсия с гидом по тому же участку занимает <strong>от 90 минут до 2 часов</strong>, и быстрее она не потому, что гиды быстро ходят, а потому что выбирают.</p>
-<p>На практике так. Два часа покрывают главную площадь и сакбе — и больше ничего. Три часа берут обе архитектурные группы: вместе с подходом получается четырёхчасовой визит. Четыре и больше добавляют Эль-Осарио и сенот Штолок. В жару с марта по сентябрь заложите время посидеть в тени. Это не опция.</p>
-<h2>Что здесь есть — и чего здесь нельзя</h2>
-<p><strong>Начнём с ограничения, потому что оно меняет ожидания сильнее всего: подниматься нельзя нигде и заходить внутрь нельзя никуда.</strong></p>
-<p>Подъём на Эль-Кастильо <strong>запрещён с 2006 года</strong> — после того, как в январе того года при падении погибла 80-летняя посетительница из США. Храм воинов для подъёма закрыт. Внутренний храм в теле Эль-Кастильо — тот, с чак-моолем и троном-ягуаром — <strong>закрыт с того же 2006 года</strong>.</p>
-<p>Смотреть можно только с земли, из-за верёвки. Если знать заранее — нормально. Если узнать на месте — обидно.</p>
-<p>Что вознаграждает внимание вместо подъёмов:</p>
-<ul>
-<li><strong>Руины были расписаны</strong>, преимущественно красным. Серый известняк, который вы видите, — обнажённый камень, а не исходная поверхность.</li>
-<li><strong>Колонны Храма воинов — это резные фигуры воинов</strong>, каждая своя. От верёвки они читаются как сетка гладких столбов; резьба проявляется только вблизи.</li>
-<li><strong>Длинноносые маски</strong> по всем южным постройкам — это <strong>Чаак</strong>, бог дождя.</li>
-<li><strong>Эль-Осарио — уменьшенный Эль-Кастильо</strong>: та же ступенчатая форма, та же схема. Поэтому он так часто уезжает в чужие фотоальбомы подписанным как главная пирамида.</li>
-<li><strong>Дорожки в центральной части — настоящие сакбе</strong>, древние мощёные дороги, а не современный гравий. Сакбе № 1 — та самая, 270-метровая, ведёт к Священному сеноту.</li>
-</ul>
-<p><strong>Священный сенот</strong> лежит в конце этой дороги, в 270–300 м от Эль-Кастильо: около <strong>60 м в диаметре</strong>, до воды примерно <strong>27 м</strong>. Там <strong>только смотровая площадка</strong> — вниз не спускаются, не купаются.</p>
-<h3>Легко пройти мимо</h3>
-<p>Перечислим, чтобы вы хотя бы знали, что они есть: <strong>вся южная группа Пуук</strong>, <strong>Эль-Осарио</strong>, <strong>сенот Штолок</strong> и <strong>Красный дом</strong>. Все четыре входят в ваш билет и лежат в обычной пешей петле. И все четыре стабильно пропускают: приехали за одной пирамидой, сфотографировали, уехали.</p>
-<h2>Две акустические проверки, которые стоит сделать</h2>
-<p>Это единственный раздел, где важно встать в конкретном месте.</p>
-<p><strong>Большое поле для игры в мяч.</strong> Поле — <strong>168 × 70 м</strong>, стены около 8 м. Акустик <strong>Дэвид Лубман (David Lubman)</strong> измерил здесь эффект волновода: параллельные стены в 36 м друг от друга и высотой 8,5 м дают <strong>83-метровый</strong> канал, а эхо от хлопка тянется <strong>около 2,5 секунды</strong>. Лубман считает, что эффект, скорее всего, исходный, а не побочный результат реставрации.</p>
-<p>Знаменитое утверждение — что голос доносится <strong>на ~140 м</strong> между храмами на противоположных концах поля. <strong>Проверить это нельзя: оба храма за верёвкой.</strong> Полно блогов, которые намекают, что можно. А вот раскатистое эхо от хлопка, стоя внутри поля, проверяется легко.</p>
-<p><strong>Эль-Кастильо.</strong> Хлопните у подножия лестницы: обратно придёт не плоское эхо, а нисходящий щебет, который обычно сравнивают с криком кетцаля. <strong>Дэвид Лубман</strong> описал его первым, в 1998 году; <strong>Нико Деклерк (Nico Declercq)</strong> с соавторами опубликовал модель в <em>Journal of the Acoustical Society of America</em> в 2004-м — лестница работает как акустический фильтр.</p>
-<p>Было ли это задумано, спор открытый, и двое, кто делал замеры, расходятся. <strong>Деклерк скептичен</strong>: строители «вряд ли могли предсказать точное звучание», и похожие эффекты он находил на других ритуальных площадках. <strong>Лубман склоняется к сознательному расчёту.</strong> За обеими позициями — люди, которые принесли к лестнице приборы, так что решать за вас мы не станем.</p>
-<h2>Названия, на которых спотыкаются все</h2>
-<p>Половина путаницы в рассказах о Чичен-Ице — из названий. Почти ни одно не значит того, что говорит.</p>
-<ul>
-<li><strong>Эль-Кастильо</strong> = <strong>Храм Кукулькана</strong>. Одно здание, два имени.</li>
-<li><strong>Эль-Осарио</strong>, он же Храм Верховного жреца, — <strong>уменьшенная копия формы Эль-Кастильо</strong>. Поэтому его так часто фотографируют и выкладывают как главную пирамиду.</li>
-<li><strong>Лас-Монхас</strong> — не монастырь. Это <strong>дворцовый комплекс</strong>, название колониальное.</li>
-<li><strong>Ла-Иглесия</strong> — не церковь. Это <strong>храм Чаака</strong>.</li>
-<li><strong>Эль-Караколь</strong> значит «улитка» — по <strong>винтовой лестнице внутри</strong>, а не по чему-то астрономическому в форме.</li>
-<li>В <strong>Группе тысячи колонн</strong> колонн примерно <strong>двести</strong>.</li>
-<li><strong>Цомпантли</strong> — платформа черепов. Её путают с <strong>платформой Венеры</strong>, а это другая постройка.</li>
-<li><strong>Три разных сенота, которые путают постоянно.</strong> <strong>Священный сенот</strong> — внутри археологической зоны, на него можно только смотреть. <strong>Сенот Штолок</strong> тоже внутри, он был источником воды для поселения. <strong>Ик-Киль</strong> — в нескольких километрах за пределами парка, вот в нём и купаются.</li>
-</ul>
-<h2>Чичен-Вьехо: часть, которую надо согласовывать</h2>
-<p><strong>Чичен-Вьехо</strong> — Grupo de la Serie Inicial — открылся в <strong>сентябре 2023 года</strong> и <strong>входит в обычный билет</strong>. Это самая малопосещаемая часть зоны с большим отрывом: попасть можно только по квоте и только с сопровождением.</p>
-<p>Как это устроено: <strong>тропа 1,5 км, шириной 4 м</strong>, около <strong>2,5 часа</strong>, всё время в сопровождении сотрудников INAH, <strong>25 построек на двух площадях</strong>. Слоты публиковали на <strong>09:00 и 12:00</strong>, <strong>50 человек на слот, 100 в день</strong>. По дням: в 2023-м INAH называл пятницу и субботу, источники 2025–2026 годов — четверг, пятницу и субботу.</p>
-<p><strong>И вот проблема.</strong> Все источники, которые удаётся найти, помещают начало этой тропы у <strong>бывшего Parador Turístico</strong> — у входа, кассы которого закрылись в 2026 году. <strong>Где она начинается теперь, нигде не задокументировано.</strong></p>
-<p>Так что не планируйте день под цифры выше. <strong>Позвоните в археологическую зону по 985 851 0137</strong> и спросите актуальные дни, слоты и место сбора. Две минуты — и утро не потрачено впустую.</p>
-<h2>Самостоятельно, гид у входа или групповая экскурсия</h2>
+<h2>Легенда о девах и то, что на самом деле было в колодце</h2>
+<p>Если про Чичен-Ицу вы слышали что-то одно, то, скорее всего, вот это: в Священный сенот бросали юных дев. История живучая — и почти целиком неверная, поэтому её стоит разобрать до того, как вы дойдёте до колодца.</p>
+<p><strong>Начнём с того, кто этого не говорил.</strong> Диего де Ланда, писавший около 1566 года и служащий источником для всех, дев не упоминает вовсе. Он пишет, что майя бросали туда <em>живых людей</em>, а в другом месте — что владыки Мани брали «рабов и рабынь», чтобы сбросить в колодец Чичен-Ицы. Никаких девиц. Версия с красавицами появилась гораздо позже и в основном от одного человека: <strong>Эдварда Томпсона</strong>, который вычерпывал сенот с 1904 года, а потом изложил историю в популярной книге 1926 года. Он рассортировал черепа на глаз, решил, что большинство — девушки четырнадцати-двадцати лет, и образ разошёлся по миру.</p>
+<p><strong>А потом кости наконец осмотрели.</strong> В <strong>1940 году</strong> антрополог <strong>Эрнест Хутон</strong> разобрал материал и нашёл кое-что гораздо более скучное и гораздо более интересное: <strong>примерно равное число мужских и женских остатков</strong>, причём половина — дети. Все позднейшие пересчёты указывают в ту же сторону. По подсчётам более поздних исследователей, от <strong>половины до двух третей</strong> людей из этого колодца были <strong>младше восемнадцати</strong>, с самым плотным сгустком между шестью и двенадцатью годами. А изотопы в их зубах говорят, что приходили они со всей Мезоамерики — с побережья Залива, из центральной Мексики, из Центральной Америки, — а не из соседнего городка.</p>
+<p>Так что настоящая история — не про обречённую местную красавицу. Она про колодец, который шестьсот лет стягивал к себе дары и людей с целого континента и в котором при вычерпывании всё ещё лежали золото, жадеит, копал, резное дерево и ткани, потому что вода не пускала к ним воздух. <strong>Разбирать легенду интереснее, чем её повторять, и на прогулке таких разборов шестнадцать.</strong></p>
+<p><a class="bokunButton inlinebuy" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=midcta" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=midcta">Послушать остальные пятнадцать &rarr;</a></p>
+<h2>Маршрут: 8 этапов, 16 историй</h2>
+<p>Ниже — <strong>8 основных этапов</strong> прогулки. В приложении маршрут разбит на <strong>16 аудиоисторий</strong> с дополнительными остановками и иллюстрациями.</p>
 <div class="tablewrap"><table class="cmp">
-<thead><tr><th></th><th>Самостоятельно с аудиогидом</th><th>Лицензированный гид у входа</th><th>Групповая экскурсия</th></tr></thead>
+<thead><tr><th>Этап</th><th>Что видно</th></tr></thead>
 <tbody>
-<tr><td><b>Цена</b></td><td>9,99 &euro; один раз, TouringBee</td><td>900–1000 песо на испанском &middot; 1200 на английском &middot; 1400 на французском, итальянском, немецком — за группу до 8 человек</td><td>60–100 US$ и выше с человека</td></tr>
-<tr><td><b>Длительность</b></td><td>как решите &middot; ~1,5 ч аудио</td><td>от 45 минут до 2 часов</td><td>~2 ч в зоне, 12–14 ч от двери до двери</td></tr>
-<tr><td><b>Исторический рассказ</b></td><td>да</td><td>да</td><td>да</td></tr>
-<tr><td><b>Отвечает на вопросы</b></td><td>нет</td><td>да</td><td>да</td></tr>
-<tr><td><b>Идёт за вашим интересом</b></td><td>нет, маршрут фиксированный</td><td>да</td><td>нет</td></tr>
-<tr><td><b>Свой темп</b></td><td>да</td><td>частично: небольшая группа может сбавить</td><td>нет</td></tr>
-<tr><td><b>Ранний старт</b></td><td>да</td><td>да</td><td>обычно нет, автобусы приезжают в 10:30–12:00</td></tr>
-<tr><td><b>Транспорт включён</b></td><td>нет</td><td>нет</td><td>обычно да</td></tr>
-<tr><td><b>Входной билет включён</b></td><td>нет</td><td>нет</td><td>иногда</td></tr>
-<tr><td><b>Языки</b></td><td>8</td><td>испанский, английский, французский, итальянский, немецкий</td><td>зависит от оператора</td></tr>
-<tr><td><b>Кому</b></td><td>для независимой прогулки в своём темпе</td><td>для разговора и вопросов по ходу</td><td>чтобы не заниматься логистикой</td></tr>
+<tr><td><b>1 &middot; Вход со стороны CATVI</b></td><td>подход с севера — единственный вход с 2026 года, примерно 900 м до пирамиды</td></tr>
+<tr><td><b>2 &middot; Священный сенот</b></td><td>провал 60 м в поперечнике, вода на 22 м ниже края, в конце старой дороги-сакбе</td></tr>
+<tr><td><b>3 &middot; Большая площадь и Эль-Кастильо</b></td><td>девятиярусная пирамида на огромной насыпной платформе, вид от ограждения</td></tr>
+<tr><td><b>4 &middot; Большая площадка для игры в мяч</b></td><td>крупнейшая в Мезоамерике, 11 000 м², с каменными кольцами и резными панелями</td></tr>
+<tr><td><b>5 &middot; Цомпантли и платформы</b></td><td>стена черепов, Орлы и Ягуары, платформа Венеры</td></tr>
+<tr><td><b>6 &middot; Храм воинов</b></td><td>колоннада Тысячи колонн, уходящая на юго-восток</td></tr>
+<tr><td><b>7 &middot; Осарио и Эль-Караколь</b></td><td>пирамида поменьше, затем круглая обсерватория на двойной террасе</td></tr>
+<tr><td><b>8 &middot; Группа Монастыря</b></td><td>архитектура Пуук и Ченес — половина городища, которая выглядит как другое место</td></tr>
 </tbody></table></div>
-<p>Таблица не называет победителя, потому что ответ сидит в той единственной строке, которая важна именно вам. Если это строка про вопросы — берите гида. Если про транспорт — групповую экскурсию. Если про темп и ранний старт — идите сами.</p>
-<p>Две честные оговорки про цифры. <strong>Официального тарифа для гидов у входа не публиковали</strong> — цифры выше — это то, что посетители называют в 2026 году: за группу до восьми человек, наличными, у касс. Считайте их диапазоном, а не прайс-листом. И <strong>45 минут</strong> на нижнем краю — цифра настоящая: гид, который проходит зону за 45 минут, проходит главную площадь, и быстро.</p>
-<p><a href="https://www.getyourguide.com/ru-ru/chichen-itza-l785/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Сравнить экскурсии в Чичен-Ицу с гидом &rarr;</a> &middot; <a href="https://www.tiqets.com/ru/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Купить входные билеты заранее &rarr;</a></p>
-<h2>Практический чеклист</h2>
-<p><strong>Часы работы — и расхождение, о котором стоит знать.</strong> Ворота открываются в <strong>08:00</strong>, с <strong>17:00</strong> персонал начинает освобождать зону. Расходятся источники в отсечке на вход: <strong>английская страница INAH говорит, что последний вход в 15:00</strong>, а бюллетени того же INAH и коммерческие источники — о входе до 16:00. Когда официальные источники расходятся об отсечке, более поздняя — ровно та, в которой нельзя ошибиться, поэтому <strong>приезжайте до 15:00</strong>. А если поздний приезд неизбежен, сначала позвоните по 985 851 0137.</p>
-<p><strong>Билет.</strong> <strong>697 песо</strong> для взрослого иностранца — <em>Boleto Único</em>, действует с <strong>27 марта 2026 года</strong>: один платёж в одной кассе внутри CATVI. Федеральный сбор INAH в 105 песо теперь входит в эту сумму, а не собирается отдельно. Граждане Мексики платят <strong>310 песо</strong>, резиденты Юкатана — 105 песо: декрет штата снял с них свою часть на 2026 год, остался только федеральный сбор. Бесплатный вход для детей до 13 лет INAH прописывает для мексиканцев и тех, кто живёт в Мексике, так что за ребёнка-иностранца рассчитывайте заплатить и спросите сумму в кассе. <strong>По воскресеньям граждане и резиденты Мексики проходят бесплатно, и это может привести к воротам больше людей.</strong> Если есть хоть какая-то гибкость в датах, используйте её.</p>
-<p><strong>Музей.</strong> <strong>Gran Museo de Chichén Itzá</strong> находится внутри CATVI: 3400 м², 14 тематических осей, более 500 предметов, вход бесплатный, работает с февраля 2024 года. Обязателен ли проход через музей по пути к памятникам — <strong>нигде не сказано</strong>, и сколько времени он добавляет, тоже не публиковали. Заложите запас, но не стройте плотный график вокруг цифры, которую никто не называл.</p>
-<p><strong>Вода.</strong> <strong>Внутри археологической зоны нет питьевых фонтанчиков</strong>, а воду на месте продают примерно в два-три раза дороже обычного. Берите больше, чем кажется нужным.</p>
-<p><strong>Еда.</strong> Внутри зоны её не продают — только на входной площади.</p>
-<p><strong>Туалеты.</strong> INAH перечисляет их среди услуг зоны, и в CATVI удобства расширили, но насчёт туалетов среди памятников источники расходятся. Пользуйтесь теми, что на входе.</p>
-<p><strong>Камеры хранения.</strong> 30–40 песо — официальной цены нет.</p>
-<p><strong>Парковка.</strong> 80–120 песо; в CATVI <strong>517 мест</strong>. На банкомат не рассчитывайте.</p>
-<p><strong>Что с собой не пустят.</strong> Дроны без разрешения INAH. Штативы. <strong>Сменные объективы</strong> — строже, чем пишет большинство гидов, но так сказано в собственном списке INAH. Профессиональные съёмки только по разрешению. Также запрещены: горючее, сигареты, включая электронные, костюмы, транспаранты, флаги, алкоголь, наркотики, холодное и огнестрельное оружие. Проводить церемонии нельзя.</p>
-<p><strong>Рюкзаки разрешены.</strong> Запрет, который до сих пор пересказывают в сети, действовал ровно два дня, 21 и 22 апреля 2026 года, после стрельбы в Теотиуакане; директор зоны тогда сама назвала меру временной, с тех пор ничто не говорит об обратном, а INAH перечисляет камеры хранения и гардероб среди услуг зоны. <strong>Значение имеет список выше</strong> — вот он постоянный.</p>
-<p><strong>Торговцы.</strong> Перепись 2025 года насчитала <strong>666 ремесленников, работающих внутри археологической зоны</strong>. После конфликта в мае 2026-го их перенесли на отрезок <strong>между новым входом CATVI и Священным сенотом</strong> — то есть теперь они стоят вдоль пути внутрь. Никого не убрали; новых продавцов не допускают. В отзывах их стабильно описывают как настойчивых.</p>
-<p>Надёжных опубликованных норм по торгу нет. Дальше — наблюдение из нашей базы знаний, а не правило: первая названная цена обычно в два-три раза выше той, по которой вещь в итоге уходит, а те же изделия в тихих боковых проходах часто отдают вдвое дешевле, чем на основной тропе.</p>
+<p>Маршрут — это основная линия через зону, а не все её тропы. Начинать можно с любой точки: карта показывает, где чья история, и вы включаете её сами, в любом порядке.</p>
+<h2>Сами, с аудиогидом или с живым гидом</h2>
+<div class="tablewrap"><table class="cmp">
+<thead><tr><th></th><th>Сами</th><th>Аудиогид TouringBee</th><th>Лицензированный гид у входа</th></tr></thead>
+<tbody>
+<tr><td><b>Цена</b></td><td>0 &euro;</td><td><strong>9,99 &euro; с человека</strong>, один платёж</td><td>900–1 400 песо за группу до 8 — это 115–175 песо с каждого полной группой и 450–700 вдвоём</td></tr>
+<tr><td><b>Когда</b></td><td>в любой час работы зоны</td><td>в любой час работы зоны</td><td>когда гид свободен</td></tr>
+<tr><td><b>Темп</b></td><td>ваш</td><td>ваш — пауза и продолжение в любом месте</td><td>гида</td></tr>
+<tr><td><b>Что получаете</b></td><td>вид</td><td>16 историй, карта офлайн, 8 языков</td><td>человека, который ответит на вопрос</td></tr>
+<tr><td><b>Языки</b></td><td>—</td><td>8 — каждый в компании слушает на своём</td><td>смотря кто свободен</td></tr>
+<tr><td><b>Доступ</b></td><td>—</td><td>один платёж, <strong>доступ на год</strong></td><td>на время экскурсии</td></tr>
+</tbody></table></div>
+<p>Считать стоит на человека. Вдвоём живой гид выходит дороже аудиогида на каждого; полной группой в восемь — примерно во столько же или дешевле. Аудиогид выигрывает не ценой, а тем, что не зависит от чужого расписания, работает без связи и ждёт, пока вы насмотритесь.</p>
+<p>Что бы вы ни выбрали, <strong>входной билет за 697 песо оплачивается отдельно</strong> и покупается в кассах CATVI.</p>
+<h2>Как это работает</h2>
+<div class="tb-steps">
+<ol>
+<li>Купите. Письмо с активацией приходит в течение нескольких минут.</li>
+<li>Поставьте приложение на iPhone или Android и выберите язык.</li>
+<li>Скачайте тур до поездки — лучше по вай-фаю в отеле, а не у входа.</li>
+<li>Идите. Офлайн-карта показывает каждую историю на своём месте — включайте, когда дойдёте, и ставьте на паузу когда угодно.</li>
+</ol>
+<div class="tb-shots">
+<img class="tb-shot" width="420" height="910" loading="lazy" decoding="async" src="/img/app-chichen-cover.webp" alt="Обложка тура в приложении TouringBee">
+<img class="tb-shot" width="420" height="910" loading="lazy" decoding="async" src="/img/app-chichen-stops.webp" alt="Список остановок на офлайн-карте">
+<img class="tb-shot" width="420" height="910" loading="lazy" decoding="async" src="/img/app-chichen-story.webp" alt="Экран истории с иллюстрацией">
+</div>
+</div>
+<p>Две практические вещи: зарядите телефон с вечера и возьмите наушники. С настройками лучше разобраться до выхода из отеля — тень на площадке есть не везде, и ковыряться в приложении на солнце неудобно.</p>
+<h2>Почему этому гиду можно доверять</h2>
+<p><strong>Оценка 4,6</strong> по 18 отзывам на Viator и Tripadvisor. На экране приложения 26 октября 2026 года стояло <strong>6 131 пройденный маршрут</strong>. Озвучка — <strong>живой голос на 8 языках</strong>, не синтез. Один платёж, <strong>доступ на год</strong> — хватит, чтобы вернуться и пройти заново в другую поездку.</p>
 </div></section>
 
 <section><div class="wrap prose">
-<h2>Кому подойдёт самостоятельная прогулка с аудиогидом</h2>
-<p>По Чичен-Ице можно пройти, не зная о ней ничего. Тысячи людей так и делают каждый день: фотографируют пирамиду и уезжают с сильной картинкой в голове. И без понятия, что за двести резных колонн стояли у них за спиной и почему южные постройки выглядят так, будто попали сюда из другого места.</p>
-<p><strong>Аудиопрогулка TouringBee</strong> ведёт по археологической зоне через <strong>16 остановок примерно за 90 минут</strong>, в порядке обхода. Четыре вещи делают её удачным выбором именно для этой зоны.</p>
-<p><strong>Офлайн работает всё.</strong> Карта, ваша позиция по GPS, рассказ. Зона большая, на мобильную связь тут не стоит рассчитывать, и грузить что-то на месте вы не будете.</p>
-<p><strong>Рассказ — профессионально сделанный исторический комментарий</strong>, а не синтезированное чтение энциклопедии. На дистанции в 90 минут это заметно.</p>
-<p><strong>Темп полностью ваш.</strong> <strong>Каждую запись вы включаете сами</strong>, дойдя до памятника, — так вас никто не протаскивает мимо здания и не держит на солнце в ожидании, пока соберётся группа. Сядьте в тени на двадцать минут и продолжите с того же места. В зоне, где тени почти нет, а полгода днём держится 33–35 °C, это практично, а не приятный бонус.</p>
-<p><strong>Группы нет.</strong> Ни места сбора, ни пересчёта по головам, ни ожидания тех двоих, кто вернулся за водой. Если вы дошли до ворот к 08:00, между вами и первым часом дня ничего не стоит.</p>
-<p><strong>9,99 &euro;</strong> один раз, <strong>восемь языков</strong>, iOS и Android, <strong>доступ на год</strong> — хватит на второй заход в другое время суток. Оценка <strong>4,6 по 18 отзывам</strong>, прогулкой воспользовались <strong>6022 путешественника</strong>.</p>
-<p>И честное ограничение: <strong>запись не отвечает на вопросы</strong> и не свернёт с маршрута, если поле для игры в мяч вдруг окажется тем, на что хочется потратить час. Если для вас главное — спрашивать по ходу, берите лицензированного гида у входа, он ровно для этого и есть. Если важнее ранний старт, свой темп и цена — аудиогид сделан под это.</p>
+<h2>Что на самом деле покупается за 9,99 &euro;</h2>
+<p>Покупается разница между «сфотографировал пирамиду» и «понял пирамиду». Шестнадцать историй, рассказанных в порядке движения, каждая — чтобы включить её перед той постройкой, о которой она: почему Эль-Кастильо имеет именно такую форму, что за резные колонны за Храмом воинов, почему южная половина городища выглядит привезённой откуда-то ещё.</p>
+<p>Истории читает живой диктор, а не синтезированный голос, и написаны они под прогулку, а не собраны из статьи в «Википедии».</p>
+<p>Два честных ограничения. <strong>Входной билет не включён</strong> — это 697 песо в кассе. И <strong>запись не отвечает на вопросы</strong>: если вам важно спрашивать по ходу, берите лицензированного гида у входа.</p>
 </div></section>
 
 <section id="product"><div class="wrap">
 <div class="product-card">
 <img class="pc-img" width="1024" height="768" loading="lazy" decoding="async" src="/img/product-audioguide.webp" alt="Аудиогид по Чичен-Ице на телефоне на фоне Эль-Кастильо">
 <div class="pc-body" style="text-align:left">
-<div class="pc-rating"><b style="color:var(--ink)"><span class="star" aria-hidden="true">&#9733;</span> 4,6 &middot; 18 отзывов на Viator &amp; Tripadvisor</b> &middot; Маршрут прошли 6022 путешественника</div>
+<div class="pc-rating"><b style="color:var(--ink)"><span class="star" aria-hidden="true">&#9733;</span> 4,6 &middot; 18 отзывов на Viator &amp; Tripadvisor</b> &middot; Маршрут прошли более 6 100 путешественников</div>
 <h3>Аудиогид по Чичен-Ице<span class="badge">Доступ сразу</span></h3>
-<div class="pc-price">От 9,99 &euro; <small>&middot; доступ на год</small></div>
+<div class="pc-price">9,99 &euro; <small>&middot; доступ на год</small></div>
 <ul class="features">
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% офлайн — связь на площадке слабая, и это неважно</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% офлайн — связь на площадке не нужна нигде</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Офлайн-карта с GPS — каждую запись вы включаете сами на месте</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> 8 языков, живой голос диктора</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg> Работает на iOS и Android</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 16 остановок, около 1,5 часа — останавливайтесь в тени, когда захотите</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/></svg> Одна покупка — один человек: каждый покупает себе</li>
 </ul>
-<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — 9,99 &euro;</a>
+<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=card" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=card">Купить аудиогид — 9,99 &euro;</a>
 </div>
 </div>
 </div></section>
 
 <section><div class="wrap prose">
+<h2>Что полезно знать до прогулки</h2>
+<p><strong>Начинайте откуда удобно.</strong> У маршрута есть порядок, но приложение его не навязывает: карта показывает, где чья история, а включаете вы сами.</p>
+<p><strong>Закрытая удобная обувь и что-нибудь на голову.</strong> Это три-пять километров по гравию и неровному камню, и подход от CATVI и обратно — около двух из них. Шляпа, вода и солнцезащитный крем здесь не формальность.</p>
+<p><strong>Приходите рано.</strong> Вход открывается в 08:00, автобусы подъезжают с 10:00. Самые жаркие часы — с полудня до начала второй половины дня, и надёжной тени на эспланаде нет.</p>
+<p><strong>Билет отдельно.</strong> Аудиогид не включает вход. Для взрослого иностранца это <strong>697 песо</strong> в кассах CATVI; <a href="https://www.tiqets.com/ru/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">билет можно купить и заранее</a>, а наш <a href="/ru/chichen-itza-tickets/">разбор билетов</a> объясняет, что входит в цену.</p>
 <h2>Частые вопросы</h2>
 <div class="faq">
-<details><summary>Можно ли посетить Чичен-Ицу без гида?</summary><p>Да. Обязательной экскурсии нет, единого маршрута нет: покупаете билет в CATVI и идёте. Так делает большинство. Аудиогид или гид, нанятый у входа, — дополнение по желанию.</p></details>
-<details><summary>Сколько времени занимает самостоятельный маршрут по Чичен-Ице?</summary><p>Источники дают 2–4 часа внутри археологической зоны, чаще всего называют 3 часа, плюс 30–60 минут на дорогу от визит-центра и обратно. Экскурсия с гидом по тому же участку занимает 90 минут – 2 часа, потому что гид выбирает.</p></details>
-<details><summary>Сколько километров придётся пройти по Чичен-Ице?</summary><p>От 3 до 5 км по основной зоне — Yucatán Today пишет: минимум 4 км — плюс подход от визит-центра в обе стороны. Ядро занимает не меньше 5 км².</p></details>
-<details><summary>Где вход в Чичен-Ицу в 2026 году?</summary><p>Через новый визит-центр CATVI на трассе 180, примерно в 900 м к северу от Эль-Кастильо. Старый западный Parador Turístico перестал продавать билеты в 2026 году, и маршрут теперь выводит к Священному сеноту раньше, чем к пирамиде, — наоборот по сравнению с тем, что описывает большинство путеводителей.</p></details>
-<details><summary>В каком порядке лучше обходить Чичен-Ицу?</summary><p>Северные памятники тольтекские, южные старше и майяские, в стиле Пуук, — так что одна петля проводит вас по эпохам по порядку. Приехали к открытию — сначала главная площадь, до автобусов. Приехали между 10:00 и полуднем — начинайте с юга, а главную площадь оставьте на время после 14:00. Как группы расходятся внутри зоны, нигде не задокументировано, так что это рассуждение, а не правило.</p></details>
-<details><summary>Можно ли подняться на Эль-Кастильо?</summary><p>Нет. Подъём запрещён с 2006 года, после падения со смертельным исходом. Храм воинов для подъёма тоже закрыт, а внутренний храм в теле Эль-Кастильо закрыт с того же года. Смотреть можно только с земли, из-за верёвки.</p></details>
-<details><summary>Есть ли приложение-аудиогид по Чичен-Ице?</summary><p>Да. Самостоятельная прогулка TouringBee — 16 остановок примерно за 90 минут, iOS и Android, восемь языков, офлайн-карта и GPS, 9,99 &euro; с доступом на год. Каждую запись вы включаете сами, дойдя до памятника.</p></details>
-<details><summary>Сколько стоит гид у входа?</summary><p>По отзывам 2026 года — около 900–1000 песо на испанском, 1200 на английском и 1400 на французском, итальянском или немецком, за группу до восьми человек, наняв на месте у касс и заплатив наличными. Экскурсия занимает от 45 минут до 2 часов. Официального тарифа не публиковали, так что считайте эти цифры диапазоном.</p></details>
-<details><summary>В какое время в Чичен-Ице меньше всего людей?</summary><p>До 10:00 и после 15:00. По собственным данным INAH, пик давления на вход приходится на 10:00–14:00; автобусы начинают приезжать около 10:00–11:00, группы уезжают с 14:00. Воскресенья по возможности избегайте: вход бесплатный для граждан и резидентов Мексики, и это может привести к воротам больше людей. Посещаемость по дням недели никто не публикует, так что считайте это поводом для гибкости, а не измеренным фактом.</p></details>
+<details><summary>Можно ли посетить Чичен-Ицу без экскурсии?</summary><p>Да. Покупаете билет за 697 песо в кассах CATVI и заходите. Внутри зоны гид нигде не требуется, и ни один участок маршрута не закрыт для одиночек. Единственное, что теряется при самостоятельном походе, — объяснение; для этого и нужен аудиогид.</p></details>
+<details><summary>Сколько историй и сколько длится прогулка?</summary><p>Шестнадцать аудиоисторий, около полутора часов, если идти без остановок. Большинство тратит больше, потому что останавливаться можно когда угодно и приложение ждёт.</p></details>
+<details><summary>Нужен ли интернет?</summary><p>Нет. Скачайте тур до поездки, и всё — звук, карта и маршрут — работает офлайн. Так сделано нарочно: зона большая, и ловить сигнал на жаре не нужно.</p></details>
+<details><summary>Входит ли билет в Чичен-Ицу?</summary><p>Нет. Аудиогид стоит 9,99 &euro;, а вход — 697 песо для взрослого иностранца, оплачивается отдельно в кассах CATVI. Говорим прямо, потому что некоторые объявления этого не уточняют.</p></details>
+<details><summary>Можно начать не с начала?</summary><p>Да, с любого места. Карта показывает каждую историю на своей точке, так что присоединиться к маршруту можно там, где вы оказались, и пройти остальное в любом порядке.</p></details>
+<details><summary>На каких языках есть озвучка?</summary><p>На восьми: английский, испанский, французский, немецкий, итальянский, португальский, польский и русский. Каждый в компании слушает на своём языке на своём телефоне.</p></details>
+<details><summary>Подойдёт ли детям?</summary><p>Подойдёт детям, которые уже способны пройти три-пять километров по жаре и носить наушники. Истории короткие, это помогает. Само городище даётся тяжелее, чем гид.</p></details>
 </div>
-<h2>Читать дальше</h2>
-<ul class="related">
-<li><a href="/ru/">Полный гид по Чичен-Ице</a> — памятники, билеты, время</li>
-<li><a href="/ru/chichen-itza-tour/">Экскурсия в Чичен-Ицу: с гидом, самостоятельно или с аудиогидом?</a> — четыре способа посмотреть зону</li>
-<li><a href="/ru/chichen-itza-day-trip-from-cancun/">Из Канкуна в Чичен-Ицу за один день</a> — автобус, машина, экскурсия или поезд</li>
-<li><a href="/ru/guides/">Все гиды по Чичен-Ице</a> — полный указатель</li>
+<h2>Что почитать дальше</h2>
+<ul>
+<li><a href="/ru/">Полный путеводитель по Чичен-Ице</a> — аудиогид, памятники и практика</li>
+<li><a href="/ru/chichen-itza-map/">Карта Чичен-Ицы</a> — как устроена зона от нынешнего входа</li>
+<li><a href="/ru/chichen-itza-tickets/">Билеты в Чичен-Ицу</a> — Boleto Único за 697 песо и что в него входит</li>
+<li><a href="/ru/chichen-itza-best-time-to-visit/">Когда лучше ехать</a> — месяцы, часы и мартовское окно</li>
+<li><a href="/ru/chichen-itza-tour/">Экскурсия, сам или аудиогид?</a> — какой формат кому подходит</li>
+<li><a href="/ru/chichen-itza-day-trip-from-cancun/">Поездка из Канкуна на день</a> — автобусы, время и во что обходится день</li>
+<li><a href="/ru/chichen-itza-equinox/">Равноденствие и змей Кукулькана</a> — тень, даты и что за ней стоит</li>
 </ul>
 </div></section>
 
 <section class="final"><div class="wrap">
 <h2>Пройдите по городу — каждая история у вас в наушниках</h2>
 <p>Пирамида, площадка для игры в мяч, колодец и обсерватория — объяснения там, где вы стоите, и в вашем темпе.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — от 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=final" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=final">Купить аудиогид — 9,99 &euro;</a>
 </div></section>
 
 <footer><div class="wrap">
 <div class="fcols">
 <div>
 <div class="fbrand">Chichén Itzá<span>Walk</span></div>
-<div class="qr"><div class="box">QR<br>app</div><div>Download the<br>TouringBee app</div></div>
+<div class="qr"><div class="box">QR<br>app</div><div>Скачайте приложение<br>TouringBee</div></div>
 </div>
-<div><h3>Explore</h3><a href="/ru/#inside">Audio Guide</a><a href="/ru/guides/">All Guides</a><a href="/ru/#preview">How it works</a><a href="https://touringbee.com/shop-tbee/" target="_blank" rel="noopener">All Tours</a></div>
-<div><h3>Legal</h3><a href="/privacy-policy.html">Privacy Policy</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Terms of Use</a><a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Become an Affiliate</a><a href="/privacy-policy.html#cookies">Cookies</a></div>
-<div><h3>Contact</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
-<div><h3>Languages</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/ru/">Русский</a></div>
+<div><h3>Разделы</h3><a href="/ru/#inside">Аудиогид</a><a href="/ru/guides/">Все гиды</a><a href="/ru/#preview">Как это работает</a><a href="https://touringbee.com/ru/shop-tbee-ru/" target="_blank" rel="noopener">Все экскурсии</a></div>
+<div><h3>Правовая информация</h3><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Условия использования</a><a href="/affiliate-disclosure.html">О партнёрских ссылках</a>
+<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Стать партнёром</a><a href="/privacy-policy.html#cookies">Куки</a></div>
+<div><h3>Контакты</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
+<div><h3>Языки</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/pt/">Português</a><a href="/pl/">Polski</a><a href="/ru/">Русский</a></div>
 </div>
-<div class="fbottom">© 2026 Chichén Itzá Walk · A TouringBee project
-<div class="disclaimer">This website is independent and not affiliated with INAH, the government of Yucatán or the administration of the Chichén Itzá archaeological zone.</div>
+<div class="fbottom">© 2026 Chichén Itzá Walk · проект TouringBee
+<div class="disclaimer">Сайт независимый и не связан с INAH, правительством Юкатана или администрацией археологической зоны Чичен-Ицы.</div>
 </div>
 </div></footer>
 
 <div class="stickybuy" id="stickybuy">
 <div class="p">Аудиогид по Чичен-Ице <small>· от 9,99 &euro; · офлайн · на русском</small></div>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить за 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=sticky" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=sticky">Купить за 9,99 &euro;</a>
 </div>
 <script>(function(){var b=document.getElementById('stickybuy');if(!b)return;function s(){if(window.scrollY>800){b.classList.add('show')}else{b.classList.remove('show')}}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 

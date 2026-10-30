@@ -196,6 +196,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 /* Bokun widget: take the injected root OUT of document flow (kills CLS) without touching the checkout modal. */
 #bokun-widgets-root{position:fixed!important;top:0!important;left:0!important;width:0!important;height:0!important;overflow:visible!important;z-index:2147483000!important}
 .bokun-widgets-cart-wrapper{position:fixed!important;top:auto!important;left:auto!important;right:16px!important;bottom:16px!important;margin:0!important;z-index:2147483000!important}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -203,7 +205,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 {"@type":"WebSite","@id":"https://chichenitzawalk.com/pl/#site","name":"Chichén Itzá Walk","url":"https://chichenitzawalk.com/pl/","publisher":{"@id":"https://chichenitzawalk.com/pl/#org"},"inLanguage":"pl"},
 {"@type":"Person","@id":"https://chichenitzawalk.com/pl/#author","name":"Eugene","description":"Przewodnik i autor tekstów podróżniczych, były przewodnik turystyczny i założyciel sieci serwisów podróżniczych paris10.travel. Autor audioprzewodników TouringBee, w tym spaceru po Chichén Itzá.","knowsAbout":["Chichén Itzá","Maya civilization","Yucatán","Mexico travel","archaeology"]},
 {"@type":"TouristAttraction","name":"Chichén Itzá","description":"Miasto archeologiczne Majów i Tolteków w Jukatanie w Meksyku. Obiekt światowego dziedzictwa UNESCO i jeden z nowych siedmiu cudów świata, znany przede wszystkim z piramidy Kukulkána (El Castillo), Wielkiego Boiska do Gry w Pelotę i Świętej Cenoty.","address":{"@type":"PostalAddress","addressLocality":"Tinúm","addressRegion":"Yucatán","postalCode":"97751","addressCountry":"MX"},"geo":{"@type":"GeoCoordinates","latitude":20.6829,"longitude":-88.5686}},
-{"@type":"Product","name":"Chichén Itzá: audioprzewodnik na własną rękę","description":"Audioprzewodnik po Chichén Itzá na własną rękę, z narracją żywym głosem i mapą GPS offline — 16 przystanków, około 1,5 godziny, offline w 8 językach na iOS i Androidzie.","image":"https://chichenitzawalk.com/img/product-audioguide.webp","brand":{"@type":"Brand","name":"TouringBee"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"18","bestRating":"5","worstRating":"1"},"offers":{"@type":"Offer","price":"9.99","priceCurrency":"EUR","availability":"https://schema.org/InStock","hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"MX","returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted"},"url":"https://touringbee.com/pl/product/chichen-itza-tour-pl/"}},
+{"@type":"Product","name":"Chichén Itzá: audioprzewodnik na własną rękę","description":"Audioprzewodnik po Chichén Itzá na własną rękę, z narracją żywym głosem i mapą GPS offline — 16 przystanków, około 1,5 godziny, offline w 8 językach na iOS i Androidzie.","image":"https://chichenitzawalk.com/img/product-audioguide.webp","brand":{"@type":"Brand","name":"TouringBee"},"offers":{"@type":"Offer","price":"9.99","priceCurrency":"EUR","availability":"https://schema.org/InStock","hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"MX","returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted"},"url":"https://touringbee.com/pl/product/chichen-itza-tour-pl/"}},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Ile kosztuje wstęp do Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Obcokrajowcy płacą w 2026 roku około 697 peso (mniej więcej 35 € / 40 $) — jeden bilet w jednej kasie, odkąd wiosną 2026 roku Boleto Único zastąpiło dawny system dwóch kas. Ceny ustala się co roku, więc sprawdź je przed wyjazdem."}},
 {"@type":"Question","name":"Jakie są godziny otwarcia Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Stanowisko otwiera się o 8:00, zamyka o 17:00. Kasy kończą sprzedaż, a ostatnie wejście jest o 16:00. Przyjazd na otwarcie to najlepsza decyzja, jaką tu podejmiesz."}},
@@ -211,7 +213,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 {"@type":"Question","name":"Ile czasu potrzeba w Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Dwie do trzech godzin wystarczą, żeby spokojnie obejść główną strefę archeologiczną. Audioprzewodnik trwa około 1,5 godziny na 16 przystankach, więc zostaje czas na zdjęcia i cień."}},
 {"@type":"Question","name":"Kiedy pojawia się wąż równonocy w Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Około 20 marca i 22 września. Późnym popołudniem schodkowa krawędź El Castillo rzuca na balustradę zygzakowaty cień, który wygląda jak wąż schodzący po schodach. Efekt widać przez kilka dni przed i po — tłumy też."}},
 {"@type":"Question","name":"Chichén Itzá to Majowie czy Aztekowie?","acceptedAnswer":{"@type":"Answer","text":"Majowie. Aztekowie mieszkali w środkowym Meksyku i wyrośli wieki później. Chichén Itzá założyli Majowie; od X wieku miasto przejęli Toltekowie i dlatego północne budowle wyglądają inaczej niż starsze południowe."}},
-{"@type":"Question","name":"Czy audioprzewodnik działa offline?","acceptedAnswer":{"@type":"Answer","text":"Tak. Pobierz go raz w aplikacji TouringBee przed wyjazdem — zasięg na miejscu jest słaby — i działa w pełni offline, bez internetu."}},
+{"@type":"Question","name":"Czy audioprzewodnik działa offline?","acceptedAnswer":{"@type":"Answer","text":"Tak. Pobierz go raz w aplikacji TouringBee przed wyjazdem — na miejscu działa w pełni offline, bez transmisji danych."}},
 {"@type":"Question","name":"W jakich językach jest audioprzewodnik?","acceptedAnswer":{"@type":"Answer","text":"Osiem języków: angielski, hiszpański, francuski, niemiecki, włoski, portugalski, polski i rosyjski."}},
 {"@type":"Question","name":"Czy warto jechać do Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Tak, jeśli przyjedziesz wcześnie i wiesz, na co patrzysz. Wejście o 8:00 z przewodnikiem w uszach zmienia gorący spacer wśród odgrodzonych kamieni w jeden z najlepszych poranków w Meksyku."}}
 ]},
@@ -233,6 +235,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <a href="/pl/chichen-itza-self-guided-tour/">Samodzielnie</a>
 <a href="/pl/chichen-itza-tickets/">Bilety</a>
 <a href="/pl/chichen-itza-best-time-to-visit/">Kiedy jechać</a>
+<a href="/pl/chichen-itza-map/">Mapa</a>
+<a href="/pl/chichen-itza-equinox/">Równonoc</a>
 <a class="all" href="/pl/guides/">Wszystkie przewodniki &rarr;</a>
 </div></details>
 <nav class="lang"><a href="/">EN</a><a href="/es/">ES</a><a href="/fr/">FR</a><a href="/de/">DE</a><a href="/it/">IT</a><a href="/pt/">PT</a><a class="on" href="/pl/">PL</a><a href="/ru/">RU</a></nav>
@@ -247,7 +251,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <p>Co zobaczyć, kiedy przyjść, ile to kosztuje — plus audioprzewodnik na miejsce, we własnym tempie.</p>
 <div>
 <a class="btn dark" href="#inside">Zobacz, co w środku</a>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Kup audioprzewodnik</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Kup audioprzewodnik</a>
 <a class="btn ghost" href="#preview" onclick="var a=document.getElementById('previewAudio');if(a){a.play();}">Posłuchaj próbki</a>
 <a class="btn dark" href="https://www.tiqets.com/pl/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Kup bilety wstępu</a>
 </div>
@@ -273,14 +277,14 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <h3>Chichén Itzá: audioprzewodnik na własną rękę<span class="badge">Dostęp od razu</span></h3>
 <div class="pc-price">Od 9,99 &euro; <small>· dostęp na rok</small></div>
 <ul class="features">
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% offline — zasięg przy ruinach jest słaby i nie ma to znaczenia</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% offline — zasięg nie jest potrzebny w żadnym miejscu strefy</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Mapa GPS offline — każde nagranie włączasz sam na miejscu</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> 8 języków, narracja żywym głosem</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg> Działa na iOS i Androidzie</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 16 przystanków, około 1,5 godziny — pauzę w cieniu robisz, kiedy chcesz</li>
 </ul>
 <div style="display:flex;gap:10px;flex-wrap:wrap">
-<a class="btn bokunButton" style="flex:1;text-align:center;margin:0" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Kup audioprzewodnik</a>
+<a class="btn bokunButton" style="flex:1;text-align:center;margin:0" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Kup audioprzewodnik</a>
 <a class="btn outline" style="margin:0" href="#preview" onclick="var a=document.getElementById('previewAudio');if(a){a.play();}">Posłuchaj demo</a>
 </div>
 </div>
@@ -294,6 +298,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <p class="lead">Chichén Itzá to nie jedna piramida. To miasto: boisko długie jak murawa stadionu, obserwatorium z oknami wycelowanymi w Wenus, studnia, która połknęła złoto i ludzi, oraz schodkowa piramida wymierzona tak dokładnie, że dwa razy w roku słońce rysuje na niej węża.</p>
 <p>Leży w płaskim buszu północnego Jukatanu: dwie i pół godziny od Cancún, czterdzieści minut od kolonialnego Valladolid. W szczytowym okresie mieszkało tu jakieś dwadzieścia tysięcy ludzi. Potem miasto opustoszało. Gdy w XVI wieku dotarli tu Hiszpanie, zastali świątynie oplecione lianami i nikogo, kto mógłby wyjaśnić, co to wszystko znaczy. Dziś to obiekt z listy UNESCO, jeden z nowych siedmiu cudów świata i jedno z najczęściej odwiedzanych stanowisk archeologicznych na Ziemi. Jest tu też gorąco, bez cienia, a od jedenastej rano wysypują się autokary. Dlatego godzina przyjazdu znaczy tutaj więcej niż przy niemal każdym innym zabytku.</p>
 <p>W tym przewodniku znajdziesz: czym było to miasto, na co właściwie patrzysz, ile kosztuje bilet w 2026 roku i jak zaplanować dzień. Wolisz usłyszeć historie na miejscu, a nie wcześniej? Nasz <a href="#inside">audioprzewodnik po Chichén Itzá</a> od TouringBee prowadzi przez 16 przystanków w półtorej godziny, offline, po polsku — cała trasa jest opisana na tej stronie.</p>
+<p class="xlinks">Warto przeczytać też: <a href="/pl/chichen-itza-equinox/">równonoc i wąż Kukulkana</a>, a jeśli wciąż wybierasz formę zwiedzania — <a href="/pl/chichen-itza-tour/">z przewodnikiem, samodzielnie czy z audioprzewodnikiem</a>.</p>
 
 <h2 id="story">Historia Chichén Itzá</h2>
 
@@ -307,7 +312,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 
 <div class="midcta">
 <p style="margin:.2em 0 .7em">Posłuchaj całego miasta, przystanek po przystanku, stojąc dokładnie tam, gdzie to się działo. <span class="price">Od 9,99 &euro;</span> · offline · po polsku</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Zdobądź audioprzewodnik</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Zdobądź audioprzewodnik</a>
 </div>
 
 <h3>Boisko i piłka, która ważyła pięć kilo</h3>
@@ -331,6 +336,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <p>Wodę — więcej, niż ci się wydaje. Kapelusz, krem z filtrem i buty, w których przejdziesz po żwirze i nierównym kamieniu. Gotówkę w peso: kasa przyjmuje karty, ale terminale często tu padają, a bramki na płatnej drodze 180D nie biorą nic poza gotówką. Przy większości ścieżek na terenie ruin stoją sprzedawcy. Targowanie się jest tu normą.</p>
 <h3>Gdzie się zatrzymać</h3>
 <p>Valladolid, czterdzieści minut na wschód, to rozsądna baza: kolonialne, tanie i na tyle blisko, żeby stanąć przy bramie na otwarcie. Mérida jest większa i leży 1 godz. 45 min na zachód. Nocleg na wybrzeżu oznacza 2,5 godziny jazdy w każdą stronę. <a href="https://www.booking.com/searchresults.pl.html?ss=Valladolid%2C%20Yucatan%2C%20Mexico&amp;aid=1437498&amp;group_adults=2&amp;no_rooms=1" target="_blank" rel="noopener sponsored">Sprawdź hotele w Valladolid na Booking.com →</a></p>
+<p class="xlinks">Więcej o praktyce: <a href="/pl/chichen-itza-tickets/">bilety i co obejmuje cena</a>, <a href="/pl/chichen-itza-best-time-to-visit/">który miesiąc i którą godzinę wybrać</a> i <a href="/pl/chichen-itza-day-trip-from-cancun/">wyprawa jednodniowa z Cancún</a>.</p>
 </div></section>
 
 <!-- 4. FAMOUS STOPS -->
@@ -352,11 +358,12 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <h2>Jak działa audioprzewodnik</h2>
 <div class="steps">
 <div class="step"><h3>Kup przewodnik</h3><p>Jedna płatność, dostęp od razu. Bez abonamentu.</p></div>
-<div class="step"><h3>Pobierz przed wyjazdem</h3><p>Zainstaluj aplikację TouringBee na iOS lub Androidzie i pobierz wycieczkę w hotelu — zasięg przy ruinach jest słaby.</p></div>
+<div class="step"><h3>Pobierz przed wyjazdem</h3><p>Zainstaluj aplikację TouringBee na iOS lub Androidzie i pobierz wycieczkę w hotelu, przez wi-fi, na które można liczyć.</p></div>
 <div class="step"><h3>Zacznij przy wejściu</h3><p>Włącz przewodnik, gdy wchodzisz, trzymaj się mapy offline i na każdym przystanku sam odpalaj nagranie.</p></div>
 <div class="step"><h3>Pauza i wznowienie</h3><p>Stań w cieniu, napij się wody, wróć dokładnie tam, gdzie skończyłeś.</p></div>
 </div>
-<p class="center" style="margin-top:22px"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Zdobądź audioprzewodnik</a></p>
+<p class="center" style="margin-top:22px"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Zdobądź audioprzewodnik</a></p>
+<p class="xlinks">Chcesz samą trasę, przystanek po przystanku? <a href="/pl/chichen-itza-self-guided-tour/">przewodnik po samodzielnym spacerze</a> układa ją w osiem etapów, a <a href="/pl/chichen-itza-map/">mapa strefy</a> pokazuje, jak strefa wygląda od dzisiejszego wejścia.</p>
 </div></section>
 
 <!-- 6. TICKETS / PRACTICAL -->
@@ -448,7 +455,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <details><summary>Ile czasu potrzeba w Chichén Itzá?</summary><p>Dwie do trzech godzin wystarczą, żeby spokojnie obejść główną strefę archeologiczną. Audioprzewodnik trwa około 1,5 godziny na 16 przystankach, więc zostaje czas na zdjęcia i cień.</p></details>
 <details><summary>Kiedy pojawia się wąż równonocy?</summary><p>Około 20 marca i 22 września. Późnym popołudniem schodkowa krawędź El Castillo rzuca na balustradę zygzakowaty cień, który wygląda jak wąż schodzący po schodach. Efekt widać przez kilka dni przed i po — tłumy też.</p></details>
 <details><summary>Chichén Itzá to Majowie czy Aztekowie?</summary><p>Majowie. Aztekowie mieszkali w środkowym Meksyku i wyrośli wieki później. Chichén Itzá założyli Majowie; od X wieku miasto przejęli Toltekowie i dlatego północne budowle wyglądają inaczej niż starsze południowe.</p></details>
-<details><summary>Czy audioprzewodnik działa offline?</summary><p>Tak. Pobierz go raz w aplikacji TouringBee przed wyjazdem — zasięg na miejscu jest słaby — i działa w pełni offline, bez internetu.</p></details>
+<details><summary>Czy audioprzewodnik działa offline?</summary><p>Tak. Pobierz go raz w aplikacji TouringBee przed wyjazdem — na miejscu działa w pełni offline, bez transmisji danych.</p></details>
 <details><summary>W jakich językach jest audioprzewodnik?</summary><p>W ośmiu: angielski, hiszpański, francuski, niemiecki, włoski, portugalski, polski i rosyjski.</p></details>
 <details><summary>Czy warto jechać do Chichén Itzá?</summary><p>Tak, jeśli przyjedziesz wcześnie i wiesz, na co patrzysz. Wejście o 8:00 z przewodnikiem w uszach zmienia gorący spacer wśród odgrodzonych kamieni w jeden z najlepszych poranków w Meksyku.</p></details>
 </div>
@@ -470,7 +477,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <section class="final"><div class="wrap">
 <h2>Przejdź to miasto z każdą historią w uszach</h2>
 <p>Piramida, boisko, studnia i obserwatorium — wyjaśnione tam, gdzie stoisz, w twoim tempie.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Weź audioprzewodnik — od 9,99 €</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Weź audioprzewodnik — od 9,99 €</a>
 </div></section>
 
 </main>
@@ -484,7 +491,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <div><h3>Informacje prawne</h3><a href="/privacy-policy.html">Polityka prywatności</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Regulamin</a><a href="/affiliate-disclosure.html">Informacja o afiliacji</a>
 <a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Zostań partnerem</a><a href="/privacy-policy.html#cookies">Pliki cookie</a></div>
 <div><h3>Kontakt</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
-<div><h3>Języki</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/ru/">Русский</a></div>
+<div><h3>Języki</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/pt/">Português</a><a href="/pl/">Polski</a><a href="/ru/">Русский</a></div>
 </div>
 <div class="fbottom">© 2026 Chichén Itzá Walk · Projekt TouringBee
 <div class="disclaimer">Ta strona jest niezależna i nie jest powiązana z INAH, władzami stanu Jukatan ani administracją strefy archeologicznej Chichén Itzá.</div>
@@ -494,7 +501,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <!-- Sticky buy bar: mobile bottom / desktop bottom-right, appears after scroll -->
 <div class="stickybuy" id="stickybuy">
 <div class="p">Audioprzewodnik po Chichén Itzá <small>· od 9,99 &euro; · offline · po polsku</small></div>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Kup za 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Kup za 9,99 &euro;</a>
 </div>
 <script>(function(){var b=document.getElementById('stickybuy');if(!b)return;function s(){if(window.scrollY>800){b.classList.add('show')}else{b.classList.remove('show')}}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 

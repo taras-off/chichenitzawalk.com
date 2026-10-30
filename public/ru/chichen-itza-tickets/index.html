@@ -199,6 +199,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 /* Bokun widget: take the injected root OUT of document flow (kills CLS) without touching the checkout modal. */
 #bokun-widgets-root{position:fixed!important;top:0!important;left:0!important;width:0!important;height:0!important;overflow:visible!important;z-index:2147483000!important}
 .bokun-widgets-cart-wrapper{position:fixed!important;top:auto!important;left:auto!important;right:16px!important;bottom:16px!important;margin:0!important;z-index:2147483000!important}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 
 /* ---- article page ---- */
 /* sticky header is 56px tall: keep anchor targets clear of it */
@@ -230,14 +232,39 @@ table.cmp{border-collapse:collapse;width:100%;min-width:680px;font-size:14.5px}
 table.cmp th,table.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 table.cmp thead th{background:var(--soft);font-size:13.5px}
 table.cmp tbody td:first-child{background:#fbfaf5;white-space:nowrap}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 ul.related{list-style:none;padding:0;margin:.6em 0 0}
 ul.related li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 ul.related a{font-weight:600;text-decoration:none}
 ul.related a:hover{text-decoration:underline}
 @media(max-width:640px){.arthero h1{font-size:29px}.arthero .sub{font-size:17px}.hbtns .btn{width:100%;text-align:center}}
+/* ---- money page: чипсы, баннер, плеер, шаги, отзывы ---- */
+ul.chips{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0 0 16px}
+ul.chips li{font-size:13px;line-height:1;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);white-space:nowrap}
+.tb-banner{display:flex;gap:16px;align-items:center;border:2px solid #0ea2e6;background:#f2f9fd;border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-banner-img{width:132px;height:96px;object-fit:cover;border-radius:8px;flex:0 0 auto}
+.tb-banner-body{min-width:0}
+.tb-banner-body p{margin:0 0 8px}
+.tb-banner-head{font-weight:700;font-size:17px;color:#0b5f85}
+.tb-audio{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-audio-head{font-weight:700;margin:0 0 6px}
+.tb-audio p{margin:0 0 10px}
+.tb-audio audio{width:100%}
+.tb-steps{margin:1.6em 0}
+.tb-steps ol{padding-left:1.2em;margin:0 0 16px}
+.tb-steps li{margin:0 0 8px}
+.tb-shots{display:flex;gap:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+img.tb-shot{width:210px;height:auto;border:1px solid var(--line);border-radius:10px;flex:0 0 auto}
+.tb-reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:1.6em 0}
+.tb-review{margin:0;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.tb-review blockquote{margin:0 0 8px;padding:0;background:none;border:0;font-style:normal;color:var(--ink)}
+.tb-review blockquote p{margin:0}
+.tb-review figcaption{font-size:13px;color:var(--muted)}
+@media(max-width:640px){.tb-banner{flex-direction:column;align-items:flex-start}.tb-banner-img{width:100%;height:150px}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://chichenitzawalk.com/ru/chichen-itza-tickets/#article","headline":"Билеты в Чичен-Ицу в 2026 году: сколько, где платить и что входит","description":"Билет в Чичен-Ицу в 2026 году — 697 песо. Где купить, можно ли оплатить картой, что входит в цену и стоит ли переплачивать за билеты без очереди.","inLanguage":"ru","datePublished":"2026-10-09","dateModified":"2026-10-09","mainEntityOfPage":{"@id":"https://chichenitzawalk.com/ru/chichen-itza-tickets/"},"image":"https://chichenitzawalk.com/img/hero-1536.webp","author":{"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene"},"publisher":{"@type":"Organization","@id":"https://chichenitzawalk.com/#org","name":"TouringBee","url":"https://touringbee.com/"},"about":{"@type":"TouristAttraction","name":"Чичен-Ица"}},{"@type":"FAQPage","@id":"https://chichenitzawalk.com/ru/chichen-itza-tickets/#faq","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько стоит билет в Чичен-Ицу в 2026 году?","acceptedAnswer":{"@type":"Answer","text":"697 песо для взрослого иностранца, примерно 34 € или 38 US$ — один Boleto Único, который оплачивают в одной кассе внутри визит-центра CATVI. Граждане Мексики платят 310 песо по документу, резиденты Юкатана — 105 песо. За 2026 год цена поднималась дважды, так что страница с суммой 676 или 648 не ошибается в типе билета, а просто устарела."}},{"@type":"Question","name":"Можно ли купить билеты в Чичен-Ицу онлайн?","acceptedAnswer":{"@type":"Answer","text":"Подтвердить, что официально можно, нам не удалось. На странице INAH есть ссылка на билетный портал, но без авторизации он не показывает ни одного объекта, ни одно правительственное сообщение о Boleto Único онлайн-продажу не упоминает, а свежие репортажи говорят о продаже только в кассах CATVI. Посредники — Tiqets, GetYourGuide, Viator — входные билеты онлайн продают, примерно вдвое дороже кассы."}},{"@type":"Question","name":"Есть ли билет в Чичен-Ицу без очереди?","acceptedAnswer":{"@type":"Answer","text":"Посредники такой продают, примерно за 75–79 US$ против 38 US$ в кассе, и описывают его по-разному: Tiqets пишет, что вы пропускаете только очередь в кассу и всё равно проходите досмотр, GetYourGuide — что в кассу идти не надо вовсе, а Viator присылает ваучер, который меняют на стойке у входа. Наценка отбивается в высокий сезон или при жёстком расписании. Если вы приезжаете к открытию и готовы заплатить на месте, касса обычно выгоднее."}},{"@type":"Question","name":"Платят ли дети за вход в Чичен-Ицу?","acceptedAnswer":{"@type":"Answer","text":"Дети-иностранцы платят. Бесплатный вход до 13 лет INAH прописывает для мексиканцев и живущих в Мексике, и на англоязычной странице говорит об этом прямо. Точная сумма для иностранного ребёнка в официальных источниках не установлена, так что заложите полный билет на каждого ребёнка и уточните в кассе."}},{"@type":"Question","name":"Правда ли, что резиденты Юкатана проходят бесплатно?","acceptedAnswer":{"@type":"Answer","text":"Нет, они платят 105 песо — федеральный сбор INAH. Декрет штата снимает с них юкатанскую долю на 2026 год, и несколько заголовков превратили это в «бесплатно», но федеральный сбор идёт по другому закону и остаётся."}},{"@type":"Question","name":"Бесплатен ли вход в Чичен-Ицу по воскресеньям?","acceptedAnswer":{"@type":"Answer","text":"Для граждан Мексики и иностранцев, живущих в Мексике, по документу — да. Для приезжих туристов — нет. Заодно у турникета может быть больше людей, так что если даты гибкие, присмотритесь к будним дням."}},{"@type":"Question","name":"Что входит во входной билет в Чичен-Ицу?","acceptedAnswer":{"@type":"Answer","text":"Вся археологическая зона и Чичен-Вьехо как сопровождаемый визит по записи. Gran Museo de Chichén Itzá внутри CATVI бесплатен для всех, с билетом и без. Парковка, камеры хранения, гид, ночное шоу Noches de Kukulkán и любой аудиогид оплачиваются отдельно."}},{"@type":"Question","name":"Можно ли заплатить картой в Чичен-Ице?","acceptedAnswer":{"@type":"Answer","text":"Ни один официальный источник не называет, какие карты принимает касса CATVI, и ни один не подтверждает работающий банкомат на территории. Это пробел в опубликованной информации, а не отказ, но надёжный план один — наличные песо."}},{"@type":"Question","name":"До какого часа продают билеты?","acceptedAnswer":{"@type":"Answer","text":"Зона работает с 08:00 до 16:00, но официальные источники расходятся об отсечке на вход: английская страница INAH говорит про 15:00, а бюллетени INAH — про вход до 16:00. Приезжайте до 15:00, чтобы не рисковать, а если весь день держится на позднем приезде — позвоните по 985 851 0137."}}]},{"@type":"BreadcrumbList","@id":"https://chichenitzawalk.com/ru/chichen-itza-tickets/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://chichenitzawalk.com/ru/"},{"@type":"ListItem","position":2,"name":"Гиды","item":"https://chichenitzawalk.com/ru/guides/"},{"@type":"ListItem","position":3,"name":"Билеты в Чичен-Ицу"}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://chichenitzawalk.com/ru/chichen-itza-tickets/#article","headline":"Билеты в Чичен-Ицу в 2026 году: сколько, где платить и что входит","description":"Билет в Чичен-Ицу в 2026 году — 697 песо. Где купить, можно ли оплатить картой, что входит в цену и стоит ли переплачивать за билеты без очереди.","inLanguage":"ru","datePublished":"2026-10-09","dateModified":"2026-10-09","mainEntityOfPage":{"@id":"https://chichenitzawalk.com/ru/chichen-itza-tickets/"},"image":"https://chichenitzawalk.com/img/hero-1536.webp","author":{"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene"},"publisher":{"@type":"Organization","@id":"https://chichenitzawalk.com/#org","name":"TouringBee","url":"https://touringbee.com/"},"about":{"@type":"TouristAttraction","name":"Чичен-Ица"}},{"@type":"FAQPage","@id":"https://chichenitzawalk.com/ru/chichen-itza-tickets/#faq","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько стоит билет в Чичен-Ицу в 2026 году?","acceptedAnswer":{"@type":"Answer","text":"697 песо для взрослого иностранца, примерно 34 € или 38 US$ — один Boleto Único, который оплачивают в одной кассе внутри визит-центра CATVI. Граждане Мексики платят 310 песо по документу, резиденты Юкатана — 105 песо. За 2026 год цена поднималась дважды, так что страница с суммой 676 или 648 не ошибается в типе билета, а просто устарела."}},{"@type":"Question","name":"Можно ли купить билеты в Чичен-Ицу онлайн?","acceptedAnswer":{"@type":"Answer","text":"Подтвердить, что официально можно, нам не удалось. На странице INAH есть ссылка на билетный портал, но без авторизации он не показывает ни одного объекта, ни одно правительственное сообщение о Boleto Único онлайн-продажу не упоминает, а свежие репортажи говорят о продаже только в кассах CATVI. Посредники — Tiqets, GetYourGuide, Viator — входные билеты онлайн продают, примерно вдвое дороже кассы."}},{"@type":"Question","name":"Есть ли билет в Чичен-Ицу без очереди?","acceptedAnswer":{"@type":"Answer","text":"Посредники такой продают, примерно за 75–79 US$ против 38 US$ в кассе, и описывают его по-разному: Tiqets пишет, что вы пропускаете только очередь в кассу и всё равно проходите досмотр, GetYourGuide — что в кассу идти не надо вовсе, а Viator присылает ваучер, который меняют на стойке у входа. Наценка отбивается в высокий сезон или при жёстком расписании. Если вы приезжаете к открытию и готовы заплатить на месте, касса обычно выгоднее."}},{"@type":"Question","name":"Платят ли дети за вход в Чичен-Ицу?","acceptedAnswer":{"@type":"Answer","text":"Дети-иностранцы платят. Бесплатный вход до 13 лет INAH прописывает для мексиканцев и живущих в Мексике, и на англоязычной странице говорит об этом прямо. Точная сумма для иностранного ребёнка в официальных источниках не установлена, так что заложите полный билет на каждого ребёнка и уточните в кассе."}},{"@type":"Question","name":"Правда ли, что резиденты Юкатана проходят бесплатно?","acceptedAnswer":{"@type":"Answer","text":"Нет, они платят 105 песо — федеральный сбор INAH. Декрет штата снимает с них юкатанскую долю на 2026 год, и несколько заголовков превратили это в «бесплатно», но федеральный сбор идёт по другому закону и остаётся."}},{"@type":"Question","name":"Бесплатен ли вход в Чичен-Ицу по воскресеньям?","acceptedAnswer":{"@type":"Answer","text":"Для граждан Мексики и иностранцев, живущих в Мексике, по документу — да. Для приезжих туристов — нет. Заодно у турникета может быть больше людей, так что если даты гибкие, присмотритесь к будним дням."}},{"@type":"Question","name":"Что входит во входной билет в Чичен-Ицу?","acceptedAnswer":{"@type":"Answer","text":"Вся археологическая зона. Чичен-Вьехо покрывается тем же билетом, но INAH сейчас помечает его как временно закрытый. Gran Museo de Chichén Itzá внутри CATVI бесплатен для всех, с билетом и без. Парковка, камеры хранения, гид, ночное шоу Noches de Kukulkán и любой аудиогид оплачиваются отдельно."}},{"@type":"Question","name":"Можно ли заплатить картой в Чичен-Ице?","acceptedAnswer":{"@type":"Answer","text":"Ни один официальный источник не называет, какие карты принимает касса CATVI, и ни один не подтверждает работающий банкомат на территории. Это пробел в опубликованной информации, а не отказ, но надёжный план один — наличные песо."}},{"@type":"Question","name":"До какого часа продают билеты?","acceptedAnswer":{"@type":"Answer","text":"Две официальные страницы INAH расходятся. Страница зоны на inah.gob.mx, обновлённая 6 октября 2026 года, даёт 08:00–17:00 с последним входом в 16:00; портал INAH Lugares — 08:00–16:00 с последним входом в 15:00. Приезжайте до 15:00, чтобы не рисковать, а если весь день держится на позднем приезде — позвоните по 985 851 0137."}}]},{"@type":"BreadcrumbList","@id":"https://chichenitzawalk.com/ru/chichen-itza-tickets/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://chichenitzawalk.com/ru/"},{"@type":"ListItem","position":2,"name":"Гиды","item":"https://chichenitzawalk.com/ru/guides/"},{"@type":"ListItem","position":3,"name":"Билеты в Чичен-Ицу"}]}]}
 </script>
 </head>
 <body>
@@ -249,9 +276,11 @@ ul.related a:hover{text-decoration:underline}
 <div class="dropdown">
 <a href="/ru/chichen-itza-tour/">Экскурсия в Чичен-Ицу: какая?</a>
 <a href="/ru/chichen-itza-day-trip-from-cancun/">Из Канкуна на день</a>
-<a href="/ru/chichen-itza-self-guided-tour/">Самостоятельно</a>
+<a href="/ru/chichen-itza-self-guided-tour/">Самостоятельная прогулка</a>
 <a href="/ru/chichen-itza-tickets/">Билеты</a>
 <a href="/ru/chichen-itza-best-time-to-visit/">Когда ехать</a>
+<a href="/ru/chichen-itza-map/">Карта зоны</a>
+<a href="/ru/chichen-itza-equinox/">Равноденствие</a>
 <a class="all" href="/ru/guides/">Все гиды &rarr;</a>
 </div></details>
 <nav class="lang"><a href="/chichen-itza-tickets/">EN</a><a href="/es/chichen-itza-tickets/">ES</a><a href="/fr/chichen-itza-tickets/">FR</a><a href="/de/chichen-itza-tickets/">DE</a><a href="/it/chichen-itza-tickets/">IT</a><a href="/pt/chichen-itza-tickets/">PT</a><a href="/pl/chichen-itza-tickets/">PL</a><a class="on" href="/ru/chichen-itza-tickets/">RU</a></nav>
@@ -264,7 +293,7 @@ ul.related a:hover{text-decoration:underline}
 <p class="sub">Один билет, 697 песо, одна касса внутри CATVI. Что входит в цену, что не входит и почему половина интернета называет неверную сумму.</p>
 <div class="byline"><img src="/img/author-eugene.webp" width="34" height="34" loading="lazy" alt="Евгений, автор"><span>Автор: <strong>Евгений</strong> &middot; обновлено 9 октября 2026 &middot; 11 мин чтения</span></div>
 <div class="hbtns">
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=hero" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=hero">Купить аудиогид — 9,99 &euro;</a>
 <a class="btn outline" href="https://www.getyourguide.com/ru-ru/chichen-itza-l785/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Сравнить билеты и экскурсии на GetYourGuide</a>
 <a class="btn outline" href="https://www.tiqets.com/ru/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Купить входные билеты</a>
 </div>
@@ -273,7 +302,7 @@ ul.related a:hover{text-decoration:underline}
 <section><div class="wrap prose">
 <p class="lead">Взрослый иностранец платит за вход в Чичен-Ицу <strong>697 песо</strong>. Один билет, один платёж, одна касса внутри визит-центра CATVI.</p>
 <p>Эту цифру стоит назвать сразу, потому что большинство страниц в выдаче дают другую. 614, 648, 676 — каждая из них когда-то была верной, и ни одна не верна сейчас. Только за 2026 год цена менялась дважды.</p>
-<p>Планируете осмотреть Чичен-Ицу самостоятельно? <a class="bokunButton inlinebuy" target="_blank" rel="noopener" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Аудиогид TouringBee</a> проведёт вас по 16 остановкам за полтора часа — зачем служило каждое здание, кто его построил и почему южная половина выглядит так, будто попала сюда из другого места, — с офлайн-картой, которая работает там, где не работает связь. Стоимость 9,99 &euro;. Входной билет за 697 песо покупается отдельно.</p>
+<p>Планируете осмотреть Чичен-Ицу самостоятельно? <a class="bokunButton inlinebuy" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=text" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=text">Аудиогид TouringBee</a> проведёт вас по 16 остановкам за полтора часа — зачем служило каждое здание, кто его построил и почему южная половина выглядит так, будто попала сюда из другого места, — с офлайн-картой, которая работает там, где не работает связь. Стоимость 9,99 &euro;. Входной билет за 697 песо покупается отдельно.</p>
 <div class="facts">
 <h2>Коротко</h2>
 <div class="fgrid">
@@ -283,8 +312,8 @@ ul.related a:hover{text-decoration:underline}
 <div><b>Где</b>одна касса внутри визит-центра CATVI на трассе 180</div>
 <div><b>Официальная онлайн-продажа</b>подтвердить не удалось — рассчитывайте платить в кассе</div>
 <div><b>Оплата</b>берите наличные песо; какие карты принимают, официально не сказано</div>
-<div><b>Часы</b>08:00–16:00 &middot; источники расходятся о последнем входе, поэтому приезжайте до 15:00</div>
-<div><b>Входит</b>вся археологическая зона и Чичен-Вьехо по записи</div>
+<div><b>Часы</b>две официальные страницы INAH расходятся — 08:00–17:00 или 08:00–16:00, — поэтому приезжайте до 15:00</div>
+<div><b>Входит</b>вся археологическая зона; Чичен-Вьехо помечен как временно закрытый</div>
 <div><b>Не входит</b>парковка, камеры хранения, гид, ночное шоу, любой аудиогид</div>
 </div>
 </div>
@@ -334,7 +363,7 @@ ul.related a:hover{text-decoration:underline}
 <p><strong>Очередь.</strong> Собственные данные INAH показывают пик нагрузки на вход между <strong>10:00 и 14:00</strong>, автобусы начинают приезжать около 10:00–11:00. Приедете к открытию — касса пройдёт быстро. Приедете в 11:30 — будете покупать билет вместе со всеми остальными.</p>
 <h2>Что входит в 697 песо</h2>
 <p><strong>Вся археологическая зона</strong>: Эль-Кастильо, Большое поле для игры в мяч, Храм воинов, Группа тысячи колонн, Священный сенот, сенот Штолок, Эль-Осарио, Эль-Караколь, Лас-Монхас и южная группа Пуук. Никакого внутреннего билета, второго турникета или премиального сектора нет.</p>
-<p><strong>Чичен-Вьехо</strong>, Grupo de la Serie Inicial, который открылся в сентябре 2023 года и покрывается обычным билетом без доплаты. Просто зайти нельзя: это сопровождаемый визит, и страница INAH даёт пятницу и субботу, два слота 09:00–11:30 и 12:00–14:30, группы максимум по 50 человек, два с половиной часа, запись в кассе. <strong>Эту страницу не обновляли после переезда входа</strong> — там до сих пор цены 2025 года и ни слова о CATVI, — так что уточняйте порядок при покупке. Телефон зоны: <strong>985 851 0137</strong>.</p>
+<p><strong>Чичен-Вьехо</strong>, Grupo de la Serie Inicial, который открылся в сентябре 2023 года и покрывается обычным билетом без доплаты. Планов вокруг него не стройте. <strong>Собственная страница зоны на сайте INAH, обновлённая 6 октября 2026 года, помечает его как временно закрытый.</strong> Портал INAH Lugares при этом до сих пор рекламирует сопровождаемые визиты по пятницам и субботам и велит записываться в кассе археологической зоны — кассе, которая в марте 2026 года переехала в CATVI, на странице, где до сих пор стоят штатные сборы 2025 года. Две официальные страницы, два разных ответа. Прежде чем на это рассчитывать, позвоните в зону: <strong>985 851 0137</strong>.</p>
 <p><strong>И одна вещь, которая в билет не входит вовсе — в хорошем смысле.</strong> <strong>Gran Museo de Chichén Itzá</strong> внутри CATVI бесплатен для всех, с билетом и без: 3400 м², 14 тематических разделов, более 500 предметов, работает с февраля 2024 года.</p>
 <h2>Что не входит</h2>
 <p class="disc">Ориентировочные расходы сверх входного билета. Ни одна из цифр ниже не является официальным тарифом: их не публикуют ни INAH, ни штат, и на месте они могут отличаться.</p>
@@ -365,7 +394,7 @@ ul.related a:hover{text-decoration:underline}
 <div class="midcta">
 <p class="price">Вход — это одна покупка. Понимание места — другая.</p>
 <p>Ваши 697 песо покупают турникет, а не рассказ. Аудиопрогулка TouringBee ведёт по археологической зоне через 16 остановок примерно за 90 минут, в порядке обхода, полностью офлайн — отдельная покупка за 9,99 &euro;, в которую входной билет не входит.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Открыть аудиогид &rarr;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=midcta" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=midcta">Открыть аудиогид &rarr;</a>
 </div>
 <h2>Три способа купить не то</h2>
 <p><strong>Смотрите на цену и дату вместе.</strong> Самая частая проблема, и никто вас не обманывает — страницы просто старые. Сумма 676 была верной в январе. Ищите дату последнего обновления, а не год в заголовке.</p>
@@ -373,8 +402,8 @@ ul.related a:hover{text-decoration:underline}
 <p><strong>Ночное шоу покупайте только через официальный канал.</strong> Туристическое ведомство штата судилось из-за подделок на <em>Noches de Kukulkán</em>. У дневного билета задокументированной проблемы такого рода нет — случаев продажи фальшивых дневных билетов у входа мы не нашли, — а у ночного шоу есть, и продаётся оно онлайн.</p>
 <p>И ещё одно, не мошенничество, но день испортит так же: в мае 2026 года зона была закрыта около двух недель из-за конфликта с ремесленниками Писте и открылась 1 июня. Это редкость, но если вы едете издалека ради одного дня, загляните накануне вечером в новости.</p>
 <h2>Часы, срок действия и расхождение внутри самого INAH</h2>
-<p><strong>С 08:00 до 16:00, ежедневно.</strong> Эта часть сомнений не вызывает.</p>
-<p>Вызывает последний вход. <strong>Испанская</strong> страница зоны у INAH даёт 08:00–16:00 и не называет отсечку. <strong>Английская</strong> страница того же INAH о той же зоне говорит, что последний вход в 15:00. А <strong>бюллетени</strong> INAH, включая служебное сообщение к сентябрьскому равноденствию 2026 года, описывают продажу билетов и вход до 16:00. На английской странице, кстати, до сих пор стоят штатные сборы 2025 года — это повод ей не доверять, но не повод её отбросить.</p>
+<p><strong>Открывается в 08:00, ежедневно.</strong> Эта часть сомнений не вызывает. А время закрытия и последний вход — обе вызывают.</p>
+<p>Спор тут не между испанским и английским, а между двумя порталами самого INAH. <strong>Собственная страница зоны на inah.gob.mx</strong>, обновлённая 6 октября 2026 года, даёт 08:00–17:00 с последним входом в 16:00 и выпроваживанием с 16:30. <strong>INAH Lugares</strong>, другой портал того же института, <strong>и в испанской, и в английской версии</strong> даёт 08:00–16:00 с последним входом в 15:00, а ещё приоритетное обслуживание турагентств с 11:00 до 14:00. На странице Lugares, кстати, до сих пор стоят штатные сборы 2025 года — это повод ей не доверять, но не повод её отбросить.</p>
 <p><strong>Поэтому: приезжайте до 15:00.</strong> Когда официальные источники расходятся об отсечке, более поздняя — ровно та, в которой нельзя ошибиться: приехать в 15:30, опираясь на неё, значит упереться в закрытые ворота после нескольких часов дороги. А для полноценного посещения приезжать надо на несколько часов раньше. Если поздний приезд неизбежен, сначала позвоните по <strong>985 851 0137</strong>.</p>
 <p><strong>Срок действия.</strong> Ни один официальный источник не говорит, действует ли билет один день и можно ли выйти и вернуться. Мы искали. Исходите из того, что вход один и день один, а если это важно для плана — спросите в кассе.</p>
 </div></section>
@@ -397,13 +426,13 @@ ul.related a:hover{text-decoration:underline}
 <h3>Аудиогид по Чичен-Ице<span class="badge">Доступ сразу</span></h3>
 <div class="pc-price">От 9,99 &euro; <small>&middot; доступ на год</small></div>
 <ul class="features">
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% офлайн — связь на площадке слабая, и это неважно</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% офлайн — связь на площадке не нужна нигде</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Офлайн-карта с GPS — каждую запись вы включаете сами на месте</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> 8 языков, живой голос диктора</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg> Работает на iOS и Android</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 16 остановок, около 1,5 часа — останавливайтесь в тени, когда захотите</li>
 </ul>
-<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — 9,99 &euro;</a>
+<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=card" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=card">Купить аудиогид — 9,99 &euro;</a>
 </div>
 </div>
 </div></section>
@@ -417,9 +446,9 @@ ul.related a:hover{text-decoration:underline}
 <details><summary>Платят ли дети за вход в Чичен-Ицу?</summary><p>Дети-иностранцы платят. Бесплатный вход до 13 лет INAH прописывает для мексиканцев и живущих в Мексике, и на англоязычной странице говорит об этом прямо. Точная сумма для иностранного ребёнка в официальных источниках не установлена, так что заложите полный билет на каждого ребёнка и уточните в кассе.</p></details>
 <details><summary>Правда ли, что резиденты Юкатана проходят бесплатно?</summary><p>Нет, они платят 105 песо — федеральный сбор INAH. Декрет штата снимает с них юкатанскую долю на 2026 год, и несколько заголовков превратили это в «бесплатно», но федеральный сбор идёт по другому закону и остаётся.</p></details>
 <details><summary>Бесплатен ли вход в Чичен-Ицу по воскресеньям?</summary><p>Для граждан Мексики и иностранцев, живущих в Мексике, по документу — да. Для приезжих туристов — нет. Заодно у турникета может быть больше людей, так что если даты гибкие, присмотритесь к будним дням.</p></details>
-<details><summary>Что входит во входной билет в Чичен-Ицу?</summary><p>Вся археологическая зона и Чичен-Вьехо как сопровождаемый визит по записи. Gran Museo de Chichén Itzá внутри CATVI бесплатен для всех, с билетом и без. Парковка, камеры хранения, гид, ночное шоу Noches de Kukulkán и любой аудиогид оплачиваются отдельно.</p></details>
+<details><summary>Что входит во входной билет в Чичен-Ицу?</summary><p>Вся археологическая зона. Чичен-Вьехо покрывается тем же билетом, но INAH сейчас помечает его как временно закрытый. Gran Museo de Chichén Itzá внутри CATVI бесплатен для всех, с билетом и без. Парковка, камеры хранения, гид, ночное шоу Noches de Kukulkán и любой аудиогид оплачиваются отдельно.</p></details>
 <details><summary>Можно ли заплатить картой в Чичен-Ице?</summary><p>Ни один официальный источник не называет, какие карты принимает касса CATVI, и ни один не подтверждает работающий банкомат на территории. Это пробел в опубликованной информации, а не отказ, но надёжный план один — наличные песо.</p></details>
-<details><summary>До какого часа продают билеты?</summary><p>Зона работает с 08:00 до 16:00, но официальные источники расходятся об отсечке на вход: английская страница INAH говорит про 15:00, а бюллетени INAH — про вход до 16:00. Приезжайте до 15:00, чтобы не рисковать, а если весь день держится на позднем приезде — позвоните по 985 851 0137.</p></details>
+<details><summary>До какого часа продают билеты?</summary><p>Две официальные страницы INAH расходятся. Страница зоны на inah.gob.mx, обновлённая 6 октября 2026 года, даёт 08:00–17:00 с последним входом в 16:00; портал INAH Lugares — 08:00–16:00 с последним входом в 15:00. Приезжайте до 15:00, чтобы не рисковать, а если весь день держится на позднем приезде — позвоните по 985 851 0137.</p></details>
 </div>
 <h2>Читать дальше</h2>
 <ul class="related">
@@ -434,29 +463,29 @@ ul.related a:hover{text-decoration:underline}
 <section class="final"><div class="wrap">
 <h2>Пройдите по городу — каждая история у вас в наушниках</h2>
 <p>Пирамида, площадка для игры в мяч, колодец и обсерватория — объяснения там, где вы стоите, и в вашем темпе.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — от 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=final" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=final">Купить аудиогид — от 9,99 &euro;</a>
 </div></section>
 
 <footer><div class="wrap">
 <div class="fcols">
 <div>
 <div class="fbrand">Chichén Itzá<span>Walk</span></div>
-<div class="qr"><div class="box">QR<br>app</div><div>Download the<br>TouringBee app</div></div>
+<div class="qr"><div class="box">QR<br>app</div><div>Скачайте приложение<br>TouringBee</div></div>
 </div>
-<div><h3>Explore</h3><a href="/ru/#inside">Audio Guide</a><a href="/ru/guides/">All Guides</a><a href="/ru/#preview">How it works</a><a href="https://touringbee.com/shop-tbee/" target="_blank" rel="noopener">All Tours</a></div>
-<div><h3>Legal</h3><a href="/privacy-policy.html">Privacy Policy</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Terms of Use</a><a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Become an Affiliate</a><a href="/privacy-policy.html#cookies">Cookies</a></div>
-<div><h3>Contact</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
-<div><h3>Languages</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/ru/">Русский</a></div>
+<div><h3>Разделы</h3><a href="/ru/#inside">Аудиогид</a><a href="/ru/guides/">Все гиды</a><a href="/ru/#preview">Как это работает</a><a href="https://touringbee.com/ru/shop-tbee-ru/" target="_blank" rel="noopener">Все экскурсии</a></div>
+<div><h3>Правовая информация</h3><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Условия использования</a><a href="/affiliate-disclosure.html">О партнёрских ссылках</a>
+<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Стать партнёром</a><a href="/privacy-policy.html#cookies">Куки</a></div>
+<div><h3>Контакты</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
+<div><h3>Языки</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/pt/">Português</a><a href="/pl/">Polski</a><a href="/ru/">Русский</a></div>
 </div>
-<div class="fbottom">© 2026 Chichén Itzá Walk · A TouringBee project
-<div class="disclaimer">This website is independent and not affiliated with INAH, the government of Yucatán or the administration of the Chichén Itzá archaeological zone.</div>
+<div class="fbottom">© 2026 Chichén Itzá Walk · проект TouringBee
+<div class="disclaimer">Сайт независимый и не связан с INAH, правительством Юкатана или администрацией археологической зоны Чичен-Ицы.</div>
 </div>
 </div></footer>
 
 <div class="stickybuy" id="stickybuy">
 <div class="p">Аудиогид по Чичен-Ице <small>· от 9,99 &euro; · офлайн · на русском</small></div>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить за 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=sticky" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=tickets&amp;utm_content=sticky">Купить за 9,99 &euro;</a>
 </div>
 <script>(function(){var b=document.getElementById('stickybuy');if(!b)return;function s(){if(window.scrollY>800){b.classList.add('show')}else{b.classList.remove('show')}}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 

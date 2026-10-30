@@ -199,6 +199,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 /* Bokun widget: take the injected root OUT of document flow (kills CLS) without touching the checkout modal. */
 #bokun-widgets-root{position:fixed!important;top:0!important;left:0!important;width:0!important;height:0!important;overflow:visible!important;z-index:2147483000!important}
 .bokun-widgets-cart-wrapper{position:fixed!important;top:auto!important;left:auto!important;right:16px!important;bottom:16px!important;margin:0!important;z-index:2147483000!important}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 
 /* ---- article page ---- */
 /* sticky header is 56px tall: keep anchor targets clear of it */
@@ -230,11 +232,36 @@ table.cmp{border-collapse:collapse;width:100%;min-width:680px;font-size:14.5px}
 table.cmp th,table.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 table.cmp thead th{background:var(--soft);font-size:13.5px}
 table.cmp tbody td:first-child{background:#fbfaf5;white-space:nowrap}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 ul.related{list-style:none;padding:0;margin:.6em 0 0}
 ul.related li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 ul.related a{font-weight:600;text-decoration:none}
 ul.related a:hover{text-decoration:underline}
 @media(max-width:640px){.arthero h1{font-size:29px}.arthero .sub{font-size:17px}.hbtns .btn{width:100%;text-align:center}}
+/* ---- money page: чипсы, баннер, плеер, шаги, отзывы ---- */
+ul.chips{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0 0 16px}
+ul.chips li{font-size:13px;line-height:1;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);white-space:nowrap}
+.tb-banner{display:flex;gap:16px;align-items:center;border:2px solid #0ea2e6;background:#f2f9fd;border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-banner-img{width:132px;height:96px;object-fit:cover;border-radius:8px;flex:0 0 auto}
+.tb-banner-body{min-width:0}
+.tb-banner-body p{margin:0 0 8px}
+.tb-banner-head{font-weight:700;font-size:17px;color:#0b5f85}
+.tb-audio{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-audio-head{font-weight:700;margin:0 0 6px}
+.tb-audio p{margin:0 0 10px}
+.tb-audio audio{width:100%}
+.tb-steps{margin:1.6em 0}
+.tb-steps ol{padding-left:1.2em;margin:0 0 16px}
+.tb-steps li{margin:0 0 8px}
+.tb-shots{display:flex;gap:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+img.tb-shot{width:210px;height:auto;border:1px solid var(--line);border-radius:10px;flex:0 0 auto}
+.tb-reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:1.6em 0}
+.tb-review{margin:0;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.tb-review blockquote{margin:0 0 8px;padding:0;background:none;border:0;font-style:normal;color:var(--ink)}
+.tb-review blockquote p{margin:0}
+.tb-review figcaption{font-size:13px;color:var(--muted)}
+@media(max-width:640px){.tb-banner{flex-direction:column;align-items:flex-start}.tb-banner-img{width:100%;height:150px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://chichenitzawalk.com/ru/chichen-itza-day-trip-from-cancun/#article","headline":"Из Канкуна в Чичен-Ицу за один день: автобус, машина, экскурсия или поезд","description":"Автобус, машина, экскурсия или поезд Tren Maya из Канкуна в Чичен-Ицу: реальные цены 2026, честное время в пути и час разницы, на котором попадаются все.","inLanguage":"ru","datePublished":"2026-09-13","dateModified":"2026-09-13","mainEntityOfPage":{"@id":"https://chichenitzawalk.com/ru/chichen-itza-day-trip-from-cancun/"},"image":"https://chichenitzawalk.com/img/hero-1536.webp","author":{"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene"},"publisher":{"@type":"Organization","@id":"https://chichenitzawalk.com/#org","name":"TouringBee","url":"https://touringbee.com/"},"about":{"@type":"TouristAttraction","name":"Чичен-Ица"}},{"@type":"FAQPage","@id":"https://chichenitzawalk.com/ru/chichen-itza-day-trip-from-cancun/#faq","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько километров от Канкуна до Чичен-Ицы?","acceptedAnswer":{"@type":"Answer","text":"Около 200 км по платной трассе 180D. Навигатор обещает 2 ч 11 мин; на практике закладывайте два с половиной — три часа в одну сторону."}},{"@type":"Question","name":"Стоит ли ехать в Чичен-Ицу из Канкуна на день?","acceptedAnswer":{"@type":"Answer","text":"Да, это вполне реальная однодневная поездка: дорога занимает около 2,5–3 часов в каждую сторону. Самый комфортный вариант — приехать к открытию: к 11:00 становится заметно жарче и люднее."}},{"@type":"Question","name":"Как дешевле всего добраться из Канкуна до Чичен-Ицы?","acceptedAnswer":{"@type":"Answer","text":"Автобусом ADO: примерно 1100 песо туда-обратно с человека плюс 697 песо за вход. За рулём выходит дешевле на человека, когда вас трое-четверо."}},{"@type":"Question","name":"Во сколько выезжать из Канкуна?","acceptedAnswer":{"@type":"Answer","text":"В 05:30, если едете за рулём и хотите быть у ворот к открытию. Обычные экскурсии забирают между 06:30 и 08:00 и привозят около 11:00."}},{"@type":"Question","name":"Есть ли разница во времени между Канкуном и Чичен-Ицей?","acceptedAnswer":{"@type":"Answer","text":"Да. Юкатан круглый год на час позади Кинтана-Роо. Зона закрывается в 17:00 по местному, последние билеты — в 16:00 по местному, то есть на час раньше, чем показывают часы в отеле."}},{"@type":"Question","name":"Можно ли доехать до Чичен-Ицы из Канкуна на поезде Tren Maya?","acceptedAnswer":{"@type":"Answer","text":"Можно, но в 2026 году на день это работает плохо: станция в 3 км от входа, поезд на запад приходит около 10:46, на восток — около 17:47, а тарифы с канкунской стороны заметно выше автобусных."}},{"@type":"Question","name":"Сколько стоит вход в Чичен-Ицу в 2026 году?","acceptedAnswer":{"@type":"Answer","text":"697 песо для взрослого иностранца, одним билетом в одной кассе: весной 2026-го Boleto Único заменил старую систему с двумя очередями. Бесплатный вход для детей до 13 лет INAH прописывает для мексиканцев и тех, кто живёт в Мексике, так что ребёнок-иностранец платит — сумму спросите в кассе."}},{"@type":"Question","name":"Безопасно ли ехать в Чичен-Ицу на арендованной машине?","acceptedAnswer":{"@type":"Answer","text":"Да. Юкатан — самый мирный штат Мексики и один из двух с первым, самым низким уровнем в рекомендациях Госдепа США; Чичен-Ица названа там прямо. Реальные риски на этом маршруте бытовые: не ездить в темноте, не останавливаться на зазывал со знаками «STOP» за несколько километров до входа, иметь наличные песо на платную дорогу и следить за счётчиком на заправке."}},{"@type":"Question","name":"Можно ли добавить в этот день сенот?","acceptedAnswer":{"@type":"Answer","text":"Легко, если вы за рулём: Ик-Киль в 3 км, Йокдзонот в 7 км и тише. С автобусом ADO это впритык к рейсу в 16:00. На экскурсии сенот обычно уже включён."}}]},{"@type":"BreadcrumbList","@id":"https://chichenitzawalk.com/ru/chichen-itza-day-trip-from-cancun/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://chichenitzawalk.com/ru/"},{"@type":"ListItem","position":2,"name":"Гиды","item":"https://chichenitzawalk.com/ru/guides/"},{"@type":"ListItem","position":3,"name":"Из Канкуна в Чичен-Ицу за один день"}]}]}
@@ -249,9 +276,11 @@ ul.related a:hover{text-decoration:underline}
 <div class="dropdown">
 <a href="/ru/chichen-itza-tour/">Экскурсия в Чичен-Ицу: какая?</a>
 <a href="/ru/chichen-itza-day-trip-from-cancun/">Из Канкуна на день</a>
-<a href="/ru/chichen-itza-self-guided-tour/">Самостоятельно</a>
+<a href="/ru/chichen-itza-self-guided-tour/">Самостоятельная прогулка</a>
 <a href="/ru/chichen-itza-tickets/">Билеты</a>
 <a href="/ru/chichen-itza-best-time-to-visit/">Когда ехать</a>
+<a href="/ru/chichen-itza-map/">Карта зоны</a>
+<a href="/ru/chichen-itza-equinox/">Равноденствие</a>
 <a class="all" href="/ru/guides/">Все гиды &rarr;</a>
 </div></details>
 <nav class="lang"><a href="/chichen-itza-day-trip-from-cancun/">EN</a><a href="/es/chichen-itza-day-trip-from-cancun/">ES</a><a href="/fr/chichen-itza-day-trip-from-cancun/">FR</a><a href="/de/chichen-itza-day-trip-from-cancun/">DE</a><a href="/it/chichen-itza-day-trip-from-cancun/">IT</a><a href="/pt/chichen-itza-day-trip-from-cancun/">PT</a><a href="/pl/chichen-itza-day-trip-from-cancun/">PL</a><a class="on" href="/ru/chichen-itza-day-trip-from-cancun/">RU</a></nav>
@@ -264,7 +293,7 @@ ul.related a:hover{text-decoration:underline}
 <p class="sub">Автобус, машина, экскурсия или поезд — реальные цены 2026 года, честное время в пути и час разницы, на котором попадаются все.</p>
 <div class="byline"><img src="/img/author-eugene.webp" width="34" height="34" loading="lazy" alt="Евгений, автор"><span>Автор: <strong>Евгений</strong> &middot; обновлено 25 сентября 2026 &middot; 14 мин чтения</span></div>
 <div class="hbtns">
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — 9,99 &euro;</a>
 <a class="btn outline" href="https://www.getyourguide.com/ru-ru/chichen-itza-l785/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Сравнить экскурсии на GetYourGuide</a>
 <a class="btn outline" href="https://www.tiqets.com/ru/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Купить входные билеты</a>
 </div>
@@ -274,7 +303,7 @@ ul.related a:hover{text-decoration:underline}
 <p class="lead">Чичен-Ица из Канкуна за один день — это работает. Около трёх часов в одну сторону, чудо света посередине, ужин там же, где вы завтракали.</p>
 <p>Вопрос не в том, реально ли это. Вопрос — во сколько вы окажетесь у входа. Одно это решение меняет температуру, толпу, фотографии и то, получите вы день или отсидите его.</p>
 <p>Если едете самостоятельно, скачайте аудиогид по Чичен-Ице заранее. Он ведёт по археологической зоне в вашем темпе: 16 остановок примерно на 1,5 часа, GPS-карта и аудио работают полностью офлайн. Это особенно удобно, если вы приехали к открытию и не хотите ждать группового гида.</p>
-<p><a class="bokunButton inlinebuy" target="_blank" rel="noopener" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Аудиогид по Чичен-Ице — 9,99 &euro; &rarr;</a></p>
+<p><a class="bokunButton inlinebuy" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Аудиогид по Чичен-Ице — 9,99 &euro; &rarr;</a></p>
 <p>И есть деталь, которую буклеты пропускают. <strong>Юкатан отстаёт от Кинтана-Роо на час.</strong> Где-то за Нуэво-Шканом телефон тихо переведёт часы назад. Эту разницу легко пропустить — особенно когда планируете обратный транспорт.</p>
 <div class="facts">
 <h2>Коротко</h2>
@@ -282,7 +311,7 @@ ul.related a:hover{text-decoration:underline}
 <div><b>Расстояние</b>~200 км по платной трассе 180D</div>
 <div><b>Дорога</b>реально 2,5–3 часа в одну сторону</div>
 <div><b>Вход (2026)</b>697 песо для взрослого иностранца — один билет, одна касса</div>
-<div><b>Часы работы</b>08:00–17:00 по местному &middot; последние билеты 16:00</div>
+<div><b>Часы работы</b>08:00–17:00 по местному &middot; последний вход 16:00 на странице зоны INAH, 15:00 на INAH Lugares — ориентируйтесь на 15:00</div>
 <div><b>Автобусы приезжают</b>10:30–12:00 &middot; пик толпы 11:00–14:00</div>
 <div><b>Самый дешёвый день</b>автобус ADO, ~1100 песо туда-обратно + вход</div>
 <div><b>Самое раннее утро</b>своя машина, у ворот к 08:00</div>
@@ -365,7 +394,7 @@ ul.related a:hover{text-decoration:underline}
 <div class="midcta">
 <p class="price">Едете самостоятельно?</p>
 <p>Живого гида в цену дороги никто не включит. Аудиогид TouringBee ведёт по 16 остановкам примерно за 1,5 часа и работает полностью офлайн. Приехали к открытию — начинать можно сразу, не дожидаясь группы.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Открыть аудиогид &rarr;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Открыть аудиогид &rarr;</a>
 </div>
 <h2>Три расписания, которые работают</h2>
 <p><strong>За рулём.</strong> Выезд из Канкуна в <strong>05:30</strong>. У ворот в <strong>07:45</strong> по местному, до открытия. Заходите одним из первых: в первые минуты после открытия людей обычно заметно меньше, чем к приезду дневных автобусов. К <strong>11:30</strong> уезжаете — как раз когда они выгружаются. Сенот до <strong>13:00</strong>, обед в Писте или Вальядолиде, дома к <strong>16:00</strong> по Канкуну. Десять часов от двери до двери, и вы увидели археологическую зону до основного потока.</p>
@@ -416,13 +445,13 @@ ul.related a:hover{text-decoration:underline}
 <h3>Аудиогид по Чичен-Ице<span class="badge">Доступ сразу</span></h3>
 <div class="pc-price">От 9,99 &euro; <small>&middot; доступ на год</small></div>
 <ul class="features">
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% офлайн — связь на площадке слабая, и это неважно</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% офлайн — связь на площадке не нужна нигде</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Офлайн-карта с GPS — каждую запись вы включаете сами на месте</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> 8 языков, живой голос диктора</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg> Работает на iOS и Android</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 16 остановок, около 1,5 часа — останавливайтесь в тени, когда захотите</li>
 </ul>
-<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — 9,99 &euro;</a>
+<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — 9,99 &euro;</a>
 </div>
 </div>
 </div></section>
@@ -451,29 +480,29 @@ ul.related a:hover{text-decoration:underline}
 <section class="final"><div class="wrap">
 <h2>Пройдите по городу — каждая история у вас в наушниках</h2>
 <p>Пирамида, площадка для игры в мяч, колодец и обсерватория — объяснения там, где вы стоите, и в вашем темпе.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — от 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид — от 9,99 &euro;</a>
 </div></section>
 
 <footer><div class="wrap">
 <div class="fcols">
 <div>
 <div class="fbrand">Chichén Itzá<span>Walk</span></div>
-<div class="qr"><div class="box">QR<br>app</div><div>Download the<br>TouringBee app</div></div>
+<div class="qr"><div class="box">QR<br>app</div><div>Скачайте приложение<br>TouringBee</div></div>
 </div>
-<div><h3>Explore</h3><a href="/ru/#inside">Audio Guide</a><a href="/ru/guides/">All Guides</a><a href="/ru/#preview">How it works</a><a href="https://touringbee.com/shop-tbee/" target="_blank" rel="noopener">All Tours</a></div>
-<div><h3>Legal</h3><a href="/privacy-policy.html">Privacy Policy</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Terms of Use</a><a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Become an Affiliate</a><a href="/privacy-policy.html#cookies">Cookies</a></div>
-<div><h3>Contact</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
-<div><h3>Languages</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/ru/">Русский</a></div>
+<div><h3>Разделы</h3><a href="/ru/#inside">Аудиогид</a><a href="/ru/guides/">Все гиды</a><a href="/ru/#preview">Как это работает</a><a href="https://touringbee.com/ru/shop-tbee-ru/" target="_blank" rel="noopener">Все экскурсии</a></div>
+<div><h3>Правовая информация</h3><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Условия использования</a><a href="/affiliate-disclosure.html">О партнёрских ссылках</a>
+<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Стать партнёром</a><a href="/privacy-policy.html#cookies">Куки</a></div>
+<div><h3>Контакты</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
+<div><h3>Языки</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/pt/">Português</a><a href="/pl/">Polski</a><a href="/ru/">Русский</a></div>
 </div>
-<div class="fbottom">© 2026 Chichén Itzá Walk · A TouringBee project
-<div class="disclaimer">This website is independent and not affiliated with INAH, the government of Yucatán or the administration of the Chichén Itzá archaeological zone.</div>
+<div class="fbottom">© 2026 Chichén Itzá Walk · проект TouringBee
+<div class="disclaimer">Сайт независимый и не связан с INAH, правительством Юкатана или администрацией археологической зоны Чичен-Ицы.</div>
 </div>
 </div></footer>
 
 <div class="stickybuy" id="stickybuy">
 <div class="p">Аудиогид по Чичен-Ице <small>· от 9,99 &euro; · офлайн · на русском</small></div>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить за 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=day-trip-from-cancun&amp;utm_content=sticky" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=day-trip-from-cancun&amp;utm_content=sticky">Купить за 9,99 &euro;</a>
 </div>
 <script>(function(){var b=document.getElementById('stickybuy');if(!b)return;function s(){if(window.scrollY>800){b.classList.add('show')}else{b.classList.remove('show')}}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 

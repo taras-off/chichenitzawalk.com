@@ -199,6 +199,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 /* Bokun widget: take the injected root OUT of document flow (kills CLS) without touching the checkout modal. */
 #bokun-widgets-root{position:fixed!important;top:0!important;left:0!important;width:0!important;height:0!important;overflow:visible!important;z-index:2147483000!important}
 .bokun-widgets-cart-wrapper{position:fixed!important;top:auto!important;left:auto!important;right:16px!important;bottom:16px!important;margin:0!important;z-index:2147483000!important}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 
 /* ---- article page ---- */
 /* sticky header is 56px tall: keep anchor targets clear of it */
@@ -230,11 +232,36 @@ table.cmp{border-collapse:collapse;width:100%;min-width:680px;font-size:14.5px}
 table.cmp th,table.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 table.cmp thead th{background:var(--soft);font-size:13.5px}
 table.cmp tbody td:first-child{background:#fbfaf5;white-space:nowrap}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 ul.related{list-style:none;padding:0;margin:.6em 0 0}
 ul.related li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 ul.related a{font-weight:600;text-decoration:none}
 ul.related a:hover{text-decoration:underline}
 @media(max-width:640px){.arthero h1{font-size:29px}.arthero .sub{font-size:17px}.hbtns .btn{width:100%;text-align:center}}
+/* ---- money page: чипсы, баннер, плеер, шаги, отзывы ---- */
+ul.chips{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0 0 16px}
+ul.chips li{font-size:13px;line-height:1;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);white-space:nowrap}
+.tb-banner{display:flex;gap:16px;align-items:center;border:2px solid #0ea2e6;background:#f2f9fd;border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-banner-img{width:132px;height:96px;object-fit:cover;border-radius:8px;flex:0 0 auto}
+.tb-banner-body{min-width:0}
+.tb-banner-body p{margin:0 0 8px}
+.tb-banner-head{font-weight:700;font-size:17px;color:#0b5f85}
+.tb-audio{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-audio-head{font-weight:700;margin:0 0 6px}
+.tb-audio p{margin:0 0 10px}
+.tb-audio audio{width:100%}
+.tb-steps{margin:1.6em 0}
+.tb-steps ol{padding-left:1.2em;margin:0 0 16px}
+.tb-steps li{margin:0 0 8px}
+.tb-shots{display:flex;gap:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+img.tb-shot{width:210px;height:auto;border:1px solid var(--line);border-radius:10px;flex:0 0 auto}
+.tb-reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:1.6em 0}
+.tb-review{margin:0;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.tb-review blockquote{margin:0 0 8px;padding:0;background:none;border:0;font-style:normal;color:var(--ink)}
+.tb-review blockquote p{margin:0}
+.tb-review figcaption{font-size:13px;color:var(--muted)}
+@media(max-width:640px){.tb-banner{flex-direction:column;align-items:flex-start}.tb-banner-img{width:100%;height:150px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://chichenitzawalk.com/pt/chichen-itza-best-time-to-visit/#article","headline":"Melhor época para visitar Chichén Itzá: clima, multidões e o equinócio","description":"Números reais de visitantes por mês, o clima mês a mês e a janela de onze dias em que a serpente de Kukulkán aparece sem a multidão do equinócio.","inLanguage":"pt","datePublished":"2026-10-15","dateModified":"2026-10-15","mainEntityOfPage":{"@id":"https://chichenitzawalk.com/pt/chichen-itza-best-time-to-visit/"},"image":"https://chichenitzawalk.com/img/hero-1536.webp","author":{"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene"},"publisher":{"@type":"Organization","@id":"https://chichenitzawalk.com/#org","name":"TouringBee","url":"https://touringbee.com/"},"about":{"@type":"TouristAttraction","name":"Chichén Itzá"}},{"@type":"FAQPage","@id":"https://chichenitzawalk.com/pt/chichen-itza-best-time-to-visit/#faq","inLanguage":"pt","mainEntity":[{"@type":"Question","name":"Qual é o melhor mês para visitar Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Novembro. A época das chuvas terminou, a máxima média desce para os 31 °C e o mês nunca é o mais concorrido. De dezembro a fevereiro o clima é igualmente bom, mas são os preços mais altos e as multidões de inverno; setembro e outubro são muito mais vazios, mas trazem a pior chuva do ano."}},{"@type":"Question","name":"Qual é a melhor hora do dia para visitar Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"As 8:00, quando o portão abre, em qualquer mês. Os dados de entradas do INAH põem a pressão entre as 10:00 e as 14:00 e os autocarros começam a chegar por volta das 10:00–11:00, por isso as duas primeiras horas são as mais calmas do dia — e as mais frescas, já que as horas mais quentes vão do meio-dia ao início da tarde."}},{"@type":"Question","name":"Qual é a época mais calma para visitar Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Setembro e outubro, com grande margem: cerca de 128 000 visitantes contra 220 000 num mês de pico, dois anos seguidos. A ocupação hoteleira perto do sítio cai para 17% em setembro. A contrapartida é o tempo — setembro é o mês mais chuvoso e a época de furacões tem o seu pico a 10 de setembro."}},{"@type":"Question","name":"É preciso ir no equinócio para ver a serpente?","acceptedAnswer":{"@type":"Answer","text":"Não. Segundo o estudo que o INAH apresentou em abril de 2026, os sete triângulos que formam o corpo completo da serpente aparecem de 15 a 25 de março, com o equinócio a meio dessa janela. A 20 de março de 2025 passaram cerca de 9221 pessoas num único dia, com o pico de afluência às 15:30 — exatamente quando a figura se forma. O fenómeno precisa de céu limpo entre cerca das 15:00 e as 17:00, por isso uma janela mais larga significa também mais oportunidades: em 2023 a nebulosidade impediu-o de aparecer."}},{"@type":"Question","name":"Quando é o equinócio da primavera em Chichén Itzá em 2027?","acceptedAnswer":{"@type":"Answer","text":"Sábado, 20 de março de 2027, às 14:25, hora local. A operação do INAH cobre normalmente a sexta a domingo em volta da data, por isso conte com muita gente de 19 a 21 de março. As férias escolares no México vão depois, de 22 de março a 2 de abril, e 15 de março é feriado nacional."}},{"@type":"Question","name":"É preciso reservar para o equinócio?","acceptedAnswer":{"@type":"Answer","text":"Não. Nenhum boletim do INAH estabeleceu alguma vez um limite de visitantes nem uma obrigação de reserva para os dias do equinócio. Conte, em vez disso, com horários alterados: em 2026 o portão abriu às 9:00 na sexta-feira, a venda de bilhetes parou às 16:00, vários monumentos fecharam às 15:30 e Chichén Viejo esteve fechado."}},{"@type":"Question","name":"Que calor faz em Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Maio é o mês mais quente, com média de 36,2 °C. Abril de 2026 foi o quarto abril mais quente de que há registo em Mérida, com 42,5 °C, e 43 °C em municípios do interior; o recorde de Yucatán é de 49 °C. De junho a agosto parece mais ameno, 34,5 °C, mas com 75% de humidade. Não há praticamente sombra no sítio."}},{"@type":"Question","name":"Chove todo o dia na época das chuvas?","acceptedAnswer":{"@type":"Answer","text":"Normalmente não. A chuva na península em época é tipicamente convectiva e concentrada à tarde — as previsões regionais da CONAGUA descrevem rotineiramente o potencial de trovoadas a aumentar de tarde. Começar cedo significa muitas vezes uma visita seca, mesmo em setembro. Ninguém publica a fração da chuva que cai depois do meio-dia, por isso trate isto como a tendência e não como garantia."}},{"@type":"Question","name":"O domingo é o dia mais concorrido em Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Não há dados publicados por dia da semana para Chichén Itzá, por isso ninguém pode responder a isso — o conjunto de dados aberto do INAH é apenas mensal. Ao domingo a entrada é gratuita para cidadãos mexicanos e residentes, que é a razão por que a ideia circula, mas não encontrámos números que a estabeleçam num sentido ou no outro."}}]},{"@type":"BreadcrumbList","@id":"https://chichenitzawalk.com/pt/chichen-itza-best-time-to-visit/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://chichenitzawalk.com/pt/"},{"@type":"ListItem","position":2,"name":"Guias","item":"https://chichenitzawalk.com/pt/guides/"},{"@type":"ListItem","position":3,"name":"Quando ir"}]}]}
@@ -252,6 +279,8 @@ ul.related a:hover{text-decoration:underline}
 <a href="/pt/chichen-itza-self-guided-tour/">Por conta própria</a>
 <a href="/pt/chichen-itza-tickets/">Bilhetes</a>
 <a href="/pt/chichen-itza-best-time-to-visit/">Quando ir</a>
+<a href="/pt/chichen-itza-map/">Mapa</a>
+<a href="/pt/chichen-itza-equinox/">Equinócio</a>
 <a class="all" href="/pt/guides/">Todos os guias &rarr;</a>
 </div></details>
 <nav class="lang"><a href="/chichen-itza-best-time-to-visit/">EN</a><a href="/es/chichen-itza-best-time-to-visit/">ES</a><a href="/fr/chichen-itza-best-time-to-visit/">FR</a><a href="/de/chichen-itza-best-time-to-visit/">DE</a><a href="/it/chichen-itza-best-time-to-visit/">IT</a><a class="on" href="/pt/chichen-itza-best-time-to-visit/">PT</a><a href="/pl/chichen-itza-best-time-to-visit/">PL</a><a href="/ru/chichen-itza-best-time-to-visit/">RU</a></nav>
@@ -264,7 +293,7 @@ ul.related a:hover{text-decoration:underline}
 <p class="sub">Números reais de visitantes mês a mês, o clima mês a mês e a janela de onze dias em que a serpente de luz aparece sem a multidão do equinócio.</p>
 <div class="byline"><img src="/img/author-eugene.webp" width="34" height="34" loading="lazy" alt="Eugene, autor"><span>Por <strong>Eugene</strong> &middot; atualizado a 15 de outubro de 2026 &middot; 12 min de leitura</span></div>
 <div class="hbtns">
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Comprar o audioguia — 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=hero" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=hero">Comprar o audioguia — 9,99 &euro;</a>
 <a class="btn outline" href="https://www.getyourguide.com/pt-pt/chichen-itza-l785/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Comparar visitas guiadas no GetYourGuide</a>
 <a class="btn outline" href="https://www.tiqets.com/pt/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Comprar bilhetes de entrada</a>
 </div>
@@ -273,7 +302,7 @@ ul.related a:hover{text-decoration:underline}
 <section><div class="wrap prose">
 <p class="lead">Quase todas as páginas respondem a isto com uma estação do ano. A resposta útil é mais estreita: <strong>novembro</strong> e, em qualquer mês que lhe calhe, <strong>a primeira hora depois de o portão abrir</strong>.</p>
 <p>Duas coisas fazem disto mais do que uma opinião. A secretaria de turismo de Yucatán publica todos os meses a contagem de visitantes de Chichén Itzá, o que torna as multidões mensuráveis em vez de adivinhadas. E o INAH publicou um calendário completo do jogo de luz de Kukulkán, que se revela durar onze dias em março, e não um.</p>
-<p>Vai percorrer o sítio por conta própria? O <a class="bokunButton inlinebuy" target="_blank" rel="noopener" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">passeio áudio da TouringBee</a> cobre a zona arqueológica em 16 pontos e cerca de 90 minutos, offline, ao seu ritmo — e é isso que torna viável um começo cedo sem andar em grupo. 9,99 &euro;; o bilhete de entrada de 697 pesos paga-se à parte.</p>
+<p>Vai percorrer o sítio por conta própria? O <a class="bokunButton inlinebuy" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=text" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=text">passeio áudio da TouringBee</a> cobre a zona arqueológica em 16 pontos e cerca de 90 minutos, offline, ao seu ritmo — e é isso que torna viável um começo cedo sem andar em grupo. 9,99 &euro;; o bilhete de entrada de 697 pesos paga-se à parte.</p>
 <div class="facts">
 <h2>Resumo rápido</h2>
 <div class="fgrid">
@@ -380,7 +409,7 @@ ul.related a:hover{text-decoration:underline}
 <div class="midcta">
 <p class="price">Qualquer que seja a data que escolher, é a hora que decide o dia.</p>
 <p>O portão abre às 8:00 e os autocarros chegam a partir das 10:00. O passeio áudio da TouringBee é o que torna viável o começo cedo por conta própria: 16 pontos, cerca de 90 minutos, pela ordem de caminhada, totalmente offline — uma compra separada de 9,99 &euro; que não inclui o seu bilhete.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Abrir o audioguia &rarr;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=midcta" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=midcta">Abrir o audioguia &rarr;</a>
 </div>
 <h2>A melhor hora, em qualquer mês</h2>
 <p>O portão abre às <strong>8:00</strong>. Os dados de entradas do próprio INAH põem a pressão entre as <strong>10:00 e as 14:00</strong>, os autocarros começam a chegar por volta das 10:00–11:00 e os grupos voltam aos seus autocarros a partir das 14:00. Isso dá-lhe duas horas limpas no início do dia, todos os dias do ano.</p>
@@ -426,13 +455,13 @@ ul.related a:hover{text-decoration:underline}
 <h3>Passeio áudio autoguiado de Chichén Itzá<span class="badge">Acesso imediato</span></h3>
 <div class="pc-price">A partir de 9,99 &euro; <small>&middot; 1 ano de acesso</small></div>
 <ul class="features">
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% offline — o sinal lá dentro é fraco, e isso não faz diferença</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% offline — não é preciso sinal em nenhum ponto da zona</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Mapa GPS offline — cada gravação começa quando quiser, no local</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> 8 idiomas, narração com voz real</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg> Funciona em iOS &amp; Android</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 16 pontos, cerca de 1,5 h — faça pausa à sombra sempre que quiser</li>
 </ul>
-<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Comprar o audioguia — 9,99 &euro;</a>
+<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=card" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=card">Comprar o audioguia — 9,99 &euro;</a>
 </div>
 </div>
 </div></section>
@@ -463,29 +492,29 @@ ul.related a:hover{text-decoration:underline}
 <section class="final"><div class="wrap">
 <h2>Percorra a cidade com todas as histórias nos ouvidos</h2>
 <p>A pirâmide, o campo de jogo da pelota, o poço e o observatório — explicados no sítio exato onde está, ao seu ritmo.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Obter o passeio áudio — a partir de 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=final" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=final">Obter o passeio áudio — a partir de 9,99 &euro;</a>
 </div></section>
 
 <footer><div class="wrap">
 <div class="fcols">
 <div>
 <div class="fbrand">Chichén Itzá<span>Walk</span></div>
-<div class="qr"><div class="box">QR<br>app</div><div>Download the<br>TouringBee app</div></div>
+<div class="qr"><div class="box">QR<br>app</div><div>Instale a app<br>TouringBee</div></div>
 </div>
-<div><h3>Explore</h3><a href="/pt/#inside">Audio Guide</a><a href="/pt/guides/">All Guides</a><a href="/pt/#preview">How it works</a><a href="https://touringbee.com/shop-tbee/" target="_blank" rel="noopener">All Tours</a></div>
-<div><h3>Legal</h3><a href="/privacy-policy.html">Privacy Policy</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Terms of Use</a><a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Become an Affiliate</a><a href="/privacy-policy.html#cookies">Cookies</a></div>
-<div><h3>Contact</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
-<div><h3>Languages</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/ru/">Русский</a></div>
+<div><h3>Explorar</h3><a href="/pt/#inside">Audioguia</a><a href="/pt/guides/">Todos os guias</a><a href="/pt/#preview">Como funciona</a><a href="https://touringbee.com/shop-tbee/" target="_blank" rel="noopener">Todos os passeios</a></div>
+<div><h3>Informação legal</h3><a href="/privacy-policy.html">Política de Privacidade</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Termos de Uso</a><a href="/affiliate-disclosure.html">Divulgação de afiliados</a>
+<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Torne-se afiliado</a><a href="/privacy-policy.html#cookies">Cookies</a></div>
+<div><h3>Contacto</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
+<div><h3>Idiomas</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/pt/">Português</a><a href="/pl/">Polski</a><a href="/ru/">Русский</a></div>
 </div>
-<div class="fbottom">© 2026 Chichén Itzá Walk · A TouringBee project
-<div class="disclaimer">This website is independent and not affiliated with INAH, the government of Yucatán or the administration of the Chichén Itzá archaeological zone.</div>
+<div class="fbottom">© 2026 Chichén Itzá Walk · Um projeto TouringBee
+<div class="disclaimer">Este site é independente e não tem qualquer ligação com o INAH, com o governo de Yucatán ou com a administração da zona arqueológica de Chichén Itzá.</div>
 </div>
 </div></footer>
 
 <div class="stickybuy" id="stickybuy">
 <div class="p">Audioguia de Chichén Itzá <small>· a partir de 9,99 &euro; · offline · em português</small></div>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Comprar 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=sticky" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=best-time-to-visit&amp;utm_content=sticky">Comprar 9,99 &euro;</a>
 </div>
 <script>(function(){var b=document.getElementById('stickybuy');if(!b)return;function s(){if(window.scrollY>800){b.classList.add('show')}else{b.classList.remove('show')}}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 

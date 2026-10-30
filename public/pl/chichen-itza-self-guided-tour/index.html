@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chichén Itzá samodzielnie: trasa i czasy | TouringBee</title>
-<meta name="description" content="Wejście przeniesiono w 2026 roku, a większość opisów trasy wciąż opisuje stare. Kolejność zwiedzania, odległości, godziny i uczciwe czasy.">
+<title>Chichén Itzá samodzielnie: 16 historii | TouringBee</title>
+<meta name="description" content="Chichén Itzá na własnych nogach, ze zrozumieniem: 16 historii audio, mapa offline, 8 języków. 9,99 € jednorazowo, dostęp na rok. Bilet do strefy osobno.">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Chichén Itzá Walk">
-<meta property="og:title" content="Chichén Itzá samodzielnie: trasa, kolejność i uczciwe czasy">
-<meta property="og:description" content="Wejście przeniesiono w 2026 roku. Tak ta trasa wygląda dzisiaj.">
+<meta property="og:title" content="Chichén Itzá samodzielnie: 16 historii">
+<meta property="og:description" content="Bez grupy, bez godzin zbiórki i bez czekania — a i tak wiesz, na co patrzysz.">
 <meta property="og:url" content="https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/">
 <meta property="og:image" content="https://chichenitzawalk.com/img/hero-1536.webp">
 <meta property="og:locale" content="pl">
@@ -20,8 +20,8 @@
 <meta property="og:locale:alternate" content="pt">
 <meta property="og:locale:alternate" content="ru">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Chichén Itzá samodzielnie: trasa, kolejność i uczciwe czasy">
-<meta name="twitter:description" content="Wejście przeniesiono w 2026 roku. Tak ta trasa wygląda dzisiaj.">
+<meta name="twitter:title" content="Chichén Itzá samodzielnie: 16 historii">
+<meta name="twitter:description" content="Bez grupy, bez godzin zbiórki i bez czekania — a i tak wiesz, na co patrzysz.">
 <meta name="twitter:image" content="https://chichenitzawalk.com/img/hero-1536.webp">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/favicon-32.png">
@@ -199,6 +199,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 /* Bokun widget: take the injected root OUT of document flow (kills CLS) without touching the checkout modal. */
 #bokun-widgets-root{position:fixed!important;top:0!important;left:0!important;width:0!important;height:0!important;overflow:visible!important;z-index:2147483000!important}
 .bokun-widgets-cart-wrapper{position:fixed!important;top:auto!important;left:auto!important;right:16px!important;bottom:16px!important;margin:0!important;z-index:2147483000!important}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 
 /* ---- article page ---- */
 /* sticky header is 56px tall: keep anchor targets clear of it */
@@ -230,14 +232,39 @@ table.cmp{border-collapse:collapse;width:100%;min-width:680px;font-size:14.5px}
 table.cmp th,table.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 table.cmp thead th{background:var(--soft);font-size:13.5px}
 table.cmp tbody td:first-child{background:#fbfaf5;white-space:nowrap}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 ul.related{list-style:none;padding:0;margin:.6em 0 0}
 ul.related li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 ul.related a{font-weight:600;text-decoration:none}
 ul.related a:hover{text-decoration:underline}
 @media(max-width:640px){.arthero h1{font-size:29px}.arthero .sub{font-size:17px}.hbtns .btn{width:100%;text-align:center}}
+/* ---- money page: чипсы, баннер, плеер, шаги, отзывы ---- */
+ul.chips{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0 0 16px}
+ul.chips li{font-size:13px;line-height:1;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);white-space:nowrap}
+.tb-banner{display:flex;gap:16px;align-items:center;border:2px solid #0ea2e6;background:#f2f9fd;border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-banner-img{width:132px;height:96px;object-fit:cover;border-radius:8px;flex:0 0 auto}
+.tb-banner-body{min-width:0}
+.tb-banner-body p{margin:0 0 8px}
+.tb-banner-head{font-weight:700;font-size:17px;color:#0b5f85}
+.tb-audio{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-audio-head{font-weight:700;margin:0 0 6px}
+.tb-audio p{margin:0 0 10px}
+.tb-audio audio{width:100%}
+.tb-steps{margin:1.6em 0}
+.tb-steps ol{padding-left:1.2em;margin:0 0 16px}
+.tb-steps li{margin:0 0 8px}
+.tb-shots{display:flex;gap:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+img.tb-shot{width:210px;height:auto;border:1px solid var(--line);border-radius:10px;flex:0 0 auto}
+.tb-reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:1.6em 0}
+.tb-review{margin:0;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.tb-review blockquote{margin:0 0 8px;padding:0;background:none;border:0;font-style:normal;color:var(--ink)}
+.tb-review blockquote p{margin:0}
+.tb-review figcaption{font-size:13px;color:var(--muted)}
+@media(max-width:640px){.tb-banner{flex-direction:column;align-items:flex-start}.tb-banner-img{width:100%;height:150px}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/#article","headline":"Chichén Itzá samodzielnie: trasa, kolejność i uczciwe czasy","description":"Wejście przeniesiono w 2026 roku, a większość opisów trasy wciąż opisuje stare. Kolejność zwiedzania, odległości, godziny i uczciwe czasy.","inLanguage":"pl","datePublished":"2026-10-01","dateModified":"2026-10-01","mainEntityOfPage":{"@id":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/"},"image":"https://chichenitzawalk.com/img/hero-1536.webp","author":{"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene"},"publisher":{"@type":"Organization","@id":"https://chichenitzawalk.com/#org","name":"TouringBee","url":"https://touringbee.com/"},"about":{"@type":"TouristAttraction","name":"Chichén Itzá"}},{"@type":"FAQPage","@id":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/#faq","inLanguage":"pl","mainEntity":[{"@type":"Question","name":"Czy można zwiedzać Chichén Itzá bez przewodnika?","acceptedAnswer":{"@type":"Answer","text":"Tak. Nie ma obowiązkowej wycieczki ani ustalonej trasy — kupujesz bilet w CATVI i idziesz. Większość odwiedzających robi to właśnie tak; audioprzewodnik albo przewodnik wzięty przy wejściu to opcjonalne dodatki."}},{"@type":"Question","name":"Ile trwa samodzielne zwiedzanie Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Źródła podają 2 do 4 godzin w samej strefie archeologicznej, najczęstsza odpowiedź to 3 godziny, plus 30 do 60 minut na dojście z centrum obsługi i powrót. Oprowadzanie z przewodnikiem po tym samym terenie trwa 90 minut do 2 godzin, bo jest wybiórcze."}},{"@type":"Question","name":"Ile się chodzi w Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Od 3 do 5 km w głównej strefie — Yucatán Today podaje minimum 4 km — plus dojście z centrum obsługi w obie strony. Rdzeń zajmuje co najmniej 5 km²."}},{"@type":"Question","name":"Gdzie jest wejście do Chichén Itzá w 2026 roku?","acceptedAnswer":{"@type":"Answer","text":"Przez nowe centrum obsługi CATVI przy drodze 180, około 900 m na północ od El Castillo. Stary Parador Turístico na zachodzie przestał sprzedawać bilety w 2026 roku, a trasa dochodzi teraz do Świętej Cenoty przed piramidą — odwrotnie niż opisuje większość przewodników."}},{"@type":"Question","name":"Jaka jest najlepsza kolejność zwiedzania Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Północne zabytki są tolteckie, a południowe starsze, majańskie w stylu Puuc, więc jedna pętla przeprowadza przez okresy architektoniczne po kolei. Przy przyjeździe na otwarcie zrób najpierw główny plac, przed autokarami. Przy przyjeździe między 10:00 a 12:00 zacznij od południa, a główny plac zostaw na po 14:00. Jak grupy rozkładają się w środku strefy, nie jest udokumentowane, więc traktuj to jako wnioskowanie, a nie regułę."}},{"@type":"Question","name":"Czy można wejść na El Castillo?","acceptedAnswer":{"@type":"Answer","text":"Nie. Wspinaczka jest zabroniona od 2006 roku, po śmiertelnym upadku. Świątynia Wojowników też jest zamknięta dla wspinaczy, a wewnętrzna świątynia w El Castillo jest zamknięta od tego samego roku. Wszystko oglądasz z poziomu ziemi, spoza sznura."}},{"@type":"Question","name":"Czy jest aplikacja z audioprzewodnikiem po Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Tak. Samodzielny spacer TouringBee obejmuje 16 przystanków w około 90 minut, na iOS i Androidzie, w ośmiu językach, z mapą GPS offline, za 9,99 € i rok dostępu. Każde nagranie włączasz samodzielnie, kiedy dojdziesz do zabytku."}},{"@type":"Question","name":"Ile kosztuje przewodnik przy wejściu?","acceptedAnswer":{"@type":"Answer","text":"Stawki podawane w 2026 roku to około 900–1000 MXN po hiszpańsku, 1200 po angielsku i 1400 po francusku, włosku lub niemiecku, za grupę do ośmiu osób, wziętą na miejscu przy kasach i opłaconą gotówką. Oprowadzanie trwa od 45 minut do 2 godzin. Oficjalnego cennika nikt nie opublikował, więc traktuj te liczby jako widełki."}},{"@type":"Question","name":"W jakich godzinach w Chichén Itzá jest najmniej ludzi?","acceptedAnswer":{"@type":"Answer","text":"Przed 10:00 i po 15:00. Własne dane INAH kładą szczyt obciążenia wejścia na przedział 10:00–14:00; autokary zaczynają podjeżdżać koło 10:00–11:00, a grupy wychodzą od 14:00. Unikaj niedzieli, jeśli możesz — wstęp jest bezpłatny dla obywateli i rezydentów Meksyku, co może przyprowadzić pod bramę więcej ludzi. Liczb zwiedzających w podziale na dni tygodnia nikt nie publikuje, więc traktuj to jako powód do elastyczności, a nie zmierzony fakt."}}]},{"@type":"BreadcrumbList","@id":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://chichenitzawalk.com/pl/"},{"@type":"ListItem","position":2,"name":"Przewodniki","item":"https://chichenitzawalk.com/pl/guides/"},{"@type":"ListItem","position":3,"name":"Chichén Itzá samodzielnie"}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/#article","headline":"Chichén Itzá samodzielnie: spacer z audioprzewodnikiem TouringBee","description":"Chichén Itzá na własnych nogach, ze zrozumieniem: 16 historii audio, mapa offline, 8 języków. 9,99 € jednorazowo, dostęp na rok. Bilet do strefy osobno.","inLanguage":"pl","datePublished":"2026-10-01","dateModified":"2026-10-30","mainEntityOfPage":{"@id":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/"},"image":"https://chichenitzawalk.com/img/hero-1536.webp","author":{"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene"},"publisher":{"@type":"Organization","@id":"https://chichenitzawalk.com/#org","name":"TouringBee","url":"https://touringbee.com/"},"about":{"@type":"TouristAttraction","name":"Chichén Itzá"}},{"@type":"FAQPage","@id":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/#faq","inLanguage":"pl","mainEntity":[{"@type":"Question","name":"Czy można zwiedzać Chichén Itzá bez wycieczki?","acceptedAnswer":{"@type":"Answer","text":"Tak. Bilet za 697 peso kupuje się w kasach CATVI i wchodzi się do środka. W strefie nic nie wymaga przewodnika, a żaden fragment trasy nie jest zarezerwowany dla grup. Bez przewodnika traci się tylko objaśnienie — i właśnie po to jest audioprzewodnik."}},{"@type":"Question","name":"Ile jest historii audio i ile czasu zajmuje przejście całego spaceru?","acceptedAnswer":{"@type":"Answer","text":"Szesnaście historii audio i około półtorej godziny, jeśli iść trasą bez zatrzymywania się. Większości osób zajmuje to dłużej, bo stanąć można w dowolnym momencie, a aplikacja spokojnie czeka."}},{"@type":"Question","name":"Czy potrzebne jest połączenie z internetem?","acceptedAnswer":{"@type":"Answer","text":"Nie. Wycieczkę pobiera się przed wyjazdem i wszystko — dźwięk, mapa i trasa — działa offline. Tak jest celowo: strefa jest duża, a w takim upale nikt nie powinien szukać zasięgu."}},{"@type":"Question","name":"Czy bilet wstępu jest w cenie audioprzewodnika?","acceptedAnswer":{"@type":"Answer","text":"Nie. Audioprzewodnik kosztuje 9,99 €, a wstęp to 697 peso dla dorosłego obcokrajowca, płatne osobno w kasach CATVI. Mówimy to wprost, bo część ofert tego nie precyzuje."}},{"@type":"Question","name":"Czy można zacząć w innym miejscu niż początek trasy?","acceptedAnswer":{"@type":"Answer","text":"Tak, w dowolnym. Każda historia ma na mapie swój punkt, więc do trasy można wejść dokładnie tam, gdzie się stoi, włączyć pierwsze nagranie i brać resztę w dowolnej kolejności."}},{"@type":"Question","name":"W jakich językach jest dostępny?","acceptedAnswer":{"@type":"Answer","text":"W ośmiu: angielskim, hiszpańskim, francuskim, niemieckim, włoskim, portugalskim, polskim i rosyjskim. Każdy w grupie słucha w swoim języku, na swoim telefonie."}},{"@type":"Question","name":"Czy nadaje się dla dzieci?","acceptedAnswer":{"@type":"Answer","text":"Dobrze sprawdza się z dziećmi na tyle dużymi, żeby przejść trzy do pięciu kilometrów w upale i wytrzymać w słuchawkach. Historie są krótkie, co pomaga. Samo stanowisko jest większym wyzwaniem niż przewodnik."}}]},{"@type":"BreadcrumbList","@id":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://chichenitzawalk.com/pl/"},{"@type":"ListItem","position":2,"name":"Przewodniki","item":"https://chichenitzawalk.com/pl/guides/"},{"@type":"ListItem","position":3,"name":"Samodzielnie"}]},{"@type":"Product","@id":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/#productld","name":"Audioprzewodnik po Chichén Itzá","description":"16 opowieści audio na trasie zwiedzania strefy archeologicznej Chichén Itzá. Offline, 8 języków, rok dostępu.","brand":{"@type":"Brand","name":"TouringBee"},"url":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/#product","image":"https://chichenitzawalk.com/img/product-audioguide.webp","offers":{"@type":"Offer","price":"9.99","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://chichenitzawalk.com/pl/chichen-itza-self-guided-tour/#product"}}]}
 </script>
 </head>
 <body>
@@ -252,6 +279,8 @@ ul.related a:hover{text-decoration:underline}
 <a href="/pl/chichen-itza-self-guided-tour/">Samodzielnie</a>
 <a href="/pl/chichen-itza-tickets/">Bilety</a>
 <a href="/pl/chichen-itza-best-time-to-visit/">Kiedy jechać</a>
+<a href="/pl/chichen-itza-map/">Mapa</a>
+<a href="/pl/chichen-itza-equinox/">Równonoc</a>
 <a class="all" href="/pl/guides/">Wszystkie przewodniki &rarr;</a>
 </div></details>
 <nav class="lang"><a href="/chichen-itza-self-guided-tour/">EN</a><a href="/es/chichen-itza-self-guided-tour/">ES</a><a href="/fr/chichen-itza-self-guided-tour/">FR</a><a href="/de/chichen-itza-self-guided-tour/">DE</a><a href="/it/chichen-itza-self-guided-tour/">IT</a><a href="/pt/chichen-itza-self-guided-tour/">PT</a><a class="on" href="/pl/chichen-itza-self-guided-tour/">PL</a><a href="/ru/chichen-itza-self-guided-tour/">RU</a></nav>
@@ -260,227 +289,177 @@ ul.related a:hover{text-decoration:underline}
 
 <div class="arthero"><div class="wrap">
 <nav class="crumbs"><a href="/pl/">Strona główna</a> &rsaquo; <a href="/pl/guides/">Przewodniki</a> &rsaquo; Samodzielnie</nav>
-<h1>Chichén Itzá samodzielnie: trasa, kolejność i uczciwe czasy</h1>
-<p class="sub">Wejście przeniesiono w 2026 roku, a niemal wszystkie opisy trasy wciąż opisują stare. Kolejność, odległości, godziny i uczciwe czasy.</p>
-<div class="byline"><img src="/img/author-eugene.webp" width="34" height="34" loading="lazy" alt="Eugene, autor"><span>Autor: <strong>Eugene</strong> &middot; aktualizacja 1 października 2026 &middot; 13 min czytania</span></div>
+<h1>Chichén Itzá samodzielnie: spacer z audioprzewodnikiem TouringBee</h1>
+<p class="sub">Bez grupy, bez godzin zbiórki i bez czekania — a i tak wiesz, na co patrzysz.</p>
+<ul class="chips">
+<li>★ 4,6</li>
+<li>~1,5 h</li>
+<li>16 historii</li>
+<li>8 języków</li>
+<li>offline</li>
+<li>9,99 &euro;</li>
+<li>ponad 6 100 podróżnych</li>
+</ul>
+<div class="byline"><img src="/img/author-eugene.webp" width="34" height="34" loading="lazy" alt="Eugene, autor"><span><strong>Eugene</strong> &middot; aktualizacja 30 października 2026 &middot; 9 min czytania</span></div>
 <div class="hbtns">
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Kup audioprzewodnik — 9,99 &euro;</a>
-<a class="btn outline" href="https://www.getyourguide.com/pl-pl/chichen-itza-l785/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Porównaj wycieczki z przewodnikiem na GetYourGuide</a>
-<a class="btn outline" href="https://www.tiqets.com/pl/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Kup bilety wstępu</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=hero" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=hero">Kup audioprzewodnik — 9,99 &euro;</a>
 </div>
 </div></div>
 
 <section><div class="wrap prose">
-<p class="lead">Chichén Itzá samodzielnie zwiedza większość odwiedzających. Nie ma obowiązkowej wycieczki, nie ma narzuconej pętli i nikt nie sprawdza, czy wiesz, na co patrzysz.</p>
-<p>Haczyk w tym, że sama trasa zmieniła się w 2026 roku. A prawie każdy opis trasy w sieci — łącznie z przewodnikami aktualizowanymi w tym roku — wciąż opisuje stare wejście.</p>
-<p>Jeśli nie chcesz stać przed Świątynią Wojowników i zgadywać, po co komu dwieście rzeźbionych kolumn, audioprzewodnik TouringBee prowadzi przez strefę archeologiczną: 16 przystanków, około 90 minut, w twoim tempie. Mapa, GPS i narracja działają offline, a każde nagranie włączasz samodzielnie, kiedy dojdziesz do zabytku.</p>
-<p><a class="bokunButton inlinebuy" target="_blank" rel="noopener" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Audioprzewodnik po Chichén Itzá — 9,99 &euro; &rarr;</a></p>
-<p>Wszystko poniżej zakłada wejście z 2026 roku, a nie to z twojego przewodnika na papierze.</p>
-<div class="facts">
-<h2>W skrócie</h2>
-<div class="fgrid">
-<div><b>Dystans na piechotę</b>3–5 km w głównej strefie &middot; Yucatán Today podaje minimum 4 km</div>
-<div><b>Plus dojście</b>800 m – 2 km w każdą stronę &middot; oficjalne dane się nie zgadzają</div>
-<div><b>Czas w środku</b>2–4 godziny &middot; najczęstsza odpowiedź to 3</div>
-<div><b>Dolicz na dojście</b>30–60 minut tam i z powrotem</div>
-<div><b>Godziny strefy</b>brama 8:00 &middot; ostatnie wejście sporne — przyjedź przed 15:00 &middot; strefę opróżniają około 17:00</div>
-<div><b>Wstęp (2026)</b>697 MXN dorosły obcokrajowiec &middot; jedna kasa, w CATVI</div>
-<div><b>Szczyt tłumu przy wejściu</b>10:00–14:00 &middot; autokary podjeżdżają od 10:00–11:00</div>
-<div><b>Najspokojniej</b>przed 10:00 i po 15:00</div>
-<div><b>Dzień bezpłatnego wstępu</b>niedziela — bezpłatna dla obywateli i rezydentów Meksyku</div>
-<div><b>Wspinaczka</b>żadna. Ani piramida, ani świątynia, ani wnętrza</div>
-<div><b>Spacer samodzielnie</b>TouringBee &middot; 16 przystanków &middot; ~1,5 h &middot; offline &middot; 9,99 &euro;</div>
+<p class="lead">Chichén Itzá można spokojnie zwiedzić bez wycieczki. Kupić trzeba wyłącznie bilet, w strefie nic nie jest zamknięte dla osób bez grupy i nikt nie sprawdza, czy masz przewodnika. Trudniejsze jest co innego: zrozumieć, na co właściwie się patrzy. Tabliczki przy zabytkach są krótkie, a czytania przewodnika z telefonu w pełnym słońcu i rozglądania się wokół po prostu nie da się robić jednocześnie.</p>
+<p>Dziewięćset metrów od bramy czekają piramida, boisko do gry w piłkę wielkości boiska piłkarskiego i cenota, z której archeolodzy wyciągnęli złoto, jadeit i setki innych darów rytualnych — a bez głosu w słuchawkach nic z tego nie mówi samo za siebie. <a class="bokunButton inlinebuy" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=text" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=text">Audiospacer TouringBee</a> wypełnia tę lukę: <strong>16 historii</strong>, w kolejności marszu, w całości offline, w tempie, jakie komu pasuje.</p>
+<div class="tb-banner">
+<img class="tb-banner-img" width="132" height="96" loading="lazy" decoding="async" src="/img/product-audioguide.webp" alt="Audioprzewodnik TouringBee otwarty na telefonie przed El Castillo">
+<div class="tb-banner-body">
+<p class="tb-banner-head">Chichén Itzá na własnych nogach?</p>
+<p>Audioprzewodnik TouringBee prowadzi trasę 16 historii — od Świętej Cenoty przez Wielki Plac i Świątynię Wojowników do grupy Las Monjas. Na telefonie, offline, we własnym tempie.</p>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=banner" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=banner">Audioprzewodnik po Chichén Itzá — 9,99 &euro;</a>
 </div>
 </div>
-<p class="disc">Dane sprawdzone 30 września 2026.</p>
-<p class="disc">Część linków na tej stronie to linki afiliacyjne (GetYourGuide, Tiqets). Jeśli zarezerwujesz przez nie, możemy dostać niewielką prowizję — bez dodatkowego kosztu dla ciebie. Nie wpływa to na to, co polecamy.</p>
-<h2>Wejście przeniesiono. Opisy tras tego nie zauważyły</h2>
-<p>Przez dekady wchodziło się od <strong>zachodu</strong>, przez stary <em>Parador Turístico</em>, i El Castillo pojawiało się niemal od razu. Do Świętej Cenoty szło się od piramidy i tą samą drogą z powrotem. Albo się ją pomijało.</p>
-<p>Tak już nie jest.</p>
-<p>Nowe centrum obsługi <strong>CATVI</strong> stoi około <strong>900 metrów na północ od El Castillo</strong>, przy drodze federalnej 180. Sekretarz turystyki Jukatanu, Darío Flota Ocampo, opisał nową kolejność wprost: <strong>najpierw cenota, potem El Castillo.</strong> Do Świętej Cenoty dochodzisz teraz przed piramidą.</p>
-<p>Stary <em>Parador Turístico</em> na zachodzie <strong>przestał sprzedawać bilety w 2026 roku</strong>; postawiono barierki i przekierowano ruch. Wejście jest teraz jedno, przez CATVI, a INAH nie daje żadnych znaków, że chce wrócić do starego układu.</p>
-<p><strong>Nie buduj na tym zbyt wiele, bo szczegółów jest mało.</strong> Nigdzie nie udało się znaleźć: dokładnego przebiegu wewnętrznej ścieżki z CATVI do zabytków, jej nawierzchni, ile z niej leży w cieniu, czy Święta Cenota wciąż jest ślepą odnogą przy sacbe, czy leży teraz po drodze, ani czy jeździ jakikolwiek transport.</p>
-<p>Oficjalne odległości też się między sobą nie zgadzają:</p>
-<ul>
-<li><strong>900 m</strong> — rząd stanu Jukatan, od CATVI do El Castillo</li>
-<li><strong>800 m</strong> — od kas do Świętej Cenoty</li>
-<li><strong>2 km</strong> — od CATVI do strefy archeologicznej</li>
-</ul>
-<p>Zakładaj więc coś między <strong>800 m a 2 km w każdą stronę</strong>, na piechotę, w otwartym terenie. <strong>Oficjalnego czasu przejścia nikt nie opublikował.</strong> Trzydzieści do sześćdziesięciu minut na drogę w obie strony, poza czasem przy zabytkach, to rozsądny zapas, a nie zmierzona wartość.</p>
-<h2>Jak zbudowana jest strefa — i dlaczego kolejność w ogóle ma znaczenie</h2>
-<p>Gdyby cała strefa archeologiczna pochodziła z jednego okresu, kolejność obchodu byłaby kwestią gustu. Nie pochodzi, i to jedyny mocny powód, żeby o niej myśleć.</p>
-<p>Rdzeń zajmuje <strong>co najmniej 5 km²</strong>. INAH liczy sześć grup zabytków: <strong>Gran Nivelación</strong> (główny plac), <strong>Grupo de las Mil Columnas</strong>, <strong>Grupo del Osario</strong>, <strong>Grupo de la Casa Colorada</strong>, <strong>Grupo de Las Monjas</strong> i <strong>Chichén Viejo</strong>.</p>
-<p>Na potrzeby spaceru zwijają się do dwóch:</p>
-<p><strong>Północ jest toltecka.</strong> El Castillo, Wielkie Boisko, Tzompantli, Świątynia Wojowników, Tysiąc Kolumn. Szerokie place, kolumnady, pierzaste węże, ikonografia wojskowa. To Chichén Itzá z pocztówek i część, do której prowadzą każdą grupę.</p>
-<p><strong>Południe jest starsze i majańskie, w stylu Puuc.</strong> El Caracol, Las Monjas, La Iglesia, Czerwony Dom. Mniejsze, gęściej zabudowane, bogato zdobione, rozplanowane bez rozmachu placów z północy.</p>
-<p><strong>Okresy architektoniczne są posortowane geograficznie.</strong> Obejdź strefę jedną pętlą i przejdziesz ją z grubsza wstecz chronologicznie. To cały argument za tym, żeby w ogóle trzymać się kolejności, i dlatego „pochodzę sobie, gdzie oczy poniosą” zostawia większość ludzi z mocnym wspomnieniem jednej piramidy i mgłą wokół niej.</p>
-<p>Odległości między północnymi zabytkami są krótkie. Od El Castillo do Wielkiego Boiska jest około <strong>150 m</strong>, do Świątyni Wojowników około <strong>120 m</strong>. <strong>Sacbe nr 1</strong>, starożytna utwardzona droga od El Castillo do Świętej Cenoty, ma <strong>270 m długości i średnio 9 m szerokości</strong> — część źródeł podaje 300 m.</p>
-<h2>Trasa, która działa, i dlaczego</h2>
-<p>Nikt nie opublikował danych o tym, <strong>jak grupy rozkładają się w środku strefy</strong>, kiedy już przejdą bramę. Udokumentowane jest <strong>wejście</strong>: własne dane INAH o obciążeniu, podane przez Proceso, kładą szczyt na przedział <strong>10:00–14:00</strong>. Autokary zaczynają podjeżdżać koło <strong>10:00–11:00</strong>, a grupy ruszają z powrotem między <strong>14:00 a 15:00</strong>. W 2024 roku strefa przyjęła <strong>2,2 mln odwiedzających</strong>.</p>
-<p>To, co poniżej, jest więc wnioskiem z danych o wejściu, a nie udokumentowaną mapą tłumu. Traktuj to jako plan roboczy.</p>
-<p><strong>Jeśli przyjeżdżasz na otwarcie.</strong> Masz wolne pole przed autokarami, a one wszystkie kierują się na główny plac. Pierwszą godzinę poświęć na <strong>Gran Nivelación</strong> — El Castillo, boisko, platformy, Świątynia Wojowników, kolumnady — bo to ta godzina, kiedy nie ma tam nikogo. Potem, kiedy autokary się rozładowują, przejdź na <strong>południe</strong>, do grupy Puuc, gdzie wycieczki spędzają najmniej czasu.</p>
-<p><strong>Jeśli przyjeżdżasz przed południem, między 10:00 a 12:00.</strong> Trafiasz w sam szczyt. Odwrócenie planu nic nie kosztuje: idź <strong>najpierw na południe</strong> — El Caracol, Las Monjas, grupa Casa Colorada — a główny plac zostaw na po 14:00, kiedy grupy zaczynają wracać do autokarów. Zobaczysz te same zabytki; zobaczysz je z mniejszą liczbą ludzi przed sobą.</p>
-<p><strong>Jeśli przyjeżdżasz po 15:00.</strong> Najpierw sprawdź, czy w ogóle cię wpuszczą: źródła nie zgadzają się co do godziny odcięcia, a 15:00 to właśnie ta liczba, przy której pomyłka kosztuje najwięcej. Jeśli jesteś już za bramą, masz najlepsze światło dnia i jakieś dwie godziny, zanim obsługa zacznie wyprowadzać ludzi od około 17:00 — zrób główny plac i drogę do cenoty, i pogódź się z tym, że grupa południowa może się nie zmieścić.</p>
-<p>Jedna zasada przechodzi przez wszystkie trzy warianty: <strong>idź w odwrotną stronę niż tłum.</strong> Grupy skupiają się na północy, w środku dnia. To wynika z danych o wejściu i z tego, jak zbudowane są programy wycieczek autokarowych, i to jedyna rada o unikaniu tłumu na tej stronie, która nie wymaga zgadywania.</p>
-<div class="midcta">
-<p class="price">Idziesz bez przewodnika?</p>
-<p>Znać kolejność to jedno; wiedzieć, na co patrzysz, to drugie. Audioprzewodnik TouringBee obchodzi Chichén Itzá w kolejności zwiedzania: 16 przystanków, około 90 minut. Działa w pełni offline — razem z mapą i GPS.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Otwórz audioprzewodnik &rarr;</a>
+<h2>Dlaczego ze słuchawkami w uszach wychodzi lepiej</h2>
+<p><strong>Wiesz, na co patrzysz.</strong> Różnica między stertą rzeźbionych kamieni a miastem polega na tym, że ktoś mówi, co tu jest czym i dlaczego zbudowano to właśnie w taki sposób.</p>
+<p><strong>Idziesz we własnym tempie.</strong> Nie trzeba na nikogo czekać ani za nikim gonić: przy jednej budowli można stać tak długo, jak się chce, a to, co nie wciąga, po prostu się pomija. Dwadzieścia minut przerwy w cieniu nic tu nie psuje.</p>
+<p><strong>Zasięg nie jest potrzebny.</strong> Wszystko pobiera się jeszcze przed wyjazdem — dźwięk, mapa, cała trasa. Strefa jest duża, dzień gorący, a łapanie zasięgu u podnóża piramidy to ostatnie, czego się wtedy chce.</p>
+<div class="tb-audio" id="audio">
+<p class="tb-audio-head">Posłuchaj początku spaceru</p>
+<p>Około minuty, w wybranym języku. Tak brzmi cały spacer.</p>
+<audio controls preload="none" src="/audio/cancunt1_pl_intro.mp3"></audio>
 </div>
-<h2>Ile czasu naprawdę potrzebujesz</h2>
-<p>Źródła zbiegają się na <strong>2 do 4 godzin w samej strefie archeologicznej</strong>, a najczęściej powtarzaną liczbą są <strong>3 godziny</strong> — sześć grup w niespiesznym tempie, z przystankami. Dolicz <strong>30 do 60 minut</strong> na dojście z CATVI i powrót; oficjalnego czasu przejścia nie ma, więc to zapas, a nie rozkład. Oprowadzanie z przewodnikiem po tym samym terenie trwa <strong>90 minut do 2 godzin</strong> i jest szybsze, bo jest wybiórcze, a nie bo przewodnicy szybko chodzą.</p>
-<p>W praktyce: dwie godziny kupują główny plac i drogę do cenoty, i nic więcej; trzy obejmują obie grupy architektoniczne, co z dojściem daje czterogodzinną wizytę; cztery i więcej dorzucają Osario i cenotę Xtoloc. W upale od marca do września wlicz czas na siedzenie w cieniu — to nie jest opcja.</p>
-<h2>Co tu jest do zobaczenia — i czego nie da się zrobić</h2>
-<p><strong>Zacznij od ograniczenia, bo zmienia oczekiwania bardziej niż cokolwiek innego: nie wejdziesz na nic i nie wejdziesz do niczego.</strong></p>
-<p>Wspinaczka na El Castillo jest <strong>zabroniona od 2006 roku</strong>, po śmiertelnym upadku 80-letniej Amerykanki w styczniu tamtego roku. Świątynia Wojowników jest zamknięta dla wspinaczy. Wewnętrzna świątynia w El Castillo — ta z chac-moolem i tronem jaguara — jest <strong>zamknięta również od 2006 roku</strong>.</p>
-<p>Wszystko oglądasz z poziomu ziemi, spoza sznura. To w porządku, jeśli wiesz o tym wcześniej, i prawdziwe rozczarowanie, jeśli nie wiesz.</p>
-<p>Co w zamian nagradza uwagę:</p>
-<ul>
-<li><strong>Ruiny były malowane</strong>, głównie na czerwono. Szary wapień, na który patrzysz, to zdarta powierzchnia, nie pierwotna.</li>
-<li><strong>Kolumny Świątyni Wojowników to rzeźbione postacie wojowników</strong>, każda inna. Od sznura czytają się jako siatka gładkich słupków; rzeźba wychodzi dopiero z bliska.</li>
-<li><strong>Maski o długich ryjach</strong> na wszystkich południowych budynkach to <strong>Chaac</strong>, bóg deszczu.</li>
-<li><strong>El Osario to mniejsza wersja El Castillo</strong> — ta sama schodkowa forma, ten sam układ. Dlatego trafia do tylu albumów podpisany jako główna piramida.</li>
-<li><strong>Ścieżki przez środek to prawdziwe sacbeob</strong> — starożytne utwardzone drogi, nie współczesny żwir. Sacbe nr 1 to właśnie ta 270-metrowa droga do Świętej Cenoty.</li>
-</ul>
-<p><strong>Święta Cenota</strong> leży na końcu tej drogi, 270–300 m od El Castillo: ma około <strong>60 m w poprzek</strong>, a do wody jest z grubsza <strong>27 m</strong>. Jest <strong>tylko platforma widokowa</strong> — bez schodzenia, bez kąpieli.</p>
-<h3>Łatwo przeoczyć</h3>
-<p>Wymienione tu, żeby przynajmniej wiedzieć, że istnieją: <strong>cała południowa grupa Puuc</strong>, <strong>Osario</strong>, <strong>cenota Xtoloc</strong> i <strong>Czerwony Dom</strong>. Wszystkie cztery są w cenie biletu i w zasięgu standardowej pętli, i wszystkie cztery regularnie pomijają ci, którzy przyjechali po jedną piramidę i wyszli po zdjęciu.</p>
-<h2>Dwa testy akustyczne warte zrobienia</h2>
-<p>To jedyna część tekstu, w której cały sens polega na tym, żeby stanąć w konkretnym punkcie.</p>
-<p><strong>Wielkie Boisko.</strong> Boisko ma <strong>168 × 70 m</strong>, ściany około 8 m wysokości. Akustyk <strong>David Lubman</strong> zmierzył efekt falowodu: równoległe ściany 36 m od siebie i 8,5 m wysokie dają <strong>83-metrowy</strong> falowód, a echo klaśnięcia biegnie <strong>około 2,5 sekundy</strong>. Zdaniem Lubmana efekt jest najprawdopodobniej pierwotny, a nie ubocznym skutkiem rekonstrukcji.</p>
-<p>Słynna teza mówi, że głos nosi <strong>~140 m</strong> między świątyniami na przeciwległych końcach boiska. <strong>Nie sprawdzisz tego, bo obie świątynie na końcach są odgrodzone.</strong> Masa wpisów na blogach sugeruje, że da się. Co sprawdzisz, stojąc w środku boiska, to przewalające się echo klaśnięcia.</p>
-<p><strong>El Castillo.</strong> Klaśnij u stóp schodów, a wróci nie płaskie echo, ale opadający świst, szeroko porównywany do głosu kwezala. <strong>David Lubman</strong> opisał go pierwszy, w 1998 roku; <strong>Nico Declercq</strong> ze współautorami opublikował model w <em>Journal of the Acoustical Society of America</em> w 2004 roku — schody działają jak filtr akustyczny.</p>
-<p>Czy było to zamierzone, pozostaje sporem otwartym, a dwie osoby, które to zmierzyły, nie zgadzają się ze sobą. <strong>Declercq jest sceptyczny</strong> — budowniczowie „raczej nie przewidzieli dokładnego dźwięku”, a podobne efekty znalazł w innych miejscach rytualnych. <strong>Lubman skłania się ku świadomemu projektowi.</strong> Oba stanowiska pochodzą od ludzi, którzy przynieśli przyrządy pod schody, więc nie rozstrzygniemy tego za ciebie.</p>
-<h2>Nazwy, na których wszyscy się potykają</h2>
-<p>Połowa zamieszania w relacjach z Chichén Itzá bierze się z nazw. Prawie żadna nie znaczy tego, co mówi.</p>
-<ul>
-<li><strong>El Castillo</strong> = <strong>Świątynia Kukulkana</strong>. Jeden budynek, dwie nazwy.</li>
-<li><strong>El Osario</strong>, zwane też Świątynią Wielkiego Kapłana, to <strong>mniejsza kopia formy El Castillo</strong> — dlatego tak często trafia na zdjęcia podpisane jako główna piramida.</li>
-<li><strong>Las Monjas</strong> to nie klasztor. To <strong>kompleks pałacowy</strong>; nazwa jest kolonialna.</li>
-<li><strong>La Iglesia</strong> to nie kościół. To <strong>świątynia Chaaca</strong>.</li>
-<li><strong>El Caracol</strong> znaczy „ślimak” — od <strong>spiralnych schodów w środku</strong>, a nie od czegokolwiek astronomicznego w kształcie.</li>
-<li><strong>Grupa Tysiąca Kolumn</strong> ma około <strong>dwustu</strong> kolumn.</li>
-<li><strong>Tzompantli</strong> to platforma czaszek. Myli się ją z <strong>Platformą Wenus</strong>, a to inna budowla.</li>
-<li><strong>Trzy różne cenoty, bez przerwy mieszane.</strong> <strong>Święta Cenota</strong> leży w strefie archeologicznej i wolno na nią tylko patrzeć. <strong>Cenota Xtoloc</strong> też jest w środku i była źródłem wody dla osady. <strong>Ik Kil</strong> leży kilka kilometrów za parkiem — to w niej ludzie się kąpią.</li>
-</ul>
-<h2>Chichén Viejo: część, którą trzeba załatwić wcześniej</h2>
-<p><strong>Chichén Viejo</strong> — Grupo de la Serie Inicial — otwarto we <strong>wrześniu 2023 roku</strong> i jest <strong>w cenie standardowego biletu</strong>. To zdecydowanie najmniej odwiedzana część strefy, bo liczba miejsc jest ograniczona, a wchodzi się tylko w asyście pracowników.</p>
-<p>Jak to wygląda: <strong>szlak 1,5 km, szeroki 4 m</strong>, około <strong>2,5 godziny</strong>, cały czas w asyście pracowników INAH, obejmujący <strong>25 budowli na dwóch placach</strong>. Opublikowane terminy to <strong>9:00 i 12:00</strong>, <strong>50 osób na termin, 100 dziennie</strong>. Co do dni: INAH mówił w 2023 roku o piątku i sobocie, a źródła z lat 2025–2026 podają czwartek, piątek i sobotę.</p>
-<p><strong>I tu jest problem.</strong> Każde źródło, jakie udało się znaleźć, umieszcza początek tego szlaku przy <strong>dawnym Parador Turístico</strong> — wejściu, którego kasy zamknięto w 2026 roku. <strong>Gdzie zaczyna się teraz, nie jest nigdzie udokumentowane.</strong></p>
-<p>Nie planuj więc dnia wokół powyższych godzin. <strong>Zadzwoń do strefy archeologicznej pod 985 851 0137</strong> i zapytaj o aktualne dni, terminy i miejsce zbiórki. Dwie minuty, a oszczędzi ci zmarnowany poranek.</p>
-<h2>Chichén Itzá samodzielnie, z przewodnikiem przy wejściu albo z grupą</h2>
+<h2>Legenda o dziewicach i to, co naprawdę leżało w studni</h2>
+<p>Jeśli o Chichén Itzá wiesz tylko jedno, to najprawdopodobniej właśnie to: że do Świętej Cenoty wrzucano młode dziewice. Legenda trzyma się mocno i jest niemal w całości nieprawdziwa, więc warto ją rozebrać, jeszcze zanim dojdzie się do krawędzi studni.</p>
+<p><strong>Zacznijmy od tego, kto tego nie napisał.</strong> Diego de Landa, który pisał około 1566 roku i na którego powołują się dziś wszyscy, o dziewicach nie wspomina ani razu. Pisze, że Majowie wrzucali do studni <em>żywych ludzi</em>, a w innym miejscu — że władcy Maní brali „niewolników i niewolnice”, żeby zrzucić ich do studni w Chichén Itzá. Żadnych panien. Wersja z pięknymi młodymi kobietami pojawia się znacznie później i w dużej mierze pochodzi od jednego człowieka: <strong>Edwarda Thompsona</strong>, który od 1904 roku wybierał muł z dna cenoty, a potem opisał to wszystko w popularnej książce z 1926 roku. Czaszki posegregował na oko, uznał, że większość należała do dziewcząt w wieku od czternastu do dwudziestu lat, i ten obraz poszedł w świat.</p>
+<p><strong>A potem ktoś wreszcie obejrzał kości.</strong> W <strong>1940 roku</strong> antropolog fizyczny <strong>Earnest Hooton</strong> przejrzał cały materiał i znalazł coś znacznie nudniejszego i znacznie ciekawszego: <strong>mniej więcej tyle samo szczątków męskich co żeńskich</strong>, a połowa z nich należała do dzieci. Każda późniejsza analiza wskazuje w tę samą stronę. Według wyliczeń nowszych badaczy od <strong>połowy do dwóch trzecich</strong> ludzi z tej studni miało <strong>mniej niż osiemnaście lat</strong>, a najwięcej było dzieci między szóstym a dwunastym rokiem życia. A izotopy w ich zębach zdradzają, że przychodzili z całej Mezoameryki — z wybrzeża Zatoki, z centralnego Meksyku, z Ameryki Środkowej — a nie z sąsiedniej osady.</p>
+<p>Prawdziwa historia nie dotyczy więc skazanej na śmierć miejscowej piękności. Dotyczy studni, która przez sześćset lat ściągała dary i ludzi z całego kontynentu. Kiedy wybrano jej dno, wciąż leżały tam złoto, jadeit, kopal, rzeźbione drewno i tkaniny — woda nie dopuszczała do nich powietrza. <strong>Rozbieranie legendy bawi bardziej niż jej powtarzanie, a na spacerze takich rozbiórek jest szesnaście.</strong></p>
+<p><a class="bokunButton inlinebuy" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=midcta" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=midcta">Posłuchaj pozostałych piętnastu &rarr;</a></p>
+<h2>Trasa: 8 etapów, 16 historii</h2>
+<p>Poniżej znajdziesz <strong>8 głównych etapów</strong> spaceru. W aplikacji cała trasa jest podzielona na <strong>16 historii audio</strong>, a po drodze dochodzą do nich dodatkowe przystanki i ilustracje.</p>
 <div class="tablewrap"><table class="cmp">
-<thead><tr><th></th><th>Samodzielnie z audioprzewodnikiem</th><th>Licencjonowany przewodnik przy wejściu</th><th>Wycieczka autokarowa</th></tr></thead>
+<thead><tr><th>Etap</th><th>Co widać</th></tr></thead>
 <tbody>
-<tr><td><b>Koszt</b></td><td>9,99 &euro; jednorazowo, TouringBee</td><td>900–1000 MXN po hiszpańsku &middot; 1200 po angielsku &middot; 1400 po francusku/włosku/niemiecku, za grupę do 8 osób</td><td>60–100+ US$ od osoby</td></tr>
-<tr><td><b>Czas trwania</b></td><td>twoja decyzja &middot; ~1,5 h nagrań</td><td>45 minut do 2 godzin</td><td>~2 h na miejscu, 12–14 h od drzwi do drzwi</td></tr>
-<tr><td><b>Komentarz historyczny</b></td><td>tak</td><td>tak</td><td>tak</td></tr>
-<tr><td><b>Odpowiada na pytania</b></td><td>nie</td><td>tak</td><td>tak</td></tr>
-<tr><td><b>Idzie za tym, co cię interesuje</b></td><td>nie — trasa jest ustalona</td><td>tak</td><td>nie</td></tr>
-<tr><td><b>Własne tempo</b></td><td>tak</td><td>częściowo — mała grupa prywatna może zwolnić</td><td>nie</td></tr>
-<tr><td><b>Możliwy wczesny start</b></td><td>tak</td><td>tak</td><td>zwykle nie — autokary podjeżdżają 10:30–12:00</td></tr>
-<tr><td><b>Transport w cenie</b></td><td>nie</td><td>nie</td><td>zwykle tak</td></tr>
-<tr><td><b>Bilet wstępu w cenie</b></td><td>nie</td><td>nie</td><td>czasem</td></tr>
-<tr><td><b>Języki</b></td><td>8</td><td>hiszpański, angielski, francuski, włoski, niemiecki</td><td>zależy od organizatora</td></tr>
-<tr><td><b>Najlepsze dla</b></td><td>samodzielnego spaceru we własnym tempie</td><td>rozmowy i pytań, które z niej wynikają</td><td>najmniejszej liczby rzeczy do zorganizowania</td></tr>
+<tr><td><b>1 &middot; Wejście od CATVI</b></td><td>dojście z północy — jedyne wejście od 2026 roku, około 900 m do piramidy</td></tr>
+<tr><td><b>2 &middot; Święta Cenota</b></td><td>zapadlisko 60 m w poprzek, woda 22 m niżej, na końcu starej drogi sacbe</td></tr>
+<tr><td><b>3 &middot; Wielki Plac i El Castillo</b></td><td>dziewięciostopniowa piramida na wielkiej sztucznej platformie, widok od ogrodzenia</td></tr>
+<tr><td><b>4 &middot; Wielkie Boisko do Gry w Piłkę</b></td><td>największe w Mezoameryce, 11 000 m², z kamiennymi obręczami i rzeźbionymi panelami</td></tr>
+<tr><td><b>5 &middot; Tzompantli i platformy</b></td><td>ściana czaszek, Orły i Jaguary, Platforma Wenus</td></tr>
+<tr><td><b>6 &middot; Świątynia Wojowników</b></td><td>kolumnada Tysiąca Kolumn ciągnąca się na południowy wschód</td></tr>
+<tr><td><b>7 &middot; El Osario i El Caracol</b></td><td>mniejsza piramida, a potem okrągłe obserwatorium na podwójnym tarasie</td></tr>
+<tr><td><b>8 &middot; Grupa Las Monjas</b></td><td>architektura Puuc i Chenes — ta połowa stanowiska, która wygląda, jakby stała gdzie indziej</td></tr>
 </tbody></table></div>
-<p>Tabela nie wskazuje zwycięzcy, bo odpowiedź siedzi w tym jednym wierszu, który dla ciebie waży najwięcej. Jeśli to wiersz o pytaniach, weź przewodnika. Jeśli o transporcie, zarezerwuj wycieczkę autokarową. Jeśli tempo i wczesny start, idź samodzielnie.</p>
-<p>Dwie uczciwe uwagi o liczbach. <strong>Oficjalnego cennika przewodników przy wejściu nikt nie opublikował</strong> — powyższe kwoty to tyle, ile odwiedzający podają w 2026 roku, za grupę do ośmiu osób, gotówką, przy kasach. Traktuj je jako widełki, a nie cennik. A dolna granica <strong>45 minut</strong> jest prawdziwa: przewodnik, który robi strefę w 45 minut, robi główny plac, w szybkim tempie.</p>
-<p><a href="https://www.getyourguide.com/pl-pl/chichen-itza-l785/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Porównaj wycieczki z przewodnikiem po Chichén Itzá &rarr;</a> &middot; <a href="https://www.tiqets.com/pl/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Kup bilety wstępu z wyprzedzeniem &rarr;</a></p>
-<h2>Lista praktyczna</h2>
-<p><strong>Godziny — i rozbieżność, o której warto wiedzieć.</strong> Brama otwiera się o <strong>8:00</strong>, a obsługa opróżnia strefę od około <strong>17:00</strong>. Źródła rozchodzą się przy godzinie odcięcia dla wejścia: <strong>angielska strona INAH mówi, że ostatnie wejście jest o 15:00</strong>, a biuletyny INAH i źródła komercyjne opisują wstęp do 16:00. Kiedy oficjalne źródła nie zgadzają się co do godziny odcięcia, późniejsza liczba jest tą, przy której pomyłka kosztuje najwięcej, więc <strong>przyjedź przed 15:00</strong> — a jeśli późnego przyjazdu nie da się uniknąć, zadzwoń najpierw pod 985 851 0137.</p>
-<p><strong>Bilet.</strong> <strong>697 MXN</strong> dla dorosłego obcokrajowca — <em>Boleto Único</em>, obowiązujący od <strong>27 marca 2026 roku</strong>, jedna płatność w jednej kasie w CATVI. Obywatele Meksyku płacą <strong>310 MXN</strong>, a rezydenci Jukatanu 105 MXN: stanowy dekret zwalnia ich z części stanowej na 2026 rok, zostaje tylko federalna opłata INAH. Bezpłatny wstęp dla dzieci do 13 lat INAH zapisuje dla Meksykanów i osób mieszkających w Meksyku, więc za dziecko obcokrajowca licz się z opłatą i zapytaj o kwotę w kasie. <strong>Niedziela jest bezpłatna dla obywateli i rezydentów Meksyku, co może przyprowadzić pod bramę więcej ludzi.</strong> Jeśli masz jakąkolwiek elastyczność, wykorzystaj ją.</p>
-<p><strong>Muzeum.</strong> <strong>Gran Museo de Chichén Itzá</strong> stoi w CATVI: 3400 m², 14 osi tematycznych, ponad 500 obiektów, wstęp bezpłatny, otwarte od lutego 2024 roku. Czy trasa dojścia zmusza do przejścia przez nie, <strong>nigdzie nie jest powiedziane</strong>, i nikt nie opublikował, ile to dokłada czasu. Dolicz trochę czasu; nie buduj ciasnego planu wokół liczby, której nikt nie podał.</p>
-<p><strong>Woda.</strong> W strefie archeologicznej <strong>nie ma pitników</strong>, a wodę sprzedają na miejscu po cenie dwa, trzy razy wyższej niż normalnie. Weź więcej, niż ci się wydaje.</p>
-<p><strong>Jedzenie.</strong> W strefie archeologicznej go nie sprzedają — tylko na placu przy wejściu.</p>
-<p><strong>Toalety.</strong> INAH wymienia je w usługach, a CATVI rozbudowało zaplecze, ale źródła nie zgadzają się co do tego, czy są jakieś między zabytkami. Korzystaj z tych przy wejściu.</p>
-<p><strong>Szafki.</strong> 30–40 MXN — oficjalnej ceny nikt nie podaje.</p>
-<p><strong>Parking.</strong> 80–120 MXN; CATVI ma <strong>517 miejsc</strong>. Nie licz na bankomat.</p>
-<p><strong>Czego nie wolno wnosić.</strong> Dronów bez zgody INAH. Statywów. <strong>Wymiennych obiektywów</strong> — to surowsze, niż podaje większość przewodników, ale tak mówi własna lista INAH. Zdjęcia profesjonalne tylko z pozwoleniem. Zabronione są też materiały łatwopalne, papierosy włącznie z elektronicznymi, przebrania, transparenty, flagi, alkohol, narkotyki, broń ostra i palna. Ceremonie są niedozwolone.</p>
-<p><strong>Plecaki są dozwolone.</strong> Zakaz, który wciąż krąży po sieci, obowiązywał tylko dwa dni, 21 i 22 kwietnia 2026 roku, po strzelaninie w Teotihuacán; dyrektorka strefy mówiła wtedy o środku tymczasowym, od tamtej pory nic tego nie podważyło, a INAH wymienia szafki i szatnię wśród usług. <strong>Liczy się lista powyżej</strong> — ta obowiązuje na stałe.</p>
-<p><strong>Sprzedawcy.</strong> Spis z 2025 roku wykazał <strong>666 rzemieślników pracujących w strefie archeologicznej</strong>. Po konflikcie z maja 2026 roku przeniesiono ich na odcinek <strong>między nowym wejściem CATVI a Świętą Cenotą</strong> — czyli stoją teraz przy drodze do środka. Nikogo nie usunięto; nowych sprzedawców się nie dopuszcza. Opinie zgodnie opisują ich jako natarczywych.</p>
-<p>Wiarygodnych opublikowanych norm targowania się nie ma. To, co poniżej, jest spostrzeżeniem z naszej własnej bazy wiedzy, a nie regułą: pierwsza podana cena to zwykle dwa, trzy razy tyle, za ile rzecz ostatecznie schodzi, a te same przedmioty w spokojniejszych bocznych alejkach często idą za połowę ceny z głównej ścieżki.</p>
+<p>Trasa biegnie główną osią strefy, a nie wszystkimi jej ścieżkami. Wejść na nią można w dowolnym punkcie: mapa pokazuje, która historia należy do którego miejsca, więc odtwarzanie włączasz tam, gdzie właśnie stoisz, w dowolnej kolejności.</p>
+<h2>Samodzielnie, z audioprzewodnikiem albo z przewodnikiem na żywo</h2>
+<div class="tablewrap"><table class="cmp">
+<thead><tr><th></th><th>Samodzielnie</th><th>Audioprzewodnik TouringBee</th><th>Licencjonowany przewodnik przy wejściu</th></tr></thead>
+<tbody>
+<tr><td><b>Koszt</b></td><td>0 &euro;</td><td><strong>9,99 &euro; za osobę</strong>, jedna płatność</td><td>900–1 400 peso za grupę do 8 osób — 115–175 peso na głowę przy pełnej grupie i 450–700 we dwoje</td></tr>
+<tr><td><b>Kiedy</b></td><td>w dowolnej godzinie otwarcia strefy</td><td>w dowolnej godzinie otwarcia strefy</td><td>kiedy któryś przewodnik jest wolny</td></tr>
+<tr><td><b>Tempo</b></td><td>własne</td><td>własne — pauza i powrót w dowolnym miejscu</td><td>tempo przewodnika</td></tr>
+<tr><td><b>Co dostajesz</b></td><td>widok</td><td>16 historii, mapa offline, 8 języków</td><td>człowieka, który odpowiada na pytania</td></tr>
+<tr><td><b>Języki</b></td><td>—</td><td>8 — każdy w grupie słucha w swoim</td><td>zależy, kto jest dostępny</td></tr>
+<tr><td><b>Dostęp</b></td><td>—</td><td>jedna płatność, <strong>dostęp na rok</strong></td><td>tyle, ile trwa oprowadzanie</td></tr>
+</tbody></table></div>
+<p>Warto przeliczyć to na osobę. We dwoje przewodnik na żywo wychodzi na głowę drożej niż audioprzewodnik; przy pełnej ósemce koszt wypada podobnie albo nawet niżej. Audioprzewodnik wygrywa czymś innym niż ceną: nie zależy od niczyjego grafiku, działa bez zasięgu i cierpliwie czeka tak długo, jak długo się stoi i patrzy.</p>
+<p>Niezależnie od wyboru <strong>bilet wstępu za 697 peso płaci się osobno</strong>, w kasach CATVI.</p>
+<h2>Jak to działa</h2>
+<div class="tb-steps">
+<ol>
+<li>Kupujesz. Mail aktywacyjny przychodzi w ciągu kilku minut.</li>
+<li>Instalujesz aplikację na iPhone'a albo Androida i wybierasz język.</li>
+<li>Pobierasz wycieczkę przed wyjazdem — na hotelowym wi-fi, nie przy bramie.</li>
+<li>Idziesz. Mapa offline pokazuje, gdzie czeka która historia — na miejscu wciskasz play, a pauza jest zawsze pod ręką.</li>
+</ol>
+<div class="tb-shots">
+<img class="tb-shot" width="420" height="910" loading="lazy" decoding="async" src="/img/app-chichen-cover.webp" alt="Okładka wycieczki w aplikacji TouringBee">
+<img class="tb-shot" width="420" height="910" loading="lazy" decoding="async" src="/img/app-chichen-stops.webp" alt="Lista przystanków na mapie offline">
+<img class="tb-shot" width="420" height="910" loading="lazy" decoding="async" src="/img/app-chichen-story.webp" alt="Ekran historii z ilustracją">
+</div>
+</div>
+<p>Dwie praktyczne rzeczy: naładować telefon poprzedniego wieczoru i zabrać słuchawki. Całe ustawianie lepiej załatwić przed wyjściem z hotelu — cień w strefie jest tylko miejscami, a mocowanie się z aplikacją w słońcu bywa naprawdę niewygodne.</p>
+<h2>Dlaczego można zaufać temu przewodnikowi</h2>
+<p><strong>Ocena 4,6</strong> z 18 opinii na Viatorze i Tripadvisorze. Licznik w aplikacji pokazywał <strong>6 131 przejść trasy</strong> 26 października 2026 roku. Narracja to <strong>prawdziwy głos w 8 językach</strong>, a nie synteza mowy. Jedna płatność i <strong>dostęp na rok</strong> — na tyle długo, że można wrócić i przejść trasę jeszcze raz podczas kolejnej podróży.</p>
 </div></section>
 
 <section><div class="wrap prose">
-<h2>Komu pasuje samodzielny spacer z audioprzewodnikiem</h2>
-<p>Chichén Itzá można obejść, nie wiedząc o nim nic. Tysiące ludzi robią to codziennie, fotografują piramidę i wychodzą z mocnym obrazem w głowie, bez pojęcia, czym było tych dwieście rzeźbionych kolumn za plecami ani dlaczego południowe budynki wyglądają, jakby pochodziły skądś indziej.</p>
-<p><strong>Audioprzewodnik TouringBee</strong> obejmuje strefę archeologiczną w <strong>16 przystankach i około 90 minutach</strong>, ułożonych w kolejności zwiedzania. Cztery rzeczy sprawiają, że pasuje właśnie do tego miejsca.</p>
-<p><strong>Działa offline — cały.</strong> Mapa, pozycja GPS i narracja. Strefa jest duża, na zasięg nie ma co liczyć, a niczego nie będziesz pobierać na miejscu.</p>
-<p><strong>Narracja to profesjonalnie przygotowany komentarz historyczny</strong>, nie syntetyczne odczytanie hasła z encyklopedii. Przez 90 minut to ma znaczenie.</p>
-<p><strong>Tempo należy wyłącznie do ciebie.</strong> <strong>Każde nagranie włączasz samodzielnie</strong>, kiedy dojdziesz do zabytku, więc nic nie przegania cię obok budynku i nie trzyma w słońcu w oczekiwaniu na zbiórkę grupy. Posiedź dwadzieścia minut w cieniu i wróć do nagrania w tym samym miejscu. W miejscu praktycznie bez cienia, gdzie przez pół roku maksymalne temperatury sięgają 33–35 °C, to rzecz praktyczna, nie kaprys.</p>
-<p><strong>Nie ma grupy.</strong> Żadnego miejsca zbiórki, liczenia głów, czekania na dwie osoby, które wróciły po wodę. Jeśli udało ci się stanąć pod bramą na 8:00, nic nie stoi między tobą a pierwszą godziną dnia.</p>
-<p><strong>9,99 &euro;</strong> jednorazowo, <strong>osiem języków</strong>, iOS i Android, <strong>rok dostępu</strong> — wystarczy na drugie przejście w innej porze dnia. Ocena <strong>4,6 z 18 opinii</strong>, skorzystało <strong>6022 podróżnych</strong>.</p>
-<p>I uczciwe ograniczenie: <strong>nagranie nie odpowie na pytanie</strong> i nie zboczy z trasy, kiedy okaże się, że na boisku chcesz spędzić godzinę. Jeśli cenisz pytanie zadane po drodze, weź licencjonowanego przewodnika przy wejściu — dokładnie po to są. Jeśli wcześniejszy start, własne tempo i cena ważą więcej, to właśnie pod to jest zrobione.</p>
+<h2>Co właściwie dostaje się za 9,99 &euro;</h2>
+<p>Dostaje się różnicę między zrobieniem zdjęcia piramidy a zrozumieniem, czym ona jest. Szesnaście historii, opowiedzianych w tej kolejności, w jakiej idzie się trasą, każda do włączenia przed budowlą, do której należy: dlaczego El Castillo ma właśnie taki kształt, czym są rzeźbione kolumny za Świątynią Wojowników i dlaczego południowa połowa stanowiska wygląda, jakby przywieziono ją z zupełnie innego miejsca.</p>
+<p>Historie czyta prawdziwy lektor, a nie syntezator mowy. Napisano je pod ten konkretny spacer, a nie zlepiono naprędce z hasła w Wikipedii.</p>
+<p>Dwa ograniczenia, bez owijania w bawełnę. <strong>Bilet wstępu nie jest w cenie</strong> — to 697 peso w kasie. I <strong>nagranie nie odpowiada na pytania</strong>: jeśli chcesz móc dopytać na bieżąco, lepiej wziąć przy wejściu licencjonowanego przewodnika.</p>
 </div></section>
 
 <section id="product"><div class="wrap">
 <div class="product-card">
-<img class="pc-img" width="1024" height="768" loading="lazy" decoding="async" src="/img/product-audioguide.webp" alt="Audioprzewodnik po Chichén Itzá w telefonie przed El Castillo">
+<img class="pc-img" width="1024" height="768" loading="lazy" decoding="async" src="/img/product-audioguide.webp" alt="Audioprzewodnik po Chichén Itzá na telefonie przed El Castillo">
 <div class="pc-body" style="text-align:left">
-<div class="pc-rating"><b style="color:var(--ink)"><span class="star" aria-hidden="true">&#9733;</span> 4,6 &middot; 18 opinii na Viator &amp; Tripadvisor</b> &middot; Skorzystało 6022 podróżnych</div>
-<h3>Chichén Itzá: audioprzewodnik do samodzielnego zwiedzania<span class="badge">Dostęp od razu</span></h3>
-<div class="pc-price">Od 9,99 &euro; <small>&middot; dostęp na rok</small></div>
+<div class="pc-rating"><b style="color:var(--ink)"><span class="star" aria-hidden="true">&#9733;</span> 4,6 &middot; 18 opinii na Viator &amp; Tripadvisor</b> &middot; Trasę przeszło już ponad 6 100 podróżnych</div>
+<h3>Audioprzewodnik po Chichén Itzá<span class="badge">Dostęp od razu</span></h3>
+<div class="pc-price">9,99 &euro; <small>&middot; dostęp na rok</small></div>
 <ul class="features">
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% offline — zasięg przy ruinach jest słaby i nie ma to znaczenia</li>
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Mapa GPS offline — każde nagranie włączasz samodzielnie na miejscu</li>
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> 8 języków, narracja żywym głosem</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% offline — zasięg nie jest potrzebny w żadnym punkcie strefy</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Mapa offline z GPS — każde nagranie włączasz na miejscu</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> 8 języków, narracja prawdziwym głosem</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg> Działa na iOS i Androidzie</li>
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 16 przystanków, około 1,5 godziny — pauzę w cieniu robisz, kiedy chcesz</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 16 przystanków, około 1,5 godziny — można przystanąć w cieniu, kiedy się chce</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/></svg> Jeden zakup, jedna osoba: każdy kupuje dla siebie</li>
 </ul>
-<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Kup audioprzewodnik — 9,99 &euro;</a>
+<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=card" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=card">Kup audioprzewodnik — 9,99 &euro;</a>
 </div>
 </div>
 </div></section>
 
 <section><div class="wrap prose">
-<h2>Najczęstsze pytania</h2>
+<h2>Warto wiedzieć przed wyjściem na trasę</h2>
+<p><strong>Start w dowolnym punkcie.</strong> Trasa ma swoją kolejność, ale aplikacja jej nie narzuca — na mapie widać, gdzie zaczyna się która historia, a włączasz ją samodzielnie.</p>
+<p><strong>Zakryte, wygodne buty i coś na głowę.</strong> To trzy do pięciu kilometrów po żwirze i nierównym kamieniu, z czego samo dojście od CATVI i z powrotem zabiera około dwóch. Kapelusz, woda i krem z filtrem naprawdę się tu liczą.</p>
+<p><strong>Lepiej wcześnie.</strong> Brama otwiera się o 08:00, a autokary podjeżdżają od 10:00. Najgorętsze godziny ciągną się od południa do wczesnego popołudnia, a na esplanadzie nie ma gdzie się schować przed słońcem.</p>
+<p><strong>Bilet to osobny wydatek.</strong> Audioprzewodnik nie obejmuje wstępu. Dla dorosłego obcokrajowca to <strong>697 peso</strong> w kasach CATVI; <a href="https://www.tiqets.com/pl/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">można go też kupić z wyprzedzeniem</a>, a nasza <a href="/pl/chichen-itza-tickets/">strona o biletach</a> wyjaśnia, co ta cena obejmuje.</p>
+<h2>Często zadawane pytania</h2>
 <div class="faq">
-<details><summary>Czy można zwiedzać Chichén Itzá bez przewodnika?</summary><p>Tak. Nie ma obowiązkowej wycieczki ani ustalonej trasy — kupujesz bilet w CATVI i idziesz. Większość odwiedzających robi to właśnie tak; audioprzewodnik albo przewodnik wzięty przy wejściu to opcjonalne dodatki.</p></details>
-<details><summary>Ile trwa samodzielne zwiedzanie Chichén Itzá?</summary><p>Źródła podają 2 do 4 godzin w samej strefie archeologicznej, najczęstsza odpowiedź to 3 godziny, plus 30 do 60 minut na dojście z centrum obsługi i powrót. Oprowadzanie z przewodnikiem po tym samym terenie trwa 90 minut do 2 godzin, bo jest wybiórcze.</p></details>
-<details><summary>Ile się chodzi w Chichén Itzá?</summary><p>Od 3 do 5 km w głównej strefie — Yucatán Today podaje minimum 4 km — plus dojście z centrum obsługi w obie strony. Rdzeń zajmuje co najmniej 5 km².</p></details>
-<details><summary>Gdzie jest wejście do Chichén Itzá w 2026 roku?</summary><p>Przez nowe centrum obsługi CATVI przy drodze 180, około 900 m na północ od El Castillo. Stary Parador Turístico na zachodzie przestał sprzedawać bilety w 2026 roku, a trasa dochodzi teraz do Świętej Cenoty przed piramidą — odwrotnie niż opisuje większość przewodników.</p></details>
-<details><summary>Jaka jest najlepsza kolejność zwiedzania Chichén Itzá?</summary><p>Północne zabytki są tolteckie, a południowe starsze, majańskie w stylu Puuc, więc jedna pętla przeprowadza przez okresy architektoniczne po kolei. Przy przyjeździe na otwarcie zrób najpierw główny plac, przed autokarami. Przy przyjeździe między 10:00 a 12:00 zacznij od południa, a główny plac zostaw na po 14:00. Jak grupy rozkładają się w środku strefy, nie jest udokumentowane, więc traktuj to jako wnioskowanie, a nie regułę.</p></details>
-<details><summary>Czy można wejść na El Castillo?</summary><p>Nie. Wspinaczka jest zabroniona od 2006 roku, po śmiertelnym upadku. Świątynia Wojowników też jest zamknięta dla wspinaczy, a wewnętrzna świątynia w El Castillo jest zamknięta od tego samego roku. Wszystko oglądasz z poziomu ziemi, spoza sznura.</p></details>
-<details><summary>Czy jest aplikacja z audioprzewodnikiem po Chichén Itzá?</summary><p>Tak. Samodzielny spacer TouringBee obejmuje 16 przystanków w około 90 minut, na iOS i Androidzie, w ośmiu językach, z mapą GPS offline, za 9,99 &euro; i rok dostępu. Każde nagranie włączasz samodzielnie, kiedy dojdziesz do zabytku.</p></details>
-<details><summary>Ile kosztuje przewodnik przy wejściu?</summary><p>Stawki podawane w 2026 roku to około 900–1000 MXN po hiszpańsku, 1200 po angielsku i 1400 po francusku, włosku lub niemiecku, za grupę do ośmiu osób, wziętą na miejscu przy kasach i opłaconą gotówką. Oprowadzanie trwa od 45 minut do 2 godzin. Oficjalnego cennika nikt nie opublikował, więc traktuj te liczby jako widełki.</p></details>
-<details><summary>W jakich godzinach w Chichén Itzá jest najmniej ludzi?</summary><p>Przed 10:00 i po 15:00. Własne dane INAH kładą szczyt obciążenia wejścia na przedział 10:00–14:00; autokary zaczynają podjeżdżać koło 10:00–11:00, a grupy wychodzą od 14:00. Unikaj niedzieli, jeśli możesz — wstęp jest bezpłatny dla obywateli i rezydentów Meksyku, co może przyprowadzić pod bramę więcej ludzi. Liczb zwiedzających w podziale na dni tygodnia nikt nie publikuje, więc traktuj to jako powód do elastyczności, a nie zmierzony fakt.</p></details>
+<details><summary>Czy można zwiedzać Chichén Itzá bez wycieczki?</summary><p>Tak. Bilet za 697 peso kupuje się w kasach CATVI i wchodzi się do środka. W strefie nic nie wymaga przewodnika, a żaden fragment trasy nie jest zarezerwowany dla grup. Bez przewodnika traci się tylko objaśnienie — i właśnie po to jest audioprzewodnik.</p></details>
+<details><summary>Ile jest historii audio i ile czasu zajmuje przejście całego spaceru?</summary><p>Szesnaście historii audio i około półtorej godziny, jeśli iść trasą bez zatrzymywania się. Większości osób zajmuje to dłużej, bo stanąć można w dowolnym momencie, a aplikacja spokojnie czeka.</p></details>
+<details><summary>Czy potrzebne jest połączenie z internetem?</summary><p>Nie. Wycieczkę pobiera się przed wyjazdem i wszystko — dźwięk, mapa i trasa — działa offline. Tak jest celowo: strefa jest duża, a w takim upale nikt nie powinien szukać zasięgu.</p></details>
+<details><summary>Czy bilet wstępu jest w cenie audioprzewodnika?</summary><p>Nie. Audioprzewodnik kosztuje 9,99 &euro;, a wstęp to 697 peso dla dorosłego obcokrajowca, płatne osobno w kasach CATVI. Mówimy to wprost, bo część ofert tego nie precyzuje.</p></details>
+<details><summary>Czy można zacząć w innym miejscu niż początek trasy?</summary><p>Tak, w dowolnym. Każda historia ma na mapie swój punkt, więc do trasy można wejść dokładnie tam, gdzie się stoi, włączyć pierwsze nagranie i brać resztę w dowolnej kolejności.</p></details>
+<details><summary>W jakich językach jest dostępny?</summary><p>W ośmiu: angielskim, hiszpańskim, francuskim, niemieckim, włoskim, portugalskim, polskim i rosyjskim. Każdy w grupie słucha w swoim języku, na swoim telefonie.</p></details>
+<details><summary>Czy nadaje się dla dzieci?</summary><p>Dobrze sprawdza się z dziećmi na tyle dużymi, żeby przejść trzy do pięciu kilometrów w upale i wytrzymać w słuchawkach. Historie są krótkie, co pomaga. Samo stanowisko jest większym wyzwaniem niż przewodnik.</p></details>
 </div>
 <h2>Czytaj dalej</h2>
 <ul class="related">
-<li><a href="/pl/">Kompletny przewodnik po Chichén Itzá</a> — zabytki, bilety, godziny</li>
-<li><a href="/pl/chichen-itza-tour/">Wycieczka do Chichén Itzá: z przewodnikiem, samodzielnie czy z audio?</a> — cztery sposoby zwiedzania, porównane</li>
-<li><a href="/pl/chichen-itza-day-trip-from-cancun/">Chichén Itzá z Cancún w jeden dzień</a> — autobus, auto, autokar czy pociąg</li>
-<li><a href="/pl/guides/">Wszystkie przewodniki po Chichén Itzá</a> — pełny spis</li>
+<li><a href="/pl/">Kompletny przewodnik po Chichén Itzá</a> — audioprzewodnik, zabytki i sprawy praktyczne</li>
+<li><a href="/pl/chichen-itza-map/">Mapa Chichén Itzá</a> — jak strefa jest rozplanowana od obecnego wejścia</li>
+<li><a href="/pl/chichen-itza-tickets/">Bilety Chichén Itzá</a> — Boleto Único za 697 peso i co obejmuje</li>
+<li><a href="/pl/chichen-itza-best-time-to-visit/">Kiedy jechać do Chichén Itzá</a> — miesiące, godziny i marcowe okienko</li>
+<li><a href="/pl/chichen-itza-tour/">Z przewodnikiem, samodzielnie czy z audioprzewodnikiem?</a> — który format komu pasuje</li>
+<li><a href="/pl/chichen-itza-day-trip-from-cancun/">Chichén Itzá z Cancún w jeden dzień</a> — autobusy, czasy i koszt dnia</li>
+<li><a href="/pl/chichen-itza-equinox/">Równonoc i cień węża Kukulkana</a> — światło na schodach, daty i dowody</li>
 </ul>
 </div></section>
 
 <section class="final"><div class="wrap">
-<h2>Przejdź to miasto z każdą historią w słuchawkach</h2>
-<p>Piramida, boisko, studnia i obserwatorium — wyjaśnione tam, gdzie stoisz, w twoim tempie.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Weź audioprzewodnik — od 9,99 &euro;</a>
+<h2>Przejdź przez miasto z każdą historią w słuchawkach</h2>
+<p>Piramida, boisko do gry w piłkę, cenota i obserwatorium — wyjaśnione dokładnie tam, gdzie stoisz, i w tempie, jakie ci pasuje.</p>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=final" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=final">Zabierz audioprzewodnik — 9,99 &euro;</a>
 </div></section>
 
 <footer><div class="wrap">
 <div class="fcols">
 <div>
 <div class="fbrand">Chichén Itzá<span>Walk</span></div>
-<div class="qr"><div class="box">QR<br>app</div><div>Download the<br>TouringBee app</div></div>
+<div class="qr"><div class="box">QR<br>app</div><div>Pobierz aplikację<br>TouringBee</div></div>
 </div>
-<div><h3>Explore</h3><a href="/pl/#inside">Audio Guide</a><a href="/pl/guides/">All Guides</a><a href="/pl/#preview">How it works</a><a href="https://touringbee.com/shop-tbee/" target="_blank" rel="noopener">All Tours</a></div>
-<div><h3>Legal</h3><a href="/privacy-policy.html">Privacy Policy</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Terms of Use</a><a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Become an Affiliate</a><a href="/privacy-policy.html#cookies">Cookies</a></div>
-<div><h3>Contact</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
-<div><h3>Languages</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/ru/">Русский</a></div>
+<div><h3>Odkrywaj</h3><a href="/pl/#inside">Audioprzewodnik</a><a href="/pl/guides/">Wszystkie przewodniki</a><a href="/pl/#preview">Jak to działa</a><a href="https://touringbee.com/pl/shop-tbee-pl/" target="_blank" rel="noopener">Wszystkie wycieczki</a></div>
+<div><h3>Informacje prawne</h3><a href="/privacy-policy.html">Polityka prywatności</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Regulamin</a><a href="/affiliate-disclosure.html">Informacja o afiliacji</a>
+<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Zostań partnerem</a><a href="/privacy-policy.html#cookies">Pliki cookie</a></div>
+<div><h3>Kontakt</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
+<div><h3>Języki</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/pt/">Português</a><a href="/pl/">Polski</a><a href="/ru/">Русский</a></div>
 </div>
-<div class="fbottom">© 2026 Chichén Itzá Walk · A TouringBee project
-<div class="disclaimer">This website is independent and not affiliated with INAH, the government of Yucatán or the administration of the Chichén Itzá archaeological zone.</div>
+<div class="fbottom">© 2026 Chichén Itzá Walk · Projekt TouringBee
+<div class="disclaimer">Ta strona jest niezależna i nie jest powiązana z INAH, władzami stanu Jukatan ani administracją strefy archeologicznej Chichén Itzá.</div>
 </div>
 </div></footer>
 
 <div class="stickybuy" id="stickybuy">
 <div class="p">Audioprzewodnik po Chichén Itzá <small>· od 9,99 &euro; · offline · po polsku</small></div>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pl" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl">Kup za 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=sticky" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pl&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=self-guided-tour&amp;utm_content=sticky">Kup za 9,99 &euro;</a>
 </div>
 <script>(function(){var b=document.getElementById('stickybuy');if(!b)return;function s(){if(window.scrollY>800){b.classList.add('show')}else{b.classList.remove('show')}}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 

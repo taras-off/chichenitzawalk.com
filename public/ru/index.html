@@ -196,6 +196,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 /* Bokun widget: take the injected root OUT of document flow (kills CLS) without touching the checkout modal. */
 #bokun-widgets-root{position:fixed!important;top:0!important;left:0!important;width:0!important;height:0!important;overflow:visible!important;z-index:2147483000!important}
 .bokun-widgets-cart-wrapper{position:fixed!important;top:auto!important;left:auto!important;right:16px!important;bottom:16px!important;margin:0!important;z-index:2147483000!important}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -203,7 +205,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 {"@type":"WebSite","@id":"https://chichenitzawalk.com/ru/#site","name":"Chichén Itzá Walk","url":"https://chichenitzawalk.com/ru/","publisher":{"@id":"https://chichenitzawalk.com/ru/#org"},"inLanguage":"ru"},
 {"@type":"Person","@id":"https://chichenitzawalk.com/ru/#author","name":"Eugene","description":"Гид и travel-автор, бывший экскурсовод, основатель сети travel-медиа paris10.travel. Автор аудиоэкскурсий TouringBee, включая прогулку по Чичен-Ице.","knowsAbout":["Chichén Itzá","Maya civilization","Yucatán","Mexico travel","archaeology"]},
 {"@type":"TouristAttraction","name":"Чичен-Ица","description":"Археологический город майя и тольтеков на Юкатане, Мексика. Объект Всемирного наследия ЮНЕСКО и одно из новых семи чудес света; известен пирамидой Кукулькана (Эль-Кастильо), Большой площадкой для игры в мяч и Священным сенотом.","address":{"@type":"PostalAddress","addressLocality":"Tinúm","addressRegion":"Yucatán","postalCode":"97751","addressCountry":"MX"},"geo":{"@type":"GeoCoordinates","latitude":20.6829,"longitude":-88.5686}},
-{"@type":"Product","name":"Аудиоэкскурсия по Чичен-Ице","description":"Аудиоэкскурсия по Чичен-Ице с живой озвучкой и офлайн-картой GPS — 16 остановок, около 1,5 часа, офлайн, на 8 языках, iOS и Android.","image":"https://chichenitzawalk.com/img/product-audioguide.webp","brand":{"@type":"Brand","name":"TouringBee"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"18","bestRating":"5","worstRating":"1"},"offers":{"@type":"Offer","price":"9.99","priceCurrency":"EUR","availability":"https://schema.org/InStock","hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"MX","returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted"},"url":"https://touringbee.com/ru/product/chichen-itza-tour-ru/"}},
+{"@type":"Product","name":"Аудиоэкскурсия по Чичен-Ице","description":"Аудиоэкскурсия по Чичен-Ице с живой озвучкой и офлайн-картой GPS — 16 остановок, около 1,5 часа, офлайн, на 8 языках, iOS и Android.","image":"https://chichenitzawalk.com/img/product-audioguide.webp","brand":{"@type":"Brand","name":"TouringBee"},"offers":{"@type":"Offer","price":"9.99","priceCurrency":"EUR","availability":"https://schema.org/InStock","hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"MX","returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted"},"url":"https://touringbee.com/ru/product/chichen-itza-tour-ru/"}},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Сколько стоит вход в Чичен-Ицу?","acceptedAnswer":{"@type":"Answer","text":"Иностранцы платят около 697 песо в 2026 году (примерно 35 € / 40 $) — один билет в одной кассе, с тех пор как весной 2026 года Boleto Único заменил прежнюю систему с двумя кассами. Цены пересматривают каждый год, так что сверьтесь перед поездкой."}},
 {"@type":"Question","name":"Какие часы работы у Чичен-Ицы?","acceptedAnswer":{"@type":"Answer","text":"Зона открывается в 8:00 и закрывается в 17:00. Кассы прекращают продажу, последний вход — в 16:00. Приехать к открытию — лучшее решение, которое вы здесь примете."}},
@@ -211,7 +213,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 {"@type":"Question","name":"Сколько времени нужно на Чичен-Ицу?","acceptedAnswer":{"@type":"Answer","text":"Двух-трёх часов хватает, чтобы пройти основную археологическую зону спокойным шагом. Аудиопрогулка идёт около 1,5 часа на 16 остановок, так что остаётся время на фото и тень."}},
 {"@type":"Question","name":"Когда в Чичен-Ице бывает змей равноденствия?","acceptedAnswer":{"@type":"Answer","text":"Около 20 марта и 22 сентября. Ближе к вечеру ступенчатый угол Эль-Кастильо бросает на балюстраду зигзаг тени, похожий на змея, сползающего по лестнице. Эффект виден несколько дней до и после — как и толпы."}},
 {"@type":"Question","name":"Чичен-Ица — это майя или ацтеки?","acceptedAnswer":{"@type":"Answer","text":"Майя. Ацтеки жили в центральной Мексике и поднялись веками позже. Чичен-Ицу основали майя; с X века город забрали тольтеки — поэтому северные постройки не похожи на более старые южные."}},
-{"@type":"Question","name":"Работает ли аудиоэкскурсия офлайн?","acceptedAnswer":{"@type":"Answer","text":"Да. Скачайте её один раз в приложении TouringBee перед выездом — связь на площадке слабая — и она работает полностью офлайн, интернет не нужен."}},
+{"@type":"Question","name":"Работает ли аудиоэкскурсия офлайн?","acceptedAnswer":{"@type":"Answer","text":"Да. Скачайте её один раз в приложении TouringBee перед выездом — на площадке она работает полностью офлайн, без интернета."}},
 {"@type":"Question","name":"На каких языках есть аудиогид?","acceptedAnswer":{"@type":"Answer","text":"Восемь языков: английский, испанский, французский, немецкий, итальянский, португальский, польский и русский."}},
 {"@type":"Question","name":"Стоит ли ехать в Чичен-Ицу?","acceptedAnswer":{"@type":"Answer","text":"Да — если приедете рано и будете понимать, на что смотрите. Приезд к 8:00 с гидом в наушниках превращает жаркую прогулку вдоль огороженных камней в одно из лучших утр в Мексике."}}
 ]},
@@ -230,9 +232,11 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <div class="dropdown">
 <a href="/ru/chichen-itza-tour/">Экскурсия в Чичен-Ицу: какая?</a>
 <a href="/ru/chichen-itza-day-trip-from-cancun/">Из Канкуна на день</a>
-<a href="/ru/chichen-itza-self-guided-tour/">Самостоятельно</a>
+<a href="/ru/chichen-itza-self-guided-tour/">Самостоятельная прогулка</a>
 <a href="/ru/chichen-itza-tickets/">Билеты</a>
 <a href="/ru/chichen-itza-best-time-to-visit/">Когда ехать</a>
+<a href="/ru/chichen-itza-map/">Карта зоны</a>
+<a href="/ru/chichen-itza-equinox/">Равноденствие</a>
 <a class="all" href="/ru/guides/">Все гиды &rarr;</a>
 </div></details>
 <nav class="lang"><a href="/">EN</a><a href="/es/">ES</a><a href="/fr/">FR</a><a href="/de/">DE</a><a href="/it/">IT</a><a href="/pt/">PT</a><a href="/pl/">PL</a><a class="on" href="/ru/">RU</a></nav>
@@ -247,7 +251,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <p>Что смотреть, когда приезжать, сколько стоит — и аудиопрогулка по самому городу.</p>
 <div>
 <a class="btn dark" href="#inside">Что внутри</a>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид</a>
 <a class="btn ghost" href="#preview" onclick="var a=document.getElementById('previewAudio');if(a){a.play();}">Послушать отрывок</a>
 <a class="btn dark" href="https://www.tiqets.com/ru/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Купить билеты</a>
 </div>
@@ -273,14 +277,14 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <h3>Аудиоэкскурсия по Чичен-Ице<span class="badge">Доступ сразу</span></h3>
 <div class="pc-price">От 9,99 &euro; <small>· доступ на год</small></div>
 <ul class="features">
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% офлайн — связь на площадке слабая, и это неважно</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% офлайн — связь на площадке не нужна нигде</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Офлайн-карта с GPS — каждую запись вы включаете сами на месте</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> 8 языков, живой голос диктора</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg> Работает на iOS и Android</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 16 остановок, около 1,5 часа — останавливайтесь в тени, когда захотите</li>
 </ul>
 <div style="display:flex;gap:10px;flex-wrap:wrap">
-<a class="btn bokunButton" style="flex:1;text-align:center;margin:0" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид</a>
+<a class="btn bokunButton" style="flex:1;text-align:center;margin:0" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид</a>
 <a class="btn outline" style="margin:0" href="#preview" onclick="var a=document.getElementById('previewAudio');if(a){a.play();}">Послушать демо</a>
 </div>
 </div>
@@ -294,6 +298,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <p class="lead">Чичен-Ица — это не одна пирамида. Это город: площадка для игры в мяч длиной с футбольное поле, обсерватория с окнами, нацеленными на Венеру, колодец, проглотивший золото и людей, и ступенчатая пирамида, выстроенная так точно, что дважды в год солнце рисует на её склоне змея.</p>
 <p>Город стоит в плоском кустарнике на севере Юкатана (Yucatán), в двух с половиной часах от Канкуна и сорока минутах от колониального Вальядолида (Valladolid). На пике здесь жили около двадцати тысяч человек. Потом город опустел — и когда в XVI веке сюда пробрались испанцы, они нашли храмы в лианах и никого, кто объяснил бы, что всё это значит. Сегодня это объект Всемирного наследия ЮНЕСКО, одно из новых семи чудес света и один из самых посещаемых археологических памятников планеты. А ещё здесь жарко, негде укрыться от солнца и с одиннадцати утра накатывают автобусные группы. Поэтому время приезда решает тут больше, чем почти где-либо ещё.</p>
 <p>Дальше — что это был за город, что именно вы видите перед собой, сколько стоит билет в 2026 году и как построить день. Если хотите слушать истории на месте, а не заранее, наша <a href="#inside">аудиопрогулка по Чичен-Ице</a> от TouringBee — это 16 остановок примерно за полтора часа, офлайн, на вашем языке. Весь маршрут расписан на этой странице.</p>
+<p class="xlinks">Стоит почитать и это: <a href="/ru/chichen-itza-equinox/">равноденствие и змей Кукулькана</a>, а если вы ещё выбираете формат — <a href="/ru/chichen-itza-tour/">экскурсия, сам или аудиогид</a>.</p>
 
 <h2 id="story">История Чичен-Ицы</h2>
 
@@ -307,7 +312,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 
 <div class="midcta">
 <p style="margin:.2em 0 .7em">Услышьте весь город, остановка за остановкой, стоя ровно там, где всё это было. <span class="price">От 9,99 &euro;</span> · офлайн · на русском</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид</a>
 </div>
 
 <h3>Площадка для игры в мяч и мяч весом пять килограммов</h3>
@@ -331,6 +336,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <p>Воду — больше, чем кажется нужным. Шляпу, крем от солнца и обувь, в которой не жалко идти по гравию и неровному камню. Наличные песо: в кассе принимают карты, но терминалы здесь часто отказывают, а пункты оплаты на трассе 180D берут только наличные. Вдоль дорожек внутри стоят торговцы; торговаться нормально и ожидаемо.</p>
 <h3>Где остановиться</h3>
 <p>Вальядолид в сорока минутах к востоку — самая разумная база: колониальный, недорогой и достаточно близкий, чтобы быть у ворот к открытию. Мерида (Mérida) больше и примерно в 1 ч 45 мин к западу. Жить на побережье — это 2,5 часа за рулём в каждую сторону. <a href="https://www.booking.com/searchresults.ru.html?ss=Valladolid%2C%20Yucatan%2C%20Mexico&amp;aid=1437498&amp;group_adults=2&amp;no_rooms=1" target="_blank" rel="noopener sponsored">Отели в Вальядолиде на Booking.com →</a></p>
+<p class="xlinks">Подробнее о практике: <a href="/ru/chichen-itza-tickets/">билеты и что входит в цену</a>, <a href="/ru/chichen-itza-best-time-to-visit/">какой месяц и час выбрать</a> и <a href="/ru/chichen-itza-day-trip-from-cancun/">поездка из Канкуна на день</a>.</p>
 </div></section>
 
 <!-- 4. FAMOUS STOPS -->
@@ -352,11 +358,12 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <h2>Как работает аудиоэкскурсия</h2>
 <div class="steps">
 <div class="step"><h3>Купите гид</h3><p>Один платёж, доступ сразу. Без подписки.</p></div>
-<div class="step"><h3>Скачайте до выезда</h3><p>Поставьте приложение TouringBee на iOS или Android и скачайте экскурсию в отеле — связь на площадке слабая.</p></div>
+<div class="step"><h3>Скачайте до выезда</h3><p>Поставьте приложение TouringBee на iOS или Android и скачайте экскурсию в отеле, по вай-фаю, на который можно положиться.</p></div>
 <div class="step"><h3>Начните у входа</h3><p>Откройте гид на входе, следите за офлайн-картой и включайте каждую историю сами в нужной точке.</p></div>
 <div class="step"><h3>Пауза и продолжение</h3><p>Остановитесь в тени, попейте воды, продолжите ровно с того места, где бросили.</p></div>
 </div>
-<p class="center" style="margin-top:22px"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид</a></p>
+<p class="center" style="margin-top:22px"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиогид</a></p>
+<p class="xlinks">Нужен сам маршрут, остановка за остановкой? <a href="/ru/chichen-itza-self-guided-tour/">разбор самостоятельной прогулки</a> раскладывает его на восемь этапов, а <a href="/ru/chichen-itza-map/">карта зоны</a> показывает, как устроена зона от нынешнего входа.</p>
 </div></section>
 
 <!-- 6. TICKETS / PRACTICAL -->
@@ -448,7 +455,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <details><summary>Сколько времени нужно на Чичен-Ицу?</summary><p>Двух-трёх часов хватает, чтобы пройти основную археологическую зону спокойным шагом. Аудиопрогулка идёт около 1,5 часа на 16 остановок, так что остаётся время на фото и тень.</p></details>
 <details><summary>Когда бывает змей равноденствия?</summary><p>Около 20 марта и 22 сентября. Ближе к вечеру ступенчатый угол Эль-Кастильо бросает на балюстраду зигзаг тени, похожий на змея, сползающего по лестнице. Эффект виден несколько дней до и после — как и толпы.</p></details>
 <details><summary>Чичен-Ица — это майя или ацтеки?</summary><p>Майя. Ацтеки жили в центральной Мексике и поднялись веками позже. Чичен-Ицу основали майя; с X века город забрали тольтеки — поэтому северные постройки не похожи на более старые южные.</p></details>
-<details><summary>Работает ли аудиоэкскурсия офлайн?</summary><p>Да. Скачайте её один раз в приложении TouringBee перед выездом — связь на площадке слабая — и она работает полностью офлайн, интернет не нужен.</p></details>
+<details><summary>Работает ли аудиоэкскурсия офлайн?</summary><p>Да. Скачайте её один раз в приложении TouringBee перед выездом — на площадке она работает полностью офлайн, без интернета.</p></details>
 <details><summary>На каких языках есть аудиогид?</summary><p>На восьми: английский, испанский, французский, немецкий, итальянский, португальский, польский и русский.</p></details>
 <details><summary>Стоит ли ехать в Чичен-Ицу?</summary><p>Да — если приедете рано и будете понимать, на что смотрите. Приезд к 8:00 с гидом в наушниках превращает жаркую прогулку вдоль огороженных камней в одно из лучших утр в Мексике.</p></details>
 </div>
@@ -470,7 +477,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <section class="final"><div class="wrap">
 <h2>Пройдите город с историей в наушниках</h2>
 <p>Пирамида, площадка для игры в мяч, колодец и обсерватория — объяснения там, где вы стоите, и в вашем темпе.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиоэкскурсию — от 9,99 €</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить аудиоэкскурсию — от 9,99 €</a>
 </div></section>
 
 </main>
@@ -484,7 +491,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <div><h3>Правовая информация</h3><a href="/privacy-policy.html">Политика конфиденциальности</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Условия использования</a><a href="/affiliate-disclosure.html">О партнёрских ссылках</a>
 <a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Стать партнёром</a><a href="/privacy-policy.html#cookies">Куки</a></div>
 <div><h3>Контакты</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
-<div><h3>Языки</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/ru/">Русский</a></div>
+<div><h3>Языки</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/pt/">Português</a><a href="/pl/">Polski</a><a href="/ru/">Русский</a></div>
 </div>
 <div class="fbottom">© 2026 Chichén Itzá Walk · проект TouringBee
 <div class="disclaimer">Сайт независимый и не связан с INAH, правительством Юкатана или администрацией археологической зоны Чичен-Ицы.</div>
@@ -494,7 +501,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <!-- Sticky buy bar: mobile bottom / desktop bottom-right, appears after scroll -->
 <div class="stickybuy" id="stickybuy">
 <div class="p">Аудиогид по Чичен-Ице <small>· от 9,99 &euro; · офлайн · на русском</small></div>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=ru" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить за 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=ru">Купить за 9,99 &euro;</a>
 </div>
 <script>(function(){var b=document.getElementById('stickybuy');if(!b)return;function s(){if(window.scrollY>800){b.classList.add('show')}else{b.classList.remove('show')}}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 

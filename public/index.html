@@ -196,6 +196,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 /* Bokun widget: take the injected root OUT of document flow (kills CLS) without touching the checkout modal. */
 #bokun-widgets-root{position:fixed!important;top:0!important;left:0!important;width:0!important;height:0!important;overflow:visible!important;z-index:2147483000!important}
 .bokun-widgets-cart-wrapper{position:fixed!important;top:auto!important;left:auto!important;right:16px!important;bottom:16px!important;margin:0!important;z-index:2147483000!important}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -203,7 +205,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 {"@type":"WebSite","@id":"https://chichenitzawalk.com/#site","name":"Chichén Itzá Walk","url":"https://chichenitzawalk.com/","publisher":{"@id":"https://chichenitzawalk.com/#org"},"inLanguage":"en"},
 {"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene","description":"Guide and travel writer, former tour guide and founder of the travel-content network paris10.travel. Author of TouringBee's self-guided audio tours, including the Chichén Itzá walk.","knowsAbout":["Chichén Itzá","Maya civilization","Yucatán","Mexico travel","archaeology"]},
 {"@type":"TouristAttraction","name":"Chichén Itzá","description":"A Maya–Toltec archaeological city in Yucatán, Mexico. A UNESCO World Heritage Site and one of the New Seven Wonders of the World, best known for the pyramid of Kukulkán (El Castillo), the Great Ball Court and the Sacred Cenote.","address":{"@type":"PostalAddress","addressLocality":"Tinúm","addressRegion":"Yucatán","postalCode":"97751","addressCountry":"MX"},"geo":{"@type":"GeoCoordinates","latitude":20.6829,"longitude":-88.5686}},
-{"@type":"Product","name":"Chichén Itzá Self-Guided Audio Tour","description":"A self-guided audio tour of Chichén Itzá with real-voice narration and an offline GPS map — 16 stops, around 1.5 hours, offline in 8 languages on iOS and Android.","image":"https://chichenitzawalk.com/img/product-audioguide.webp","brand":{"@type":"Brand","name":"TouringBee"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"18","bestRating":"5","worstRating":"1"},"offers":{"@type":"Offer","price":"9.99","priceCurrency":"EUR","availability":"https://schema.org/InStock","hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"MX","returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted"},"url":"https://touringbee.com/product/chichen-itza-tour/"}},
+{"@type":"Product","name":"Chichén Itzá Self-Guided Audio Tour","description":"A self-guided audio tour of Chichén Itzá with real-voice narration and an offline GPS map — 16 stops, around 1.5 hours, offline in 8 languages on iOS and Android.","image":"https://chichenitzawalk.com/img/product-audioguide.webp","brand":{"@type":"Brand","name":"TouringBee"},"offers":{"@type":"Offer","price":"9.99","priceCurrency":"EUR","availability":"https://schema.org/InStock","hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"MX","returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted"},"url":"https://touringbee.com/product/chichen-itza-tour/"}},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"How much does it cost to enter Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Foreign visitors pay around 697 pesos in 2026 (roughly €35 / $40) — one ticket at one window, since the Boleto Único replaced the old two-counter system in spring 2026. Prices are set yearly, so check before you travel."}},
 {"@type":"Question","name":"What are the opening hours of Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"The site opens at 8:00 and closes at 17:00. Ticket booths stop selling and last entry is at 16:00. Arriving at opening is the single best decision you can make here."}},
@@ -211,7 +213,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 {"@type":"Question","name":"How long do you need at Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Two to three hours covers the main archaeological zone at a comfortable pace. The self-guided audio walk runs about 1.5 hours across 16 stops, leaving time for photos and shade."}},
 {"@type":"Question","name":"When is the equinox serpent at Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Around 20 March and 22 September. In the late afternoon the stepped corner of El Castillo throws a zigzag shadow onto the balustrade that looks like a serpent descending the stairs. The effect is visible for several days either side — and so are the crowds."}},
 {"@type":"Question","name":"Is Chichén Itzá Maya or Aztec?","acceptedAnswer":{"@type":"Answer","text":"Maya. The Aztecs lived in central Mexico and rose centuries later. Chichén Itzá was founded by the Maya; from the 10th century the Toltecs took the city, which is why the northern monuments look different from the older southern ones."}},
-{"@type":"Question","name":"Is the audio tour available offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. Download it once in the TouringBee app before you go — mobile signal at the site is poor — and it works fully offline, with no data needed."}},
+{"@type":"Question","name":"Is the audio tour available offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. Download it once in the TouringBee app before you go, and it works fully offline at the site, with no data needed."}},
 {"@type":"Question","name":"What languages is the audio guide in?","acceptedAnswer":{"@type":"Answer","text":"Eight languages: English, Spanish, French, German, Italian, Portuguese, Polish and Russian."}},
 {"@type":"Question","name":"Is Chichén Itzá worth visiting?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you go early and know what you are looking at. Arriving at 8:00 with a guide in your ears turns a hot walk past roped-off stones into one of the best mornings in Mexico."}}
 ]},
@@ -233,6 +235,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <a href="/chichen-itza-self-guided-tour/">Self-guided tour</a>
 <a href="/chichen-itza-tickets/">Tickets</a>
 <a href="/chichen-itza-best-time-to-visit/">Best time</a>
+<a href="/chichen-itza-map/">Site map</a>
+<a href="/chichen-itza-equinox/">Equinox</a>
 <a class="all" href="/guides/">All guides &rarr;</a>
 </div></details>
 <nav class="lang"><a class="on" href="/">EN</a><a href="/es/">ES</a><a href="/fr/">FR</a><a href="/de/">DE</a><a href="/it/">IT</a><a href="/pt/">PT</a><a href="/pl/">PL</a><a href="/ru/">RU</a></nav>
@@ -273,7 +277,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <h3>Chichén Itzá Self-Guided Audio Tour<span class="badge">Instant access</span></h3>
 <div class="pc-price">From &euro;9.99 <small>· 1 year access</small></div>
 <ul class="features">
-<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% offline — the signal at the site is poor, and it doesn't matter</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l20 20"/><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg> 100% offline — no signal needed at any point on the site</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Offline GPS map — you start each track yourself at the spot</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> 8 languages, real voice narration</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg> Works on iOS &amp; Android</li>
@@ -294,6 +298,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <p class="lead">Chichén Itzá is not one pyramid. It is a city: a ball court the length of a football pitch, an observatory with windows aimed at Venus, a well that swallowed gold and people, and a stepped pyramid built so precisely that twice a year the sun draws a snake down its side.</p>
 <p>It sits in the flat scrub of the northern Yucatán, two and a half hours from Cancún and forty minutes from the colonial town of Valladolid. Around twenty thousand people lived here at its peak. Then it emptied — and when Spanish explorers pushed through in the 16th century they found temples wrapped in vines and no one to ask what any of it meant. Today it is a UNESCO World Heritage Site, one of the New Seven Wonders of the World, and one of the most visited archaeological sites on earth. It is also hot, sun-exposed and swamped by coach parties from about eleven in the morning, which is why timing matters here more than at almost any other monument.</p>
 <p>This guide covers what the city is, what you are actually looking at, what a ticket costs in 2026, and how to plan the day. If you want the stories on the spot rather than in advance, our <a href="#inside">self-guided Chichén Itzá audio walk</a> by TouringBee runs 16 stops in about an hour and a half, offline, in your own language — the whole route is on this page.</p>
+<p class="xlinks">Also worth reading: <a href="/chichen-itza-equinox/">the equinox and the Kukulkán serpent</a>, and <a href="/chichen-itza-tour/">guided, self-guided or audio guide</a> if you are still choosing a format.</p>
 
 <h2 id="story">The Story of Chichén Itzá</h2>
 
@@ -331,6 +336,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <p>Water — more than you think. A hat, sunscreen, and shoes you can walk on gravel and uneven stone in. Cash in pesos: the ticket window takes cards, but card machines here fail often, and the toll booths on the 180D motorway take nothing but cash. Vendors line most of the paths inside the site; haggling is normal and expected.</p>
 <h3>Where to Stay</h3>
 <p>Valladolid, forty minutes east, is the smart base — colonial, cheap, and close enough to be at the gates for opening. Mérida is bigger and about 1h45 west. Staying on the coast means a 2.5-hour drive each way. <a href="https://www.booking.com/searchresults.en.html?ss=Valladolid%2C%20Yucatan%2C%20Mexico&amp;aid=1437498&amp;group_adults=2&amp;no_rooms=1" target="_blank" rel="noopener sponsored">Check hotels in Valladolid on Booking.com →</a></p>
+<p class="xlinks">Deeper on the practicalities: <a href="/chichen-itza-tickets/">tickets and what the price covers</a>, <a href="/chichen-itza-best-time-to-visit/">which month and hour to pick</a>, and <a href="/chichen-itza-day-trip-from-cancun/">doing it as a day trip from Cancún</a>.</p>
 </div></section>
 
 <!-- 4. FAMOUS STOPS -->
@@ -352,11 +358,12 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <h2>How the Audio Tour Works</h2>
 <div class="steps">
 <div class="step"><h3>Buy the guide</h3><p>One payment, instant access. No subscription.</p></div>
-<div class="step"><h3>Download before you go</h3><p>Get the TouringBee app on iOS or Android and download the tour at your hotel — the signal at the site is weak.</p></div>
+<div class="step"><h3>Download before you go</h3><p>Get the TouringBee app on iOS or Android and download the tour at your hotel, on wi-fi you can rely on.</p></div>
 <div class="step"><h3>Start at the entrance</h3><p>Open the guide when you walk in, follow the offline map, and start each story yourself at each stop.</p></div>
 <div class="step"><h3>Pause &amp; resume</h3><p>Stop in the shade, drink some water, pick it up exactly where you left off.</p></div>
 </div>
 <p class="center" style="margin-top:22px"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1">Get the Audio Guide</a></p>
+<p class="xlinks">Want the walk itself, stop by stop? Our <a href="/chichen-itza-self-guided-tour/">self-guided walking tour</a> sets out the route in eight stages, and <a href="/chichen-itza-map/">the site map</a> shows how the zone is laid out from the current entrance.</p>
 </div></section>
 
 <!-- 6. TICKETS / PRACTICAL -->
@@ -448,7 +455,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <details><summary>How long do you need at Chichén Itzá?</summary><p>Two to three hours covers the main archaeological zone at a comfortable pace. The self-guided audio walk runs about 1.5 hours across 16 stops, leaving time for photos and shade.</p></details>
 <details><summary>When is the equinox serpent?</summary><p>Around 20 March and 22 September. In the late afternoon the stepped corner of El Castillo throws a zigzag shadow onto the balustrade that looks like a serpent descending the stairs. The effect is visible for several days either side — and so are the crowds.</p></details>
 <details><summary>Is Chichén Itzá Maya or Aztec?</summary><p>Maya. The Aztecs lived in central Mexico and rose centuries later. Chichén Itzá was founded by the Maya; from the 10th century the Toltecs took the city, which is why the northern monuments look different from the older southern ones.</p></details>
-<details><summary>Is the audio tour available offline?</summary><p>Yes. Download it once in the TouringBee app before you go — mobile signal at the site is poor — and it works fully offline, with no data needed.</p></details>
+<details><summary>Is the audio tour available offline?</summary><p>Yes. Download it once in the TouringBee app before you go, and it works fully offline at the site, with no data needed.</p></details>
 <details><summary>What languages is the audio guide in?</summary><p>Eight: English, Spanish, French, German, Italian, Portuguese, Polish and Russian.</p></details>
 <details><summary>Is Chichén Itzá worth visiting?</summary><p>Yes, if you go early and know what you are looking at. Arriving at 8:00 with a guide in your ears turns a hot walk past roped-off stones into one of the best mornings in Mexico.</p></details>
 </div>
@@ -484,7 +491,7 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 <div><h3>Legal</h3><a href="/privacy-policy.html">Privacy Policy</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Terms of Use</a><a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
 <a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Become an Affiliate</a><a href="/privacy-policy.html#cookies">Cookies</a></div>
 <div><h3>Contact</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
-<div><h3>Languages</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/ru/">Русский</a></div>
+<div><h3>Languages</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/pt/">Português</a><a href="/pl/">Polski</a><a href="/ru/">Русский</a></div>
 </div>
 <div class="fbottom">© 2026 Chichén Itzá Walk · A TouringBee project
 <div class="disclaimer">This website is independent and not affiliated with INAH, the government of Yucatán or the administration of the Chichén Itzá archaeological zone.</div>

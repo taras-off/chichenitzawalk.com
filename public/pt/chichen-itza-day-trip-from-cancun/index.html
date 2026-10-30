@@ -199,6 +199,8 @@ footer{background:#fff;color:var(--muted);font-size:14px;padding:44px 0;border-t
 /* Bokun widget: take the injected root OUT of document flow (kills CLS) without touching the checkout modal. */
 #bokun-widgets-root{position:fixed!important;top:0!important;left:0!important;width:0!important;height:0!important;overflow:visible!important;z-index:2147483000!important}
 .bokun-widgets-cart-wrapper{position:fixed!important;top:auto!important;left:auto!important;right:16px!important;bottom:16px!important;margin:0!important;z-index:2147483000!important}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 
 /* ---- article page ---- */
 /* sticky header is 56px tall: keep anchor targets clear of it */
@@ -230,11 +232,36 @@ table.cmp{border-collapse:collapse;width:100%;min-width:680px;font-size:14.5px}
 table.cmp th,table.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 table.cmp thead th{background:var(--soft);font-size:13.5px}
 table.cmp tbody td:first-child{background:#fbfaf5;white-space:nowrap}
+p.xlinks{font-size:15px;color:var(--muted);background:var(--soft);border-left:3px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0;margin:18px 0 0}
+p.xlinks a{font-weight:600}
 ul.related{list-style:none;padding:0;margin:.6em 0 0}
 ul.related li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 ul.related a{font-weight:600;text-decoration:none}
 ul.related a:hover{text-decoration:underline}
 @media(max-width:640px){.arthero h1{font-size:29px}.arthero .sub{font-size:17px}.hbtns .btn{width:100%;text-align:center}}
+/* ---- money page: чипсы, баннер, плеер, шаги, отзывы ---- */
+ul.chips{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0 0 16px}
+ul.chips li{font-size:13px;line-height:1;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);white-space:nowrap}
+.tb-banner{display:flex;gap:16px;align-items:center;border:2px solid #0ea2e6;background:#f2f9fd;border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-banner-img{width:132px;height:96px;object-fit:cover;border-radius:8px;flex:0 0 auto}
+.tb-banner-body{min-width:0}
+.tb-banner-body p{margin:0 0 8px}
+.tb-banner-head{font-weight:700;font-size:17px;color:#0b5f85}
+.tb-audio{border:1px solid var(--line);background:var(--soft);border-radius:12px;padding:16px 18px;margin:1.8em 0}
+.tb-audio-head{font-weight:700;margin:0 0 6px}
+.tb-audio p{margin:0 0 10px}
+.tb-audio audio{width:100%}
+.tb-steps{margin:1.6em 0}
+.tb-steps ol{padding-left:1.2em;margin:0 0 16px}
+.tb-steps li{margin:0 0 8px}
+.tb-shots{display:flex;gap:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+img.tb-shot{width:210px;height:auto;border:1px solid var(--line);border-radius:10px;flex:0 0 auto}
+.tb-reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:1.6em 0}
+.tb-review{margin:0;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.tb-review blockquote{margin:0 0 8px;padding:0;background:none;border:0;font-style:normal;color:var(--ink)}
+.tb-review blockquote p{margin:0}
+.tb-review figcaption{font-size:13px;color:var(--muted)}
+@media(max-width:640px){.tb-banner{flex-direction:column;align-items:flex-start}.tb-banner-img{width:100%;height:150px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://chichenitzawalk.com/pt/chichen-itza-day-trip-from-cancun/#article","headline":"Chichén Itzá a partir de Cancún num dia: autocarro, carro, excursão ou comboio","description":"Autocarro, carro, excursão ou comboio de Cancún a Chichén Itzá: preços reais de 2026, tempos honestos e a hora de diferença de que quase ninguém o avisa.","inLanguage":"pt","datePublished":"2026-09-13","dateModified":"2026-09-13","mainEntityOfPage":{"@id":"https://chichenitzawalk.com/pt/chichen-itza-day-trip-from-cancun/"},"image":"https://chichenitzawalk.com/img/hero-1536.webp","author":{"@type":"Person","@id":"https://chichenitzawalk.com/#author","name":"Eugene"},"publisher":{"@type":"Organization","@id":"https://chichenitzawalk.com/#org","name":"TouringBee","url":"https://touringbee.com/"},"about":{"@type":"TouristAttraction","name":"Chichén Itzá"}},{"@type":"FAQPage","@id":"https://chichenitzawalk.com/pt/chichen-itza-day-trip-from-cancun/#faq","inLanguage":"pt","mainEntity":[{"@type":"Question","name":"A que distância fica Chichén Itzá de Cancún?","acceptedAnswer":{"@type":"Answer","text":"Cerca de 200 km pela autoestrada com portagem 180D. As aplicações de navegação dizem 2 h 11 min; na prática conte com duas horas e meia a três em cada sentido."}},{"@type":"Question","name":"Vale a pena ir a Chichén Itzá num dia a partir de Cancún?","acceptedAnswer":{"@type":"Answer","text":"Sim — dá para um dia: são cerca de 2,5 a 3 horas de estrada em cada sentido. A versão mais confortável é estar lá à hora de abertura; às 11:00 está bastante mais quente e mais cheio."}},{"@type":"Question","name":"Qual é a forma mais barata de ir de Cancún a Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"O autocarro da ADO, por cerca de 1100 MXN ida e volta por pessoa, mais 697 MXN de entrada. De carro fica mais barato por cabeça a partir de três ou quatro pessoas."}},{"@type":"Question","name":"A que horas convém sair de Cancún?","acceptedAnswer":{"@type":"Answer","text":"Às 5:30 de carro, para ter o portão à hora de abertura. As excursões normais de autocarro recolhem entre as 6:30 e as 8:00 e chegam ao sítio por volta das 11:00."}},{"@type":"Question","name":"Há diferença de horas entre Cancún e Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Há. Yucatán está uma hora atrás de Quintana Roo, todo o ano. O sítio fecha às 17:00 locais e os últimos bilhetes saem às 16:00 locais — uma hora mais cedo do que o relógio do hotel sugere."}},{"@type":"Question","name":"Dá para ir de Tren Maya de Cancún a Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"Dá, mas em 2026 não funciona bem para ir e voltar no mesmo dia: a estação fica a 3 km do portão, o comboio para oeste passa por volta das 10:46 e o de leste por volta das 17:47, e as tarifas do lado de Cancún ficam bem acima do autocarro."}},{"@type":"Question","name":"Quanto custa entrar em Chichén Itzá em 2026?","acceptedAnswer":{"@type":"Answer","text":"697 MXN para um adulto estrangeiro, pagos num só bilhete e num só balcão desde que o Boleto Único substituiu as duas filas antigas, na primavera de 2026. O INAH escreve a entrada gratuita para menores de 13 anos a pensar em mexicanos e em residentes no México, por isso uma criança estrangeira paga — pergunte o valor ao balcão."}},{"@type":"Question","name":"É seguro ir de carro alugado até Chichén Itzá?","acceptedAnswer":{"@type":"Answer","text":"É. Yucatán é o estado mais pacífico do México e um de apenas dois no nível 1, a classificação mais baixa do aviso do Departamento de Estado dos EUA — que nomeia Chichén Itzá diretamente. Os riscos reais deste trajeto são banais: não conduza depois de escurecer, não pare para os angariadores que abanam sinais de «STOP» a poucos quilómetros da entrada, leve pesos em dinheiro para a autoestrada com portagem e veja se o contador da bomba foi posto a zero quando atestar."}},{"@type":"Question","name":"Dá para juntar um cenote ao dia?","acceptedAnswer":{"@type":"Answer","text":"Com carro, facilmente — Ik Kil fica a 3 km e Yokdzonot a 7 km, mais tranquilo. No autocarro da ADO fica apertado contra o regresso das 16:00. Numa excursão organizada, costuma vir incluído."}}]},{"@type":"BreadcrumbList","@id":"https://chichenitzawalk.com/pt/chichen-itza-day-trip-from-cancun/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://chichenitzawalk.com/pt/"},{"@type":"ListItem","position":2,"name":"Guias","item":"https://chichenitzawalk.com/pt/guides/"},{"@type":"ListItem","position":3,"name":"Chichén Itzá a partir de Cancún num dia"}]}]}
@@ -252,6 +279,8 @@ ul.related a:hover{text-decoration:underline}
 <a href="/pt/chichen-itza-self-guided-tour/">Por conta própria</a>
 <a href="/pt/chichen-itza-tickets/">Bilhetes</a>
 <a href="/pt/chichen-itza-best-time-to-visit/">Quando ir</a>
+<a href="/pt/chichen-itza-map/">Mapa</a>
+<a href="/pt/chichen-itza-equinox/">Equinócio</a>
 <a class="all" href="/pt/guides/">Todos os guias &rarr;</a>
 </div></details>
 <nav class="lang"><a href="/chichen-itza-day-trip-from-cancun/">EN</a><a href="/es/chichen-itza-day-trip-from-cancun/">ES</a><a href="/fr/chichen-itza-day-trip-from-cancun/">FR</a><a href="/de/chichen-itza-day-trip-from-cancun/">DE</a><a href="/it/chichen-itza-day-trip-from-cancun/">IT</a><a class="on" href="/pt/chichen-itza-day-trip-from-cancun/">PT</a><a href="/pl/chichen-itza-day-trip-from-cancun/">PL</a><a href="/ru/chichen-itza-day-trip-from-cancun/">RU</a></nav>
@@ -264,7 +293,7 @@ ul.related a:hover{text-decoration:underline}
 <p class="sub">Autocarro, carro, excursão ou comboio — preços reais de 2026, tempos honestos e a hora que apanha muita gente de surpresa.</p>
 <div class="byline"><img src="/img/author-eugene.webp" width="34" height="34" loading="lazy" alt="Eugene, autor"><span>Por <strong>Eugene</strong> &middot; atualizado a 25 de setembro de 2026 &middot; 14 min de leitura</span></div>
 <div class="hbtns">
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Comprar o audioguia — 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Comprar o audioguia — 9,99 &euro;</a>
 <a class="btn outline" href="https://www.getyourguide.com/pt-pt/chichen-itza-l785/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Comparar excursões de um dia na GetYourGuide</a>
 <a class="btn outline" href="https://www.tiqets.com/pt/chichen-itza-tickets-l146416/?partner=touringbee_limited-180893&amp;tq_campaign=chichenitzawalk" target="_blank" rel="noopener sponsored">Comprar bilhetes de entrada</a>
 </div>
@@ -274,7 +303,7 @@ ul.related a:hover{text-decoration:underline}
 <p class="lead">Chichén Itzá a partir de Cancún num dia funciona. Cerca de três horas de estrada em cada sentido, uma maravilha do mundo pelo meio, e o jantar à noite onde tomou o pequeno-almoço.</p>
 <p>A pergunta não é se dá. É a que horas chega — porque é essa decisão que muda a temperatura, a multidão, as fotografias e se vai gostar do dia ou apenas aguentá-lo.</p>
 <p>Se for por conta própria, descarregue o audioguia antes de sair. Leva-o pela zona arqueológica ao seu ritmo: 16 pontos, cerca de 90 minutos, com mapa GPS e áudio a funcionar totalmente offline. Serve sobretudo a quem fez o esforço de chegar à hora de abertura e não quer ficar à espera de um guia de grupo.</p>
-<p><a class="bokunButton inlinebuy" target="_blank" rel="noopener" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Audioguia de Chichén Itzá — 9,99 &euro; &rarr;</a></p>
+<p><a class="bokunButton inlinebuy" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Audioguia de Chichén Itzá — 9,99 &euro; &rarr;</a></p>
 <p>E há um detalhe que as brochuras saltam. <strong>Yucatán está uma hora atrás de Quintana Roo.</strong> O telefone atrasa-se sozinho, sem avisar, algures depois de Nuevo Xcan. É uma diferença fácil de esquecer — sobretudo na hora de calcular o regresso.</p>
 <div class="facts">
 <h2>Resumo rápido</h2>
@@ -282,7 +311,7 @@ ul.related a:hover{text-decoration:underline}
 <div><b>Distância</b>~200 km pela autoestrada com portagem 180D</div>
 <div><b>Tempo de estrada</b>2 h 30 a 3 h realistas, em cada sentido</div>
 <div><b>Entrada (2026)</b>697 MXN para adulto estrangeiro — um bilhete, um balcão</div>
-<div><b>Horário do sítio</b>8:00–17:00 local &middot; últimos bilhetes às 16:00</div>
+<div><b>Horário do sítio</b>8:00–17:00 local &middot; última entrada às 16:00 na página da zona do INAH, 15:00 no INAH Lugares — melhor apontar para as 15:00</div>
 <div><b>Autocarros de excursão</b>chegam às 10:30–12:00 &middot; pico de gente 11:00–14:00</div>
 <div><b>Dia mais barato</b>Autocarro da ADO, ~1100 MXN ida e volta + entrada</div>
 <div><b>Manhã mais rápida</b>Carro próprio, à entrada às 8:00</div>
@@ -365,7 +394,7 @@ ul.related a:hover{text-decoration:underline}
 <div class="midcta">
 <p class="price">Vai por conta própria?</p>
 <p>Ninguém inclui um guia ao vivo no preço da estrada. O audioguia da TouringBee cobre 16 pontos em cerca de 90 minutos e funciona totalmente offline. Chegue à hora de abertura e começa logo, sem esperar por um grupo.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Abrir o audioguia &rarr;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Abrir o audioguia &rarr;</a>
 </div>
 <h2>Três horários que funcionam</h2>
 <p><strong>De carro.</strong> Saia de Cancún às <strong>5:30</strong>. Chegue ao portão às <strong>7:45</strong> locais, antes de abrir. Entre com os primeiros: nos primeiros minutos depois da abertura costuma haver bastante menos gente do que quando os autocarros do dia descarregam. Saia às <strong>11:30</strong>, à medida que eles chegam. Cenote até às <strong>13:00</strong>, almoço em Pisté ou Valladolid, de volta às <strong>16:00</strong> pela hora de Cancún. Dez horas de porta a porta, e viu a zona arqueológica antes do grosso do movimento.</p>
@@ -422,7 +451,7 @@ ul.related a:hover{text-decoration:underline}
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg> Funciona em iOS &amp; Android</li>
 <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 16 pontos, cerca de 1,5 h — faça pausa à sombra sempre que quiser</li>
 </ul>
-<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Comprar o audioguia — 9,99 &euro;</a>
+<a class="btn bokunButton block" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Comprar o audioguia — 9,99 &euro;</a>
 </div>
 </div>
 </div></section>
@@ -451,29 +480,29 @@ ul.related a:hover{text-decoration:underline}
 <section class="final"><div class="wrap">
 <h2>Percorra a cidade com todas as histórias nos ouvidos</h2>
 <p>A pirâmide, o campo de jogo da pelota, o poço e o observatório — explicados no sítio exato onde está, ao seu ritmo.</p>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Obter o passeio áudio — a partir de 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Obter o passeio áudio — a partir de 9,99 &euro;</a>
 </div></section>
 
 <footer><div class="wrap">
 <div class="fcols">
 <div>
 <div class="fbrand">Chichén Itzá<span>Walk</span></div>
-<div class="qr"><div class="box">QR<br>app</div><div>Download the<br>TouringBee app</div></div>
+<div class="qr"><div class="box">QR<br>app</div><div>Instale a app<br>TouringBee</div></div>
 </div>
-<div><h3>Explore</h3><a href="/pt/#inside">Audio Guide</a><a href="/pt/guides/">All Guides</a><a href="/pt/#preview">How it works</a><a href="https://touringbee.com/shop-tbee/" target="_blank" rel="noopener">All Tours</a></div>
-<div><h3>Legal</h3><a href="/privacy-policy.html">Privacy Policy</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Terms of Use</a><a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Become an Affiliate</a><a href="/privacy-policy.html#cookies">Cookies</a></div>
-<div><h3>Contact</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
-<div><h3>Languages</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/ru/">Русский</a></div>
+<div><h3>Explorar</h3><a href="/pt/#inside">Audioguia</a><a href="/pt/guides/">Todos os guias</a><a href="/pt/#preview">Como funciona</a><a href="https://touringbee.com/shop-tbee/" target="_blank" rel="noopener">Todos os passeios</a></div>
+<div><h3>Informação legal</h3><a href="/privacy-policy.html">Política de Privacidade</a><a href="https://touringbee.com/terms-and-conditions-of-use/" target="_blank" rel="noopener">Termos de Uso</a><a href="/affiliate-disclosure.html">Divulgação de afiliados</a>
+<a href="https://touringbee.com/affiliate-home/" target="_blank" rel="noopener">Torne-se afiliado</a><a href="/privacy-policy.html#cookies">Cookies</a></div>
+<div><h3>Contacto</h3><a href="mailto:info@touringbee.com">info@touringbee.com</a><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></div>
+<div><h3>Idiomas</h3><a href="/">English</a><a href="/es/">Español</a><a href="/fr/">Français</a><a href="/de/">Deutsch</a><a href="/it/">Italiano</a><a href="/pt/">Português</a><a href="/pl/">Polski</a><a href="/ru/">Русский</a></div>
 </div>
-<div class="fbottom">© 2026 Chichén Itzá Walk · A TouringBee project
-<div class="disclaimer">This website is independent and not affiliated with INAH, the government of Yucatán or the administration of the Chichén Itzá archaeological zone.</div>
+<div class="fbottom">© 2026 Chichén Itzá Walk · Um projeto TouringBee
+<div class="disclaimer">Este site é independente e não tem qualquer ligação com o INAH, com o governo de Yucatán ou com a administração da zona arqueológica de Chichén Itzá.</div>
 </div>
 </div></footer>
 
 <div class="stickybuy" id="stickybuy">
 <div class="p">Audioguia de Chichén Itzá <small>· a partir de 9,99 &euro; · offline · em português</small></div>
-<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?lang=pt" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt">Comprar 9,99 &euro;</a>
+<a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=day-trip-from-cancun&amp;utm_content=sticky" data-src="https://widgets.bokun.io/online-sales/028dc54f-646b-4b9d-a0f0-e1c5746da99a/experience/790505?partialView=1&amp;lang=pt&amp;utm_source=chichenitzawalk.com&amp;utm_medium=referral&amp;utm_campaign=day-trip-from-cancun&amp;utm_content=sticky">Comprar 9,99 &euro;</a>
 </div>
 <script>(function(){var b=document.getElementById('stickybuy');if(!b)return;function s(){if(window.scrollY>800){b.classList.add('show')}else{b.classList.remove('show')}}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 
